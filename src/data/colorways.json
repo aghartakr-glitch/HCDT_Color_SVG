@@ -1,0 +1,6650 @@
+[
+ {
+  "id": "001",
+  "no": 1,
+  "name": "라임",
+  "origin": "main",
+  "badge": "메인 컬러",
+  "purple": "#6B00FF",
+  "aux": "#DAF61F",
+  "auxDeep": "#CFE500",
+  "mapping": {
+   "1": {
+    "bg": null,
+    "base": "#6B00FF",
+    "hi": "#DAF61F",
+    "wordmark": "#6B00FF",
+    "accent": "#6B00FF"
+   },
+   "2": {
+    "bg": "#6B00FF",
+    "base": "#6B00FF",
+    "hi": "#DAF61F",
+    "wordmark": "#DAF61F",
+    "accent": "#DAF61F"
+   },
+   "3": {
+    "bg": "#DAF61F",
+    "base": null,
+    "hi": "#6B00FF",
+    "wordmark": "#6B00FF",
+    "accent": "#6B00FF"
+   },
+   "4": {
+    "bg": null,
+    "base": "#6B00FF",
+    "hi": "#DAF61F",
+    "wordmark": "#CFE500",
+    "accent": "#CFE500"
+   },
+   "5": {
+    "bg": null,
+    "base": "#6B00FF",
+    "hi": "#DAF61F",
+    "wordmark": "#6B00FF",
+    "accent": "#CFE500"
+   },
+   "6": {
+    "bg": null,
+    "base": "#CFE500",
+    "hi": null,
+    "wordmark": "#CFE500",
+    "accent": "#CFE500"
+   }
+  },
+  "source": {
+   "file": "N-FUD 2026_Logo_261012.ai",
+   "page": 9,
+   "colorMode": "RGB(DeviceRGB)",
+   "valuesAreSourceExact": true,
+   "note": "원본 AI 문서가 RGB 모드라 CMYK·별색 정보가 없고, 웹 HEX는 원본 RGB 값과 같다"
+  },
+  "metrics": {
+   "contrastPurpleAux": 5.6,
+   "contrastAuxWhite": 1.22,
+   "contrastDeepWhite": 1.41,
+   "contrastDeepPurple": 4.84,
+   "oklch": [
+    0.921,
+    0.209,
+    117.882
+   ]
+  }
+ },
+ {
+  "id": "002",
+  "no": 2,
+  "name": "오렌지",
+  "origin": "main",
+  "badge": "메인 컬러",
+  "purple": "#6B00FF",
+  "aux": "#FD8C53",
+  "auxDeep": "#F77C46",
+  "mapping": {
+   "1": {
+    "bg": null,
+    "base": "#6B00FF",
+    "hi": "#FD8C53",
+    "wordmark": "#6B00FF",
+    "accent": "#6B00FF"
+   },
+   "2": {
+    "bg": "#6B00FF",
+    "base": "#6B00FF",
+    "hi": "#FD8C53",
+    "wordmark": "#FD8C53",
+    "accent": "#FD8C53"
+   },
+   "3": {
+    "bg": "#FD8C53",
+    "base": null,
+    "hi": "#6B00FF",
+    "wordmark": "#6B00FF",
+    "accent": "#6B00FF"
+   },
+   "4": {
+    "bg": null,
+    "base": "#6B00FF",
+    "hi": "#FD8C53",
+    "wordmark": "#F77C46",
+    "accent": "#F77C46"
+   },
+   "5": {
+    "bg": null,
+    "base": "#6B00FF",
+    "hi": "#FD8C53",
+    "wordmark": "#6B00FF",
+    "accent": "#F77C46"
+   },
+   "6": {
+    "bg": null,
+    "base": "#F77C46",
+    "hi": null,
+    "wordmark": "#F77C46",
+    "accent": "#F77C46"
+   }
+  },
+  "source": {
+   "file": "N-FUD 2026_Logo_261012.ai",
+   "page": 10,
+   "colorMode": "RGB(DeviceRGB)",
+   "valuesAreSourceExact": true,
+   "note": "원본 AI 문서가 RGB 모드라 CMYK·별색 정보가 없고, 웹 HEX는 원본 RGB 값과 같다"
+  },
+  "metrics": {
+   "contrastPurpleAux": 2.95,
+   "contrastAuxWhite": 2.32,
+   "contrastDeepWhite": 2.65,
+   "contrastDeepPurple": 2.58,
+   "oklch": [
+    0.753,
+    0.155,
+    46.103
+   ]
+  }
+ },
+ {
+  "id": "003",
+  "no": 3,
+  "name": "민트그린",
+  "origin": "main",
+  "badge": "메인 컬러",
+  "purple": "#6B00FF",
+  "aux": "#6FEF9A",
+  "auxDeep": "#53E580",
+  "mapping": {
+   "1": {
+    "bg": null,
+    "base": "#6B00FF",
+    "hi": "#6FEF9A",
+    "wordmark": "#6B00FF",
+    "accent": "#6B00FF"
+   },
+   "2": {
+    "bg": "#6B00FF",
+    "base": "#6B00FF",
+    "hi": "#6FEF9A",
+    "wordmark": "#6FEF9A",
+    "accent": "#6FEF9A"
+   },
+   "3": {
+    "bg": "#6FEF9A",
+    "base": null,
+    "hi": "#6B00FF",
+    "wordmark": "#6B00FF",
+    "accent": "#6B00FF"
+   },
+   "4": {
+    "bg": null,
+    "base": "#6B00FF",
+    "hi": "#6FEF9A",
+    "wordmark": "#53E580",
+    "accent": "#53E580"
+   },
+   "5": {
+    "bg": null,
+    "base": "#6B00FF",
+    "hi": "#6FEF9A",
+    "wordmark": "#6B00FF",
+    "accent": "#53E580"
+   },
+   "6": {
+    "bg": null,
+    "base": "#53E580",
+    "hi": null,
+    "wordmark": "#53E580",
+    "accent": "#53E580"
+   }
+  },
+  "source": {
+   "file": "N-FUD 2026_Logo_261012.ai",
+   "page": 11,
+   "colorMode": "RGB(DeviceRGB)",
+   "valuesAreSourceExact": true,
+   "note": "원본 AI 문서가 RGB 모드라 CMYK·별색 정보가 없고, 웹 HEX는 원본 RGB 값과 같다"
+  },
+  "metrics": {
+   "contrastPurpleAux": 4.72,
+   "contrastAuxWhite": 1.45,
+   "contrastDeepWhite": 1.63,
+   "contrastDeepPurple": 4.2,
+   "oklch": [
+    0.858,
+    0.165,
+    152.342
+   ]
+  }
+ },
+ {
+  "id": "004",
+  "no": 4,
+  "name": "옐로",
+  "origin": "main",
+  "badge": "메인 컬러",
+  "purple": "#6B00FF",
+  "aux": "#FFD54A",
+  "auxDeep": "#EFB920",
+  "mapping": {
+   "1": {
+    "bg": null,
+    "base": "#6B00FF",
+    "hi": "#FFD54A",
+    "wordmark": "#6B00FF",
+    "accent": "#6B00FF"
+   },
+   "2": {
+    "bg": "#6B00FF",
+    "base": "#6B00FF",
+    "hi": "#FFD54A",
+    "wordmark": "#FFD54A",
+    "accent": "#FFD54A"
+   },
+   "3": {
+    "bg": "#FFD54A",
+    "base": null,
+    "hi": "#6B00FF",
+    "wordmark": "#6B00FF",
+    "accent": "#6B00FF"
+   },
+   "4": {
+    "bg": null,
+    "base": "#6B00FF",
+    "hi": "#FFD54A",
+    "wordmark": "#EFB920",
+    "accent": "#EFB920"
+   },
+   "5": {
+    "bg": null,
+    "base": "#6B00FF",
+    "hi": "#FFD54A",
+    "wordmark": "#6B00FF",
+    "accent": "#EFB920"
+   },
+   "6": {
+    "bg": null,
+    "base": "#EFB920",
+    "hi": null,
+    "wordmark": "#EFB920",
+    "accent": "#EFB920"
+   }
+  },
+  "source": {
+   "file": "N-FUD 2026_Logo_261012.ai",
+   "page": 12,
+   "colorMode": "RGB(DeviceRGB)",
+   "valuesAreSourceExact": true,
+   "note": "원본 AI 문서가 RGB 모드라 CMYK·별색 정보가 없고, 웹 HEX는 원본 RGB 값과 같다"
+  },
+  "metrics": {
+   "contrastPurpleAux": 4.84,
+   "contrastAuxWhite": 1.41,
+   "contrastDeepWhite": 1.81,
+   "contrastDeepPurple": 3.79,
+   "oklch": [
+    0.886,
+    0.157,
+    91.66
+   ]
+  }
+ },
+ {
+  "id": "005",
+  "no": 5,
+  "name": "피치",
+  "origin": "main",
+  "badge": "메인 컬러",
+  "purple": "#6B00FF",
+  "aux": "#FFDCA4",
+  "auxDeep": "#EAAD54",
+  "mapping": {
+   "1": {
+    "bg": null,
+    "base": "#6B00FF",
+    "hi": "#FFDCA4",
+    "wordmark": "#6B00FF",
+    "accent": "#6B00FF"
+   },
+   "2": {
+    "bg": "#6B00FF",
+    "base": "#6B00FF",
+    "hi": "#FFDCA4",
+    "wordmark": "#FFDCA4",
+    "accent": "#FFDCA4"
+   },
+   "3": {
+    "bg": "#FFDCA4",
+    "base": null,
+    "hi": "#6B00FF",
+    "wordmark": "#6B00FF",
+    "accent": "#6B00FF"
+   },
+   "4": {
+    "bg": null,
+    "base": "#6B00FF",
+    "hi": "#FFDCA4",
+    "wordmark": "#EAAD54",
+    "accent": "#EAAD54"
+   },
+   "5": {
+    "bg": null,
+    "base": "#6B00FF",
+    "hi": "#FFDCA4",
+    "wordmark": "#6B00FF",
+    "accent": "#EAAD54"
+   },
+   "6": {
+    "bg": null,
+    "base": "#EAAD54",
+    "hi": null,
+    "wordmark": "#EAAD54",
+    "accent": "#EAAD54"
+   }
+  },
+  "source": {
+   "file": "N-FUD 2026_Logo_261012.ai",
+   "page": 13,
+   "colorMode": "RGB(DeviceRGB)",
+   "valuesAreSourceExact": true,
+   "note": "원본 AI 문서가 RGB 모드라 CMYK·별색 정보가 없고, 웹 HEX는 원본 RGB 값과 같다"
+  },
+  "metrics": {
+   "contrastPurpleAux": 5.22,
+   "contrastAuxWhite": 1.31,
+   "contrastDeepWhite": 1.98,
+   "contrastDeepPurple": 3.45,
+   "oklch": [
+    0.911,
+    0.081,
+    79.147
+   ]
+  }
+ },
+ {
+  "id": "006",
+  "no": 6,
+  "name": "핑크",
+  "origin": "main",
+  "badge": "메인 컬러",
+  "purple": "#6B00FF",
+  "aux": "#FCB4C0",
+  "auxDeep": "#F4718E",
+  "mapping": {
+   "1": {
+    "bg": null,
+    "base": "#6B00FF",
+    "hi": "#FCB4C0",
+    "wordmark": "#6B00FF",
+    "accent": "#6B00FF"
+   },
+   "2": {
+    "bg": "#6B00FF",
+    "base": "#6B00FF",
+    "hi": "#FCB4C0",
+    "wordmark": "#FCB4C0",
+    "accent": "#FCB4C0"
+   },
+   "3": {
+    "bg": "#FCB4C0",
+    "base": null,
+    "hi": "#6B00FF",
+    "wordmark": "#6B00FF",
+    "accent": "#6B00FF"
+   },
+   "4": {
+    "bg": null,
+    "base": "#6B00FF",
+    "hi": "#FCB4C0",
+    "wordmark": "#F4718E",
+    "accent": "#F4718E"
+   },
+   "5": {
+    "bg": null,
+    "base": "#6B00FF",
+    "hi": "#FCB4C0",
+    "wordmark": "#6B00FF",
+    "accent": "#F4718E"
+   },
+   "6": {
+    "bg": null,
+    "base": "#F4718E",
+    "hi": null,
+    "wordmark": "#F4718E",
+    "accent": "#F4718E"
+   }
+  },
+  "source": {
+   "file": "N-FUD 2026_Logo_261012.ai",
+   "page": 14,
+   "colorMode": "RGB(DeviceRGB)",
+   "valuesAreSourceExact": true,
+   "note": "원본 AI 문서가 RGB 모드라 CMYK·별색 정보가 없고, 웹 HEX는 원본 RGB 값과 같다"
+  },
+  "metrics": {
+   "contrastPurpleAux": 4.05,
+   "contrastAuxWhite": 1.69,
+   "contrastDeepWhite": 2.76,
+   "contrastDeepPurple": 2.48,
+   "oklch": [
+    0.841,
+    0.085,
+    8.033
+   ]
+  }
+ },
+ {
+  "id": "007",
+  "no": 7,
+  "name": "라이트블루",
+  "origin": "main",
+  "badge": "메인 컬러",
+  "purple": "#6B00FF",
+  "aux": "#BCECF7",
+  "auxDeep": "#7FD7E5",
+  "mapping": {
+   "1": {
+    "bg": null,
+    "base": "#6B00FF",
+    "hi": "#BCECF7",
+    "wordmark": "#6B00FF",
+    "accent": "#6B00FF"
+   },
+   "2": {
+    "bg": "#6B00FF",
+    "base": "#6B00FF",
+    "hi": "#BCECF7",
+    "wordmark": "#BCECF7",
+    "accent": "#BCECF7"
+   },
+   "3": {
+    "bg": "#BCECF7",
+    "base": null,
+    "hi": "#6B00FF",
+    "wordmark": "#6B00FF",
+    "accent": "#6B00FF"
+   },
+   "4": {
+    "bg": null,
+    "base": "#6B00FF",
+    "hi": "#BCECF7",
+    "wordmark": "#7FD7E5",
+    "accent": "#7FD7E5"
+   },
+   "5": {
+    "bg": null,
+    "base": "#6B00FF",
+    "hi": "#BCECF7",
+    "wordmark": "#6B00FF",
+    "accent": "#7FD7E5"
+   },
+   "6": {
+    "bg": null,
+    "base": "#7FD7E5",
+    "hi": null,
+    "wordmark": "#7FD7E5",
+    "accent": "#7FD7E5"
+   }
+  },
+  "source": {
+   "file": "N-FUD 2026_Logo_261012.ai",
+   "page": 15,
+   "colorMode": "RGB(DeviceRGB)",
+   "valuesAreSourceExact": true,
+   "note": "원본 AI 문서가 RGB 모드라 CMYK·별색 정보가 없고, 웹 HEX는 원본 RGB 값과 같다"
+  },
+  "metrics": {
+   "contrastPurpleAux": 5.37,
+   "contrastAuxWhite": 1.27,
+   "contrastDeepWhite": 1.65,
+   "contrastDeepPurple": 4.16,
+   "oklch": [
+    0.913,
+    0.051,
+    213.233
+   ]
+  }
+ },
+ {
+  "id": "008",
+  "no": 8,
+  "name": "아쿠아",
+  "origin": "main",
+  "badge": "메인 컬러",
+  "purple": "#6B00FF",
+  "aux": "#7CFCE9",
+  "auxDeep": "#3DE0C5",
+  "mapping": {
+   "1": {
+    "bg": null,
+    "base": "#6B00FF",
+    "hi": "#7CFCE9",
+    "wordmark": "#6B00FF",
+    "accent": "#6B00FF"
+   },
+   "2": {
+    "bg": "#6B00FF",
+    "base": "#6B00FF",
+    "hi": "#7CFCE9",
+    "wordmark": "#7CFCE9",
+    "accent": "#7CFCE9"
+   },
+   "3": {
+    "bg": "#7CFCE9",
+    "base": null,
+    "hi": "#6B00FF",
+    "wordmark": "#6B00FF",
+    "accent": "#6B00FF"
+   },
+   "4": {
+    "bg": null,
+    "base": "#6B00FF",
+    "hi": "#7CFCE9",
+    "wordmark": "#3DE0C5",
+    "accent": "#3DE0C5"
+   },
+   "5": {
+    "bg": null,
+    "base": "#6B00FF",
+    "hi": "#7CFCE9",
+    "wordmark": "#6B00FF",
+    "accent": "#3DE0C5"
+   },
+   "6": {
+    "bg": null,
+    "base": "#3DE0C5",
+    "hi": null,
+    "wordmark": "#3DE0C5",
+    "accent": "#3DE0C5"
+   }
+  },
+  "source": {
+   "file": "N-FUD 2026_Logo_261012.ai",
+   "page": 16,
+   "colorMode": "RGB(DeviceRGB)",
+   "valuesAreSourceExact": true,
+   "note": "원본 AI 문서가 RGB 모드라 CMYK·별색 정보가 없고, 웹 HEX는 원본 RGB 값과 같다"
+  },
+  "metrics": {
+   "contrastPurpleAux": 5.53,
+   "contrastAuxWhite": 1.24,
+   "contrastDeepWhite": 1.66,
+   "contrastDeepPurple": 4.13,
+   "oklch": [
+    0.913,
+    0.118,
+    182.671
+   ]
+  }
+ },
+ {
+  "id": "009",
+  "no": 9,
+  "name": "맑은 핑크",
+  "origin": "extended",
+  "badge": "확장 컬러",
+  "purple": "#6B00FF",
+  "aux": "#FF96D3",
+  "auxDeep": "#F37BCA",
+  "mapping": {
+   "1": {
+    "bg": null,
+    "base": "#6B00FF",
+    "hi": "#FF96D3",
+    "wordmark": "#6B00FF",
+    "accent": "#6B00FF"
+   },
+   "2": {
+    "bg": "#6B00FF",
+    "base": "#6B00FF",
+    "hi": "#FF96D3",
+    "wordmark": "#FF96D3",
+    "accent": "#FF96D3"
+   },
+   "3": {
+    "bg": "#FF96D3",
+    "base": null,
+    "hi": "#6B00FF",
+    "wordmark": "#6B00FF",
+    "accent": "#6B00FF"
+   },
+   "4": {
+    "bg": null,
+    "base": "#6B00FF",
+    "hi": "#FF96D3",
+    "wordmark": "#F37BCA",
+    "accent": "#F37BCA"
+   },
+   "5": {
+    "bg": null,
+    "base": "#6B00FF",
+    "hi": "#FF96D3",
+    "wordmark": "#6B00FF",
+    "accent": "#F37BCA"
+   },
+   "6": {
+    "bg": null,
+    "base": "#F37BCA",
+    "hi": null,
+    "wordmark": "#F37BCA",
+    "accent": "#F37BCA"
+   }
+  },
+  "source": null,
+  "metrics": {
+   "contrastPurpleAux": 3.44,
+   "contrastAuxWhite": 1.99,
+   "contrastDeepWhite": 2.47,
+   "contrastDeepPurple": 2.77,
+   "oklch": [
+    0.8,
+    0.145,
+    345.044
+   ]
+  }
+ },
+ {
+  "id": "010",
+  "no": 10,
+  "name": "연한 핑크",
+  "origin": "extended",
+  "badge": "확장 컬러",
+  "purple": "#6B00FF",
+  "aux": "#FFD8EC",
+  "auxDeep": "#E5A1CA",
+  "mapping": {
+   "1": {
+    "bg": null,
+    "base": "#6B00FF",
+    "hi": "#FFD8EC",
+    "wordmark": "#6B00FF",
+    "accent": "#6B00FF"
+   },
+   "2": {
+    "bg": "#6B00FF",
+    "base": "#6B00FF",
+    "hi": "#FFD8EC",
+    "wordmark": "#FFD8EC",
+    "accent": "#FFD8EC"
+   },
+   "3": {
+    "bg": "#FFD8EC",
+    "base": null,
+    "hi": "#6B00FF",
+    "wordmark": "#6B00FF",
+    "accent": "#6B00FF"
+   },
+   "4": {
+    "bg": null,
+    "base": "#6B00FF",
+    "hi": "#FFD8EC",
+    "wordmark": "#E5A1CA",
+    "accent": "#E5A1CA"
+   },
+   "5": {
+    "bg": null,
+    "base": "#6B00FF",
+    "hi": "#FFD8EC",
+    "wordmark": "#6B00FF",
+    "accent": "#E5A1CA"
+   },
+   "6": {
+    "bg": null,
+    "base": "#E5A1CA",
+    "hi": null,
+    "wordmark": "#E5A1CA",
+    "accent": "#E5A1CA"
+   }
+  },
+  "source": null,
+  "metrics": {
+   "contrastPurpleAux": 5.31,
+   "contrastAuxWhite": 1.29,
+   "contrastDeepWhite": 2.04,
+   "contrastDeepPurple": 3.35,
+   "oklch": [
+    0.921,
+    0.05,
+    345.835
+   ]
+  }
+ },
+ {
+  "id": "011",
+  "no": 11,
+  "name": "부드러운 핑크",
+  "origin": "extended",
+  "badge": "확장 컬러",
+  "purple": "#6B00FF",
+  "aux": "#E28BB8",
+  "auxDeep": "#D764AA",
+  "mapping": {
+   "1": {
+    "bg": null,
+    "base": "#6B00FF",
+    "hi": "#E28BB8",
+    "wordmark": "#6B00FF",
+    "accent": "#6B00FF"
+   },
+   "2": {
+    "bg": "#6B00FF",
+    "base": "#6B00FF",
+    "hi": "#E28BB8",
+    "wordmark": "#E28BB8",
+    "accent": "#E28BB8"
+   },
+   "3": {
+    "bg": "#E28BB8",
+    "base": null,
+    "hi": "#6B00FF",
+    "wordmark": "#6B00FF",
+    "accent": "#6B00FF"
+   },
+   "4": {
+    "bg": null,
+    "base": "#6B00FF",
+    "hi": "#E28BB8",
+    "wordmark": "#D764AA",
+    "accent": "#D764AA"
+   },
+   "5": {
+    "bg": null,
+    "base": "#6B00FF",
+    "hi": "#E28BB8",
+    "wordmark": "#6B00FF",
+    "accent": "#D764AA"
+   },
+   "6": {
+    "bg": null,
+    "base": "#D764AA",
+    "hi": null,
+    "wordmark": "#D764AA",
+    "accent": "#D764AA"
+   }
+  },
+  "source": null,
+  "metrics": {
+   "contrastPurpleAux": 2.81,
+   "contrastAuxWhite": 2.44,
+   "contrastDeepWhite": 3.34,
+   "contrastDeepPurple": 2.05,
+   "oklch": [
+    0.74,
+    0.119,
+    348.071
+   ]
+  }
+ },
+ {
+  "id": "012",
+  "no": 12,
+  "name": "맑은 핑크 2",
+  "origin": "extended",
+  "badge": "확장 컬러",
+  "purple": "#6B00FF",
+  "aux": "#FF86C1",
+  "auxDeep": "#F274BA",
+  "mapping": {
+   "1": {
+    "bg": null,
+    "base": "#6B00FF",
+    "hi": "#FF86C1",
+    "wordmark": "#6B00FF",
+    "accent": "#6B00FF"
+   },
+   "2": {
+    "bg": "#6B00FF",
+    "base": "#6B00FF",
+    "hi": "#FF86C1",
+    "wordmark": "#FF86C1",
+    "accent": "#FF86C1"
+   },
+   "3": {
+    "bg": "#FF86C1",
+    "base": null,
+    "hi": "#6B00FF",
+    "wordmark": "#6B00FF",
+    "accent": "#6B00FF"
+   },
+   "4": {
+    "bg": null,
+    "base": "#6B00FF",
+    "hi": "#FF86C1",
+    "wordmark": "#F274BA",
+    "accent": "#F274BA"
+   },
+   "5": {
+    "bg": null,
+    "base": "#6B00FF",
+    "hi": "#FF86C1",
+    "wordmark": "#6B00FF",
+    "accent": "#F274BA"
+   },
+   "6": {
+    "bg": null,
+    "base": "#F274BA",
+    "hi": null,
+    "wordmark": "#F274BA",
+    "accent": "#F274BA"
+   }
+  },
+  "source": null,
+  "metrics": {
+   "contrastPurpleAux": 3.07,
+   "contrastAuxWhite": 2.23,
+   "contrastDeepWhite": 2.63,
+   "contrastDeepPurple": 2.6,
+   "oklch": [
+    0.771,
+    0.16,
+    350.937
+   ]
+  }
+ },
+ {
+  "id": "013",
+  "no": 13,
+  "name": "부드러운 핑크 2",
+  "origin": "extended",
+  "badge": "확장 컬러",
+  "purple": "#6B00FF",
+  "aux": "#FFA9D0",
+  "auxDeep": "#F47FBE",
+  "mapping": {
+   "1": {
+    "bg": null,
+    "base": "#6B00FF",
+    "hi": "#FFA9D0",
+    "wordmark": "#6B00FF",
+    "accent": "#6B00FF"
+   },
+   "2": {
+    "bg": "#6B00FF",
+    "base": "#6B00FF",
+    "hi": "#FFA9D0",
+    "wordmark": "#FFA9D0",
+    "accent": "#FFA9D0"
+   },
+   "3": {
+    "bg": "#FFA9D0",
+    "base": null,
+    "hi": "#6B00FF",
+    "wordmark": "#6B00FF",
+    "accent": "#6B00FF"
+   },
+   "4": {
+    "bg": null,
+    "base": "#6B00FF",
+    "hi": "#FFA9D0",
+    "wordmark": "#F47FBE",
+    "accent": "#F47FBE"
+   },
+   "5": {
+    "bg": null,
+    "base": "#6B00FF",
+    "hi": "#FFA9D0",
+    "wordmark": "#6B00FF",
+    "accent": "#F47FBE"
+   },
+   "6": {
+    "bg": null,
+    "base": "#F47FBE",
+    "hi": null,
+    "wordmark": "#F47FBE",
+    "accent": "#F47FBE"
+   }
+  },
+  "source": null,
+  "metrics": {
+   "contrastPurpleAux": 3.86,
+   "contrastAuxWhite": 1.77,
+   "contrastDeepWhite": 2.43,
+   "contrastDeepPurple": 2.81,
+   "oklch": [
+    0.83,
+    0.111,
+    351.044
+   ]
+  }
+ },
+ {
+  "id": "014",
+  "no": 14,
+  "name": "맑은 핑크 3",
+  "origin": "extended",
+  "badge": "확장 컬러",
+  "purple": "#6B00FF",
+  "aux": "#F67CB2",
+  "auxDeep": "#E96AAB",
+  "mapping": {
+   "1": {
+    "bg": null,
+    "base": "#6B00FF",
+    "hi": "#F67CB2",
+    "wordmark": "#6B00FF",
+    "accent": "#6B00FF"
+   },
+   "2": {
+    "bg": "#6B00FF",
+    "base": "#6B00FF",
+    "hi": "#F67CB2",
+    "wordmark": "#F67CB2",
+    "accent": "#F67CB2"
+   },
+   "3": {
+    "bg": "#F67CB2",
+    "base": null,
+    "hi": "#6B00FF",
+    "wordmark": "#6B00FF",
+    "accent": "#6B00FF"
+   },
+   "4": {
+    "bg": null,
+    "base": "#6B00FF",
+    "hi": "#F67CB2",
+    "wordmark": "#E96AAB",
+    "accent": "#E96AAB"
+   },
+   "5": {
+    "bg": null,
+    "base": "#6B00FF",
+    "hi": "#F67CB2",
+    "wordmark": "#6B00FF",
+    "accent": "#E96AAB"
+   },
+   "6": {
+    "bg": null,
+    "base": "#E96AAB",
+    "hi": null,
+    "wordmark": "#E96AAB",
+    "accent": "#E96AAB"
+   }
+  },
+  "source": null,
+  "metrics": {
+   "contrastPurpleAux": 2.75,
+   "contrastAuxWhite": 2.49,
+   "contrastDeepWhite": 2.95,
+   "contrastDeepPurple": 2.32,
+   "oklch": [
+    0.74,
+    0.16,
+    353.849
+   ]
+  }
+ },
+ {
+  "id": "015",
+  "no": 15,
+  "name": "부드러운 핑크 3",
+  "origin": "extended",
+  "badge": "확장 컬러",
+  "purple": "#6B00FF",
+  "aux": "#FD9CBA",
+  "auxDeep": "#F474A7",
+  "mapping": {
+   "1": {
+    "bg": null,
+    "base": "#6B00FF",
+    "hi": "#FD9CBA",
+    "wordmark": "#6B00FF",
+    "accent": "#6B00FF"
+   },
+   "2": {
+    "bg": "#6B00FF",
+    "base": "#6B00FF",
+    "hi": "#FD9CBA",
+    "wordmark": "#FD9CBA",
+    "accent": "#FD9CBA"
+   },
+   "3": {
+    "bg": "#FD9CBA",
+    "base": null,
+    "hi": "#6B00FF",
+    "wordmark": "#6B00FF",
+    "accent": "#6B00FF"
+   },
+   "4": {
+    "bg": null,
+    "base": "#6B00FF",
+    "hi": "#FD9CBA",
+    "wordmark": "#F474A7",
+    "accent": "#F474A7"
+   },
+   "5": {
+    "bg": null,
+    "base": "#6B00FF",
+    "hi": "#FD9CBA",
+    "wordmark": "#6B00FF",
+    "accent": "#F474A7"
+   },
+   "6": {
+    "bg": null,
+    "base": "#F474A7",
+    "hi": null,
+    "wordmark": "#F474A7",
+    "accent": "#F474A7"
+   }
+  },
+  "source": null,
+  "metrics": {
+   "contrastPurpleAux": 3.47,
+   "contrastAuxWhite": 1.97,
+   "contrastDeepWhite": 2.66,
+   "contrastDeepPurple": 2.57,
+   "oklch": [
+    0.8,
+    0.12,
+    0.219
+   ]
+  }
+ },
+ {
+  "id": "016",
+  "no": 16,
+  "name": "연한 핑크 2",
+  "origin": "extended",
+  "badge": "확장 컬러",
+  "purple": "#6B00FF",
+  "aux": "#FFCBD5",
+  "auxDeep": "#ED94AC",
+  "mapping": {
+   "1": {
+    "bg": null,
+    "base": "#6B00FF",
+    "hi": "#FFCBD5",
+    "wordmark": "#6B00FF",
+    "accent": "#6B00FF"
+   },
+   "2": {
+    "bg": "#6B00FF",
+    "base": "#6B00FF",
+    "hi": "#FFCBD5",
+    "wordmark": "#FFCBD5",
+    "accent": "#FFCBD5"
+   },
+   "3": {
+    "bg": "#FFCBD5",
+    "base": null,
+    "hi": "#6B00FF",
+    "wordmark": "#6B00FF",
+    "accent": "#6B00FF"
+   },
+   "4": {
+    "bg": null,
+    "base": "#6B00FF",
+    "hi": "#FFCBD5",
+    "wordmark": "#ED94AC",
+    "accent": "#ED94AC"
+   },
+   "5": {
+    "bg": null,
+    "base": "#6B00FF",
+    "hi": "#FFCBD5",
+    "wordmark": "#6B00FF",
+    "accent": "#ED94AC"
+   },
+   "6": {
+    "bg": null,
+    "base": "#ED94AC",
+    "hi": null,
+    "wordmark": "#ED94AC",
+    "accent": "#ED94AC"
+   }
+  },
+  "source": null,
+  "metrics": {
+   "contrastPurpleAux": 4.81,
+   "contrastAuxWhite": 1.42,
+   "contrastDeepWhite": 2.23,
+   "contrastDeepPurple": 3.07,
+   "oklch": [
+    0.89,
+    0.06,
+    5.474
+   ]
+  }
+ },
+ {
+  "id": "017",
+  "no": 17,
+  "name": "부드러운 핑크 4",
+  "origin": "extended",
+  "badge": "확장 컬러",
+  "purple": "#6B00FF",
+  "aux": "#EA899F",
+  "auxDeep": "#E26089",
+  "mapping": {
+   "1": {
+    "bg": null,
+    "base": "#6B00FF",
+    "hi": "#EA899F",
+    "wordmark": "#6B00FF",
+    "accent": "#6B00FF"
+   },
+   "2": {
+    "bg": "#6B00FF",
+    "base": "#6B00FF",
+    "hi": "#EA899F",
+    "wordmark": "#EA899F",
+    "accent": "#EA899F"
+   },
+   "3": {
+    "bg": "#EA899F",
+    "base": null,
+    "hi": "#6B00FF",
+    "wordmark": "#6B00FF",
+    "accent": "#6B00FF"
+   },
+   "4": {
+    "bg": null,
+    "base": "#6B00FF",
+    "hi": "#EA899F",
+    "wordmark": "#E26089",
+    "accent": "#E26089"
+   },
+   "5": {
+    "bg": null,
+    "base": "#6B00FF",
+    "hi": "#EA899F",
+    "wordmark": "#6B00FF",
+    "accent": "#E26089"
+   },
+   "6": {
+    "bg": null,
+    "base": "#E26089",
+    "hi": null,
+    "wordmark": "#E26089",
+    "accent": "#E26089"
+   }
+  },
+  "source": null,
+  "metrics": {
+   "contrastPurpleAux": 2.79,
+   "contrastAuxWhite": 2.45,
+   "contrastDeepWhite": 3.35,
+   "contrastDeepPurple": 2.04,
+   "oklch": [
+    0.739,
+    0.12,
+    5.84
+   ]
+  }
+ },
+ {
+  "id": "018",
+  "no": 18,
+  "name": "맑은 핑크 4",
+  "origin": "extended",
+  "badge": "확장 컬러",
+  "purple": "#6B00FF",
+  "aux": "#FC7B9B",
+  "auxDeep": "#F06893",
+  "mapping": {
+   "1": {
+    "bg": null,
+    "base": "#6B00FF",
+    "hi": "#FC7B9B",
+    "wordmark": "#6B00FF",
+    "accent": "#6B00FF"
+   },
+   "2": {
+    "bg": "#6B00FF",
+    "base": "#6B00FF",
+    "hi": "#FC7B9B",
+    "wordmark": "#FC7B9B",
+    "accent": "#FC7B9B"
+   },
+   "3": {
+    "bg": "#FC7B9B",
+    "base": null,
+    "hi": "#6B00FF",
+    "wordmark": "#6B00FF",
+    "accent": "#6B00FF"
+   },
+   "4": {
+    "bg": null,
+    "base": "#6B00FF",
+    "hi": "#FC7B9B",
+    "wordmark": "#F06893",
+    "accent": "#F06893"
+   },
+   "5": {
+    "bg": null,
+    "base": "#6B00FF",
+    "hi": "#FC7B9B",
+    "wordmark": "#6B00FF",
+    "accent": "#F06893"
+   },
+   "6": {
+    "bg": null,
+    "base": "#F06893",
+    "hi": null,
+    "wordmark": "#F06893",
+    "accent": "#F06893"
+   }
+  },
+  "source": null,
+  "metrics": {
+   "contrastPurpleAux": 2.75,
+   "contrastAuxWhite": 2.49,
+   "contrastDeepWhite": 2.96,
+   "contrastDeepPurple": 2.32,
+   "oklch": [
+    0.74,
+    0.16,
+    6.139
+   ]
+  }
+ },
+ {
+  "id": "019",
+  "no": 19,
+  "name": "부드러운 코랄",
+  "origin": "extended",
+  "badge": "확장 컬러",
+  "purple": "#6B00FF",
+  "aux": "#EC99A3",
+  "auxDeep": "#E36A83",
+  "mapping": {
+   "1": {
+    "bg": null,
+    "base": "#6B00FF",
+    "hi": "#EC99A3",
+    "wordmark": "#6B00FF",
+    "accent": "#6B00FF"
+   },
+   "2": {
+    "bg": "#6B00FF",
+    "base": "#6B00FF",
+    "hi": "#EC99A3",
+    "wordmark": "#EC99A3",
+    "accent": "#EC99A3"
+   },
+   "3": {
+    "bg": "#EC99A3",
+    "base": null,
+    "hi": "#6B00FF",
+    "wordmark": "#6B00FF",
+    "accent": "#6B00FF"
+   },
+   "4": {
+    "bg": null,
+    "base": "#6B00FF",
+    "hi": "#EC99A3",
+    "wordmark": "#E36A83",
+    "accent": "#E36A83"
+   },
+   "5": {
+    "bg": null,
+    "base": "#6B00FF",
+    "hi": "#EC99A3",
+    "wordmark": "#6B00FF",
+    "accent": "#E36A83"
+   },
+   "6": {
+    "bg": null,
+    "base": "#E36A83",
+    "hi": null,
+    "wordmark": "#E36A83",
+    "accent": "#E36A83"
+   }
+  },
+  "source": null,
+  "metrics": {
+   "contrastPurpleAux": 3.14,
+   "contrastAuxWhite": 2.18,
+   "contrastDeepWhite": 3.16,
+   "contrastDeepPurple": 2.17,
+   "oklch": [
+    0.769,
+    0.1,
+    11.823
+   ]
+  }
+ },
+ {
+  "id": "020",
+  "no": 20,
+  "name": "부드러운 코랄 2",
+  "origin": "extended",
+  "badge": "확장 컬러",
+  "purple": "#6B00FF",
+  "aux": "#F7A3A5",
+  "auxDeep": "#EF7481",
+  "mapping": {
+   "1": {
+    "bg": null,
+    "base": "#6B00FF",
+    "hi": "#F7A3A5",
+    "wordmark": "#6B00FF",
+    "accent": "#6B00FF"
+   },
+   "2": {
+    "bg": "#6B00FF",
+    "base": "#6B00FF",
+    "hi": "#F7A3A5",
+    "wordmark": "#F7A3A5",
+    "accent": "#F7A3A5"
+   },
+   "3": {
+    "bg": "#F7A3A5",
+    "base": null,
+    "hi": "#6B00FF",
+    "wordmark": "#6B00FF",
+    "accent": "#6B00FF"
+   },
+   "4": {
+    "bg": null,
+    "base": "#6B00FF",
+    "hi": "#F7A3A5",
+    "wordmark": "#EF7481",
+    "accent": "#EF7481"
+   },
+   "5": {
+    "bg": null,
+    "base": "#6B00FF",
+    "hi": "#F7A3A5",
+    "wordmark": "#6B00FF",
+    "accent": "#EF7481"
+   },
+   "6": {
+    "bg": null,
+    "base": "#EF7481",
+    "hi": null,
+    "wordmark": "#EF7481",
+    "accent": "#EF7481"
+   }
+  },
+  "source": null,
+  "metrics": {
+   "contrastPurpleAux": 3.5,
+   "contrastAuxWhite": 1.96,
+   "contrastDeepWhite": 2.81,
+   "contrastDeepPurple": 2.44,
+   "oklch": [
+    0.799,
+    0.1,
+    17.978
+   ]
+  }
+ },
+ {
+  "id": "021",
+  "no": 21,
+  "name": "맑은 코랄",
+  "origin": "extended",
+  "badge": "확장 컬러",
+  "purple": "#6B00FF",
+  "aux": "#FF7D7F",
+  "auxDeep": "#F56974",
+  "mapping": {
+   "1": {
+    "bg": null,
+    "base": "#6B00FF",
+    "hi": "#FF7D7F",
+    "wordmark": "#6B00FF",
+    "accent": "#6B00FF"
+   },
+   "2": {
+    "bg": "#6B00FF",
+    "base": "#6B00FF",
+    "hi": "#FF7D7F",
+    "wordmark": "#FF7D7F",
+    "accent": "#FF7D7F"
+   },
+   "3": {
+    "bg": "#FF7D7F",
+    "base": null,
+    "hi": "#6B00FF",
+    "wordmark": "#6B00FF",
+    "accent": "#6B00FF"
+   },
+   "4": {
+    "bg": null,
+    "base": "#6B00FF",
+    "hi": "#FF7D7F",
+    "wordmark": "#F56974",
+    "accent": "#F56974"
+   },
+   "5": {
+    "bg": null,
+    "base": "#6B00FF",
+    "hi": "#FF7D7F",
+    "wordmark": "#6B00FF",
+    "accent": "#F56974"
+   },
+   "6": {
+    "bg": null,
+    "base": "#F56974",
+    "hi": null,
+    "wordmark": "#F56974",
+    "accent": "#F56974"
+   }
+  },
+  "source": null,
+  "metrics": {
+   "contrastPurpleAux": 2.77,
+   "contrastAuxWhite": 2.47,
+   "contrastDeepWhite": 2.93,
+   "contrastDeepPurple": 2.33,
+   "oklch": [
+    0.74,
+    0.159,
+    20.753
+   ]
+  }
+ },
+ {
+  "id": "022",
+  "no": 22,
+  "name": "부드러운 코랄 3",
+  "origin": "extended",
+  "badge": "확장 컬러",
+  "purple": "#6B00FF",
+  "aux": "#ED8C81",
+  "auxDeep": "#E7635F",
+  "mapping": {
+   "1": {
+    "bg": null,
+    "base": "#6B00FF",
+    "hi": "#ED8C81",
+    "wordmark": "#6B00FF",
+    "accent": "#6B00FF"
+   },
+   "2": {
+    "bg": "#6B00FF",
+    "base": "#6B00FF",
+    "hi": "#ED8C81",
+    "wordmark": "#ED8C81",
+    "accent": "#ED8C81"
+   },
+   "3": {
+    "bg": "#ED8C81",
+    "base": null,
+    "hi": "#6B00FF",
+    "wordmark": "#6B00FF",
+    "accent": "#6B00FF"
+   },
+   "4": {
+    "bg": null,
+    "base": "#6B00FF",
+    "hi": "#ED8C81",
+    "wordmark": "#E7635F",
+    "accent": "#E7635F"
+   },
+   "5": {
+    "bg": null,
+    "base": "#6B00FF",
+    "hi": "#ED8C81",
+    "wordmark": "#6B00FF",
+    "accent": "#E7635F"
+   },
+   "6": {
+    "bg": null,
+    "base": "#E7635F",
+    "hi": null,
+    "wordmark": "#E7635F",
+    "accent": "#E7635F"
+   }
+  },
+  "source": null,
+  "metrics": {
+   "contrastPurpleAux": 2.82,
+   "contrastAuxWhite": 2.42,
+   "contrastDeepWhite": 3.31,
+   "contrastDeepPurple": 2.07,
+   "oklch": [
+    0.74,
+    0.12,
+    27.217
+   ]
+  }
+ },
+ {
+  "id": "023",
+  "no": 23,
+  "name": "연한 주황",
+  "origin": "extended",
+  "badge": "확장 컬러",
+  "purple": "#6B00FF",
+  "aux": "#F9C2B8",
+  "auxDeep": "#EA8D82",
+  "mapping": {
+   "1": {
+    "bg": null,
+    "base": "#6B00FF",
+    "hi": "#F9C2B8",
+    "wordmark": "#6B00FF",
+    "accent": "#6B00FF"
+   },
+   "2": {
+    "bg": "#6B00FF",
+    "base": "#6B00FF",
+    "hi": "#F9C2B8",
+    "wordmark": "#F9C2B8",
+    "accent": "#F9C2B8"
+   },
+   "3": {
+    "bg": "#F9C2B8",
+    "base": null,
+    "hi": "#6B00FF",
+    "wordmark": "#6B00FF",
+    "accent": "#6B00FF"
+   },
+   "4": {
+    "bg": null,
+    "base": "#6B00FF",
+    "hi": "#F9C2B8",
+    "wordmark": "#EA8D82",
+    "accent": "#EA8D82"
+   },
+   "5": {
+    "bg": null,
+    "base": "#6B00FF",
+    "hi": "#F9C2B8",
+    "wordmark": "#6B00FF",
+    "accent": "#EA8D82"
+   },
+   "6": {
+    "bg": null,
+    "base": "#EA8D82",
+    "hi": null,
+    "wordmark": "#EA8D82",
+    "accent": "#EA8D82"
+   }
+  },
+  "source": null,
+  "metrics": {
+   "contrastPurpleAux": 4.38,
+   "contrastAuxWhite": 1.56,
+   "contrastDeepWhite": 2.43,
+   "contrastDeepPurple": 2.81,
+   "oklch": [
+    0.86,
+    0.065,
+    30.262
+   ]
+  }
+ },
+ {
+  "id": "024",
+  "no": 24,
+  "name": "맑은 주황",
+  "origin": "extended",
+  "badge": "확장 컬러",
+  "purple": "#6B00FF",
+  "aux": "#FF8066",
+  "auxDeep": "#F56C5A",
+  "mapping": {
+   "1": {
+    "bg": null,
+    "base": "#6B00FF",
+    "hi": "#FF8066",
+    "wordmark": "#6B00FF",
+    "accent": "#6B00FF"
+   },
+   "2": {
+    "bg": "#6B00FF",
+    "base": "#6B00FF",
+    "hi": "#FF8066",
+    "wordmark": "#FF8066",
+    "accent": "#FF8066"
+   },
+   "3": {
+    "bg": "#FF8066",
+    "base": null,
+    "hi": "#6B00FF",
+    "wordmark": "#6B00FF",
+    "accent": "#6B00FF"
+   },
+   "4": {
+    "bg": null,
+    "base": "#6B00FF",
+    "hi": "#FF8066",
+    "wordmark": "#F56C5A",
+    "accent": "#F56C5A"
+   },
+   "5": {
+    "bg": null,
+    "base": "#6B00FF",
+    "hi": "#FF8066",
+    "wordmark": "#6B00FF",
+    "accent": "#F56C5A"
+   },
+   "6": {
+    "bg": null,
+    "base": "#F56C5A",
+    "hi": null,
+    "wordmark": "#F56C5A",
+    "accent": "#F56C5A"
+   }
+  },
+  "source": null,
+  "metrics": {
+   "contrastPurpleAux": 2.78,
+   "contrastAuxWhite": 2.46,
+   "contrastDeepWhite": 2.93,
+   "contrastDeepPurple": 2.34,
+   "oklch": [
+    0.74,
+    0.16,
+    32.935
+   ]
+  }
+ },
+ {
+  "id": "025",
+  "no": 25,
+  "name": "부드러운 주황",
+  "origin": "extended",
+  "badge": "확장 컬러",
+  "purple": "#6B00FF",
+  "aux": "#FFA28D",
+  "auxDeep": "#FA7864",
+  "mapping": {
+   "1": {
+    "bg": null,
+    "base": "#6B00FF",
+    "hi": "#FFA28D",
+    "wordmark": "#6B00FF",
+    "accent": "#6B00FF"
+   },
+   "2": {
+    "bg": "#6B00FF",
+    "base": "#6B00FF",
+    "hi": "#FFA28D",
+    "wordmark": "#FFA28D",
+    "accent": "#FFA28D"
+   },
+   "3": {
+    "bg": "#FFA28D",
+    "base": null,
+    "hi": "#6B00FF",
+    "wordmark": "#6B00FF",
+    "accent": "#6B00FF"
+   },
+   "4": {
+    "bg": null,
+    "base": "#6B00FF",
+    "hi": "#FFA28D",
+    "wordmark": "#FA7864",
+    "accent": "#FA7864"
+   },
+   "5": {
+    "bg": null,
+    "base": "#6B00FF",
+    "hi": "#FFA28D",
+    "wordmark": "#6B00FF",
+    "accent": "#FA7864"
+   },
+   "6": {
+    "bg": null,
+    "base": "#FA7864",
+    "hi": null,
+    "wordmark": "#FA7864",
+    "accent": "#FA7864"
+   }
+  },
+  "source": null,
+  "metrics": {
+   "contrastPurpleAux": 3.52,
+   "contrastAuxWhite": 1.94,
+   "contrastDeepWhite": 2.65,
+   "contrastDeepPurple": 2.59,
+   "oklch": [
+    0.801,
+    0.115,
+    33.43
+   ]
+  }
+ },
+ {
+  "id": "026",
+  "no": 26,
+  "name": "연한 주황 2",
+  "origin": "extended",
+  "badge": "확장 컬러",
+  "purple": "#6B00FF",
+  "aux": "#FFCEBC",
+  "auxDeep": "#EF997E",
+  "mapping": {
+   "1": {
+    "bg": null,
+    "base": "#6B00FF",
+    "hi": "#FFCEBC",
+    "wordmark": "#6B00FF",
+    "accent": "#6B00FF"
+   },
+   "2": {
+    "bg": "#6B00FF",
+    "base": "#6B00FF",
+    "hi": "#FFCEBC",
+    "wordmark": "#FFCEBC",
+    "accent": "#FFCEBC"
+   },
+   "3": {
+    "bg": "#FFCEBC",
+    "base": null,
+    "hi": "#6B00FF",
+    "wordmark": "#6B00FF",
+    "accent": "#6B00FF"
+   },
+   "4": {
+    "bg": null,
+    "base": "#6B00FF",
+    "hi": "#FFCEBC",
+    "wordmark": "#EF997E",
+    "accent": "#EF997E"
+   },
+   "5": {
+    "bg": null,
+    "base": "#6B00FF",
+    "hi": "#FFCEBC",
+    "wordmark": "#6B00FF",
+    "accent": "#EF997E"
+   },
+   "6": {
+    "bg": null,
+    "base": "#EF997E",
+    "hi": null,
+    "wordmark": "#EF997E",
+    "accent": "#EF997E"
+   }
+  },
+  "source": null,
+  "metrics": {
+   "contrastPurpleAux": 4.82,
+   "contrastAuxWhite": 1.42,
+   "contrastDeepWhite": 2.2,
+   "contrastDeepPurple": 3.1,
+   "oklch": [
+    0.889,
+    0.061,
+    41.143
+   ]
+  }
+ },
+ {
+  "id": "027",
+  "no": 27,
+  "name": "맑은 살구",
+  "origin": "extended",
+  "badge": "확장 컬러",
+  "purple": "#6B00FF",
+  "aux": "#FFA661",
+  "auxDeep": "#FA8728",
+  "mapping": {
+   "1": {
+    "bg": null,
+    "base": "#6B00FF",
+    "hi": "#FFA661",
+    "wordmark": "#6B00FF",
+    "accent": "#6B00FF"
+   },
+   "2": {
+    "bg": "#6B00FF",
+    "base": "#6B00FF",
+    "hi": "#FFA661",
+    "wordmark": "#FFA661",
+    "accent": "#FFA661"
+   },
+   "3": {
+    "bg": "#FFA661",
+    "base": null,
+    "hi": "#6B00FF",
+    "wordmark": "#6B00FF",
+    "accent": "#6B00FF"
+   },
+   "4": {
+    "bg": null,
+    "base": "#6B00FF",
+    "hi": "#FFA661",
+    "wordmark": "#FA8728",
+    "accent": "#FA8728"
+   },
+   "5": {
+    "bg": null,
+    "base": "#6B00FF",
+    "hi": "#FFA661",
+    "wordmark": "#6B00FF",
+    "accent": "#FA8728"
+   },
+   "6": {
+    "bg": null,
+    "base": "#FA8728",
+    "hi": null,
+    "wordmark": "#FA8728",
+    "accent": "#FA8728"
+   }
+  },
+  "source": null,
+  "metrics": {
+   "contrastPurpleAux": 3.54,
+   "contrastAuxWhite": 1.93,
+   "contrastDeepWhite": 2.45,
+   "contrastDeepPurple": 2.79,
+   "oklch": [
+    0.8,
+    0.135,
+    57.016
+   ]
+  }
+ },
+ {
+  "id": "028",
+  "no": 28,
+  "name": "연한 살구",
+  "origin": "extended",
+  "badge": "확장 컬러",
+  "purple": "#6B00FF",
+  "aux": "#FFDDC3",
+  "auxDeep": "#E9A97B",
+  "mapping": {
+   "1": {
+    "bg": null,
+    "base": "#6B00FF",
+    "hi": "#FFDDC3",
+    "wordmark": "#6B00FF",
+    "accent": "#6B00FF"
+   },
+   "2": {
+    "bg": "#6B00FF",
+    "base": "#6B00FF",
+    "hi": "#FFDDC3",
+    "wordmark": "#FFDDC3",
+    "accent": "#FFDDC3"
+   },
+   "3": {
+    "bg": "#FFDDC3",
+    "base": null,
+    "hi": "#6B00FF",
+    "wordmark": "#6B00FF",
+    "accent": "#6B00FF"
+   },
+   "4": {
+    "bg": null,
+    "base": "#6B00FF",
+    "hi": "#FFDDC3",
+    "wordmark": "#E9A97B",
+    "accent": "#E9A97B"
+   },
+   "5": {
+    "bg": null,
+    "base": "#6B00FF",
+    "hi": "#FFDDC3",
+    "wordmark": "#6B00FF",
+    "accent": "#E9A97B"
+   },
+   "6": {
+    "bg": null,
+    "base": "#E9A97B",
+    "hi": null,
+    "wordmark": "#E9A97B",
+    "accent": "#E9A97B"
+   }
+  },
+  "source": null,
+  "metrics": {
+   "contrastPurpleAux": 5.34,
+   "contrastAuxWhite": 1.28,
+   "contrastDeepWhite": 2.01,
+   "contrastDeepPurple": 3.4,
+   "oklch": [
+    0.919,
+    0.051,
+    59.49
+   ]
+  }
+ },
+ {
+  "id": "029",
+  "no": 29,
+  "name": "맑은 살구 2",
+  "origin": "extended",
+  "badge": "확장 컬러",
+  "purple": "#6B00FF",
+  "aux": "#F38F00",
+  "auxDeep": "#E78200",
+  "mapping": {
+   "1": {
+    "bg": null,
+    "base": "#6B00FF",
+    "hi": "#F38F00",
+    "wordmark": "#6B00FF",
+    "accent": "#6B00FF"
+   },
+   "2": {
+    "bg": "#6B00FF",
+    "base": "#6B00FF",
+    "hi": "#F38F00",
+    "wordmark": "#F38F00",
+    "accent": "#F38F00"
+   },
+   "3": {
+    "bg": "#F38F00",
+    "base": null,
+    "hi": "#6B00FF",
+    "wordmark": "#6B00FF",
+    "accent": "#6B00FF"
+   },
+   "4": {
+    "bg": null,
+    "base": "#6B00FF",
+    "hi": "#F38F00",
+    "wordmark": "#E78200",
+    "accent": "#E78200"
+   },
+   "5": {
+    "bg": null,
+    "base": "#6B00FF",
+    "hi": "#F38F00",
+    "wordmark": "#6B00FF",
+    "accent": "#E78200"
+   },
+   "6": {
+    "bg": null,
+    "base": "#E78200",
+    "hi": null,
+    "wordmark": "#E78200",
+    "accent": "#E78200"
+   }
+  },
+  "source": null,
+  "metrics": {
+   "contrastPurpleAux": 2.85,
+   "contrastAuxWhite": 2.4,
+   "contrastDeepWhite": 2.77,
+   "contrastDeepPurple": 2.47,
+   "oklch": [
+    0.74,
+    0.168,
+    63.228
+   ]
+  }
+ },
+ {
+  "id": "030",
+  "no": 30,
+  "name": "맑은 살구 3",
+  "origin": "extended",
+  "badge": "확장 컬러",
+  "purple": "#6B00FF",
+  "aux": "#F89D00",
+  "auxDeep": "#ED9000",
+  "mapping": {
+   "1": {
+    "bg": null,
+    "base": "#6B00FF",
+    "hi": "#F89D00",
+    "wordmark": "#6B00FF",
+    "accent": "#6B00FF"
+   },
+   "2": {
+    "bg": "#6B00FF",
+    "base": "#6B00FF",
+    "hi": "#F89D00",
+    "wordmark": "#F89D00",
+    "accent": "#F89D00"
+   },
+   "3": {
+    "bg": "#F89D00",
+    "base": null,
+    "hi": "#6B00FF",
+    "wordmark": "#6B00FF",
+    "accent": "#6B00FF"
+   },
+   "4": {
+    "bg": null,
+    "base": "#6B00FF",
+    "hi": "#F89D00",
+    "wordmark": "#ED9000",
+    "accent": "#ED9000"
+   },
+   "5": {
+    "bg": null,
+    "base": "#6B00FF",
+    "hi": "#F89D00",
+    "wordmark": "#6B00FF",
+    "accent": "#ED9000"
+   },
+   "6": {
+    "bg": null,
+    "base": "#ED9000",
+    "hi": null,
+    "wordmark": "#ED9000",
+    "accent": "#ED9000"
+   }
+  },
+  "source": null,
+  "metrics": {
+   "contrastPurpleAux": 3.2,
+   "contrastAuxWhite": 2.14,
+   "contrastDeepWhite": 2.44,
+   "contrastDeepPurple": 2.8,
+   "oklch": [
+    0.77,
+    0.168,
+    68.899
+   ]
+  }
+ },
+ {
+  "id": "031",
+  "no": 31,
+  "name": "맑은 황금",
+  "origin": "extended",
+  "badge": "확장 컬러",
+  "purple": "#6B00FF",
+  "aux": "#FCAB00",
+  "auxDeep": "#F19E00",
+  "mapping": {
+   "1": {
+    "bg": null,
+    "base": "#6B00FF",
+    "hi": "#FCAB00",
+    "wordmark": "#6B00FF",
+    "accent": "#6B00FF"
+   },
+   "2": {
+    "bg": "#6B00FF",
+    "base": "#6B00FF",
+    "hi": "#FCAB00",
+    "wordmark": "#FCAB00",
+    "accent": "#FCAB00"
+   },
+   "3": {
+    "bg": "#FCAB00",
+    "base": null,
+    "hi": "#6B00FF",
+    "wordmark": "#6B00FF",
+    "accent": "#6B00FF"
+   },
+   "4": {
+    "bg": null,
+    "base": "#6B00FF",
+    "hi": "#FCAB00",
+    "wordmark": "#F19E00",
+    "accent": "#F19E00"
+   },
+   "5": {
+    "bg": null,
+    "base": "#6B00FF",
+    "hi": "#FCAB00",
+    "wordmark": "#6B00FF",
+    "accent": "#F19E00"
+   },
+   "6": {
+    "bg": null,
+    "base": "#F19E00",
+    "hi": null,
+    "wordmark": "#F19E00",
+    "accent": "#F19E00"
+   }
+  },
+  "source": null,
+  "metrics": {
+   "contrastPurpleAux": 3.57,
+   "contrastAuxWhite": 1.92,
+   "contrastDeepWhite": 2.18,
+   "contrastDeepPurple": 3.14,
+   "oklch": [
+    0.8,
+    0.169,
+    74.874
+   ]
+  }
+ },
+ {
+  "id": "032",
+  "no": 32,
+  "name": "맑은 황금 2",
+  "origin": "extended",
+  "badge": "확장 컬러",
+  "purple": "#6B00FF",
+  "aux": "#E8A63D",
+  "auxDeep": "#DB8F00",
+  "mapping": {
+   "1": {
+    "bg": null,
+    "base": "#6B00FF",
+    "hi": "#E8A63D",
+    "wordmark": "#6B00FF",
+    "accent": "#6B00FF"
+   },
+   "2": {
+    "bg": "#6B00FF",
+    "base": "#6B00FF",
+    "hi": "#E8A63D",
+    "wordmark": "#E8A63D",
+    "accent": "#E8A63D"
+   },
+   "3": {
+    "bg": "#E8A63D",
+    "base": null,
+    "hi": "#6B00FF",
+    "wordmark": "#6B00FF",
+    "accent": "#6B00FF"
+   },
+   "4": {
+    "bg": null,
+    "base": "#6B00FF",
+    "hi": "#E8A63D",
+    "wordmark": "#DB8F00",
+    "accent": "#DB8F00"
+   },
+   "5": {
+    "bg": null,
+    "base": "#6B00FF",
+    "hi": "#E8A63D",
+    "wordmark": "#6B00FF",
+    "accent": "#DB8F00"
+   },
+   "6": {
+    "bg": null,
+    "base": "#DB8F00",
+    "hi": null,
+    "wordmark": "#DB8F00",
+    "accent": "#DB8F00"
+   }
+  },
+  "source": null,
+  "metrics": {
+   "contrastPurpleAux": 3.24,
+   "contrastAuxWhite": 2.11,
+   "contrastDeepWhite": 2.64,
+   "contrastDeepPurple": 2.59,
+   "oklch": [
+    0.771,
+    0.14,
+    74.955
+   ]
+  }
+ },
+ {
+  "id": "033",
+  "no": 33,
+  "name": "맑은 황금 3",
+  "origin": "extended",
+  "badge": "확장 컬러",
+  "purple": "#6B00FF",
+  "aux": "#DB9E2E",
+  "auxDeep": "#CB8900",
+  "mapping": {
+   "1": {
+    "bg": null,
+    "base": "#6B00FF",
+    "hi": "#DB9E2E",
+    "wordmark": "#6B00FF",
+    "accent": "#6B00FF"
+   },
+   "2": {
+    "bg": "#6B00FF",
+    "base": "#6B00FF",
+    "hi": "#DB9E2E",
+    "wordmark": "#DB9E2E",
+    "accent": "#DB9E2E"
+   },
+   "3": {
+    "bg": "#DB9E2E",
+    "base": null,
+    "hi": "#6B00FF",
+    "wordmark": "#6B00FF",
+    "accent": "#6B00FF"
+   },
+   "4": {
+    "bg": null,
+    "base": "#6B00FF",
+    "hi": "#DB9E2E",
+    "wordmark": "#CB8900",
+    "accent": "#CB8900"
+   },
+   "5": {
+    "bg": null,
+    "base": "#6B00FF",
+    "hi": "#DB9E2E",
+    "wordmark": "#6B00FF",
+    "accent": "#CB8900"
+   },
+   "6": {
+    "bg": null,
+    "base": "#CB8900",
+    "hi": null,
+    "wordmark": "#CB8900",
+    "accent": "#CB8900"
+   }
+  },
+  "source": null,
+  "metrics": {
+   "contrastPurpleAux": 2.91,
+   "contrastAuxWhite": 2.35,
+   "contrastDeepWhite": 2.95,
+   "contrastDeepPurple": 2.32,
+   "oklch": [
+    0.74,
+    0.14,
+    77.681
+   ]
+  }
+ },
+ {
+  "id": "034",
+  "no": 34,
+  "name": "맑은 황금 4",
+  "origin": "extended",
+  "badge": "확장 컬러",
+  "purple": "#6B00FF",
+  "aux": "#FFC75D",
+  "auxDeep": "#F7AD00",
+  "mapping": {
+   "1": {
+    "bg": null,
+    "base": "#6B00FF",
+    "hi": "#FFC75D",
+    "wordmark": "#6B00FF",
+    "accent": "#6B00FF"
+   },
+   "2": {
+    "bg": "#6B00FF",
+    "base": "#6B00FF",
+    "hi": "#FFC75D",
+    "wordmark": "#FFC75D",
+    "accent": "#FFC75D"
+   },
+   "3": {
+    "bg": "#FFC75D",
+    "base": null,
+    "hi": "#6B00FF",
+    "wordmark": "#6B00FF",
+    "accent": "#6B00FF"
+   },
+   "4": {
+    "bg": null,
+    "base": "#6B00FF",
+    "hi": "#FFC75D",
+    "wordmark": "#F7AD00",
+    "accent": "#F7AD00"
+   },
+   "5": {
+    "bg": null,
+    "base": "#6B00FF",
+    "hi": "#FFC75D",
+    "wordmark": "#6B00FF",
+    "accent": "#F7AD00"
+   },
+   "6": {
+    "bg": null,
+    "base": "#F7AD00",
+    "hi": null,
+    "wordmark": "#F7AD00",
+    "accent": "#F7AD00"
+   }
+  },
+  "source": null,
+  "metrics": {
+   "contrastPurpleAux": 4.42,
+   "contrastAuxWhite": 1.55,
+   "contrastDeepWhite": 1.92,
+   "contrastDeepPurple": 3.56,
+   "oklch": [
+    0.86,
+    0.138,
+    81.026
+   ]
+  }
+ },
+ {
+  "id": "035",
+  "no": 35,
+  "name": "부드러운 노랑",
+  "origin": "extended",
+  "badge": "확장 컬러",
+  "purple": "#6B00FF",
+  "aux": "#FFE387",
+  "auxDeep": "#F4C428",
+  "mapping": {
+   "1": {
+    "bg": null,
+    "base": "#6B00FF",
+    "hi": "#FFE387",
+    "wordmark": "#6B00FF",
+    "accent": "#6B00FF"
+   },
+   "2": {
+    "bg": "#6B00FF",
+    "base": "#6B00FF",
+    "hi": "#FFE387",
+    "wordmark": "#FFE387",
+    "accent": "#FFE387"
+   },
+   "3": {
+    "bg": "#FFE387",
+    "base": null,
+    "hi": "#6B00FF",
+    "wordmark": "#6B00FF",
+    "accent": "#6B00FF"
+   },
+   "4": {
+    "bg": null,
+    "base": "#6B00FF",
+    "hi": "#FFE387",
+    "wordmark": "#F4C428",
+    "accent": "#F4C428"
+   },
+   "5": {
+    "bg": null,
+    "base": "#6B00FF",
+    "hi": "#FFE387",
+    "wordmark": "#6B00FF",
+    "accent": "#F4C428"
+   },
+   "6": {
+    "bg": null,
+    "base": "#F4C428",
+    "hi": null,
+    "wordmark": "#F4C428",
+    "accent": "#F4C428"
+   }
+  },
+  "source": null,
+  "metrics": {
+   "contrastPurpleAux": 5.41,
+   "contrastAuxWhite": 1.27,
+   "contrastDeepWhite": 1.64,
+   "contrastDeepPurple": 4.16,
+   "oklch": [
+    0.92,
+    0.116,
+    92.99
+   ]
+  }
+ },
+ {
+  "id": "036",
+  "no": 36,
+  "name": "연한 노랑",
+  "origin": "extended",
+  "badge": "확장 컬러",
+  "purple": "#6B00FF",
+  "aux": "#ECE6C0",
+  "auxDeep": "#CABA70",
+  "mapping": {
+   "1": {
+    "bg": null,
+    "base": "#6B00FF",
+    "hi": "#ECE6C0",
+    "wordmark": "#6B00FF",
+    "accent": "#6B00FF"
+   },
+   "2": {
+    "bg": "#6B00FF",
+    "base": "#6B00FF",
+    "hi": "#ECE6C0",
+    "wordmark": "#ECE6C0",
+    "accent": "#ECE6C0"
+   },
+   "3": {
+    "bg": "#ECE6C0",
+    "base": null,
+    "hi": "#6B00FF",
+    "wordmark": "#6B00FF",
+    "accent": "#6B00FF"
+   },
+   "4": {
+    "bg": null,
+    "base": "#6B00FF",
+    "hi": "#ECE6C0",
+    "wordmark": "#CABA70",
+    "accent": "#CABA70"
+   },
+   "5": {
+    "bg": null,
+    "base": "#6B00FF",
+    "hi": "#ECE6C0",
+    "wordmark": "#6B00FF",
+    "accent": "#CABA70"
+   },
+   "6": {
+    "bg": null,
+    "base": "#CABA70",
+    "hi": null,
+    "wordmark": "#CABA70",
+    "accent": "#CABA70"
+   }
+  },
+  "source": null,
+  "metrics": {
+   "contrastPurpleAux": 5.42,
+   "contrastAuxWhite": 1.26,
+   "contrastDeepWhite": 1.95,
+   "contrastDeepPurple": 3.51,
+   "oklch": [
+    0.92,
+    0.05,
+    99.882
+   ]
+  }
+ },
+ {
+  "id": "037",
+  "no": 37,
+  "name": "선명한 노랑",
+  "origin": "extended",
+  "badge": "확장 컬러",
+  "purple": "#6B00FF",
+  "aux": "#FFE800",
+  "auxDeep": "#E7CB00",
+  "mapping": {
+   "1": {
+    "bg": null,
+    "base": "#6B00FF",
+    "hi": "#FFE800",
+    "wordmark": "#6B00FF",
+    "accent": "#6B00FF"
+   },
+   "2": {
+    "bg": "#6B00FF",
+    "base": "#6B00FF",
+    "hi": "#FFE800",
+    "wordmark": "#FFE800",
+    "accent": "#FFE800"
+   },
+   "3": {
+    "bg": "#FFE800",
+    "base": null,
+    "hi": "#6B00FF",
+    "wordmark": "#6B00FF",
+    "accent": "#6B00FF"
+   },
+   "4": {
+    "bg": null,
+    "base": "#6B00FF",
+    "hi": "#FFE800",
+    "wordmark": "#E7CB00",
+    "accent": "#E7CB00"
+   },
+   "5": {
+    "bg": null,
+    "base": "#6B00FF",
+    "hi": "#FFE800",
+    "wordmark": "#6B00FF",
+    "accent": "#E7CB00"
+   },
+   "6": {
+    "bg": null,
+    "base": "#E7CB00",
+    "hi": null,
+    "wordmark": "#E7CB00",
+    "accent": "#E7CB00"
+   }
+  },
+  "source": null,
+  "metrics": {
+   "contrastPurpleAux": 5.47,
+   "contrastAuxWhite": 1.25,
+   "contrastDeepWhite": 1.62,
+   "contrastDeepPurple": 4.22,
+   "oklch": [
+    0.921,
+    0.193,
+    102.156
+   ]
+  }
+ },
+ {
+  "id": "038",
+  "no": 38,
+  "name": "연한 레몬",
+  "origin": "extended",
+  "badge": "확장 컬러",
+  "purple": "#6B00FF",
+  "aux": "#E2DEA1",
+  "auxDeep": "#C8B949",
+  "mapping": {
+   "1": {
+    "bg": null,
+    "base": "#6B00FF",
+    "hi": "#E2DEA1",
+    "wordmark": "#6B00FF",
+    "accent": "#6B00FF"
+   },
+   "2": {
+    "bg": "#6B00FF",
+    "base": "#6B00FF",
+    "hi": "#E2DEA1",
+    "wordmark": "#E2DEA1",
+    "accent": "#E2DEA1"
+   },
+   "3": {
+    "bg": "#E2DEA1",
+    "base": null,
+    "hi": "#6B00FF",
+    "wordmark": "#6B00FF",
+    "accent": "#6B00FF"
+   },
+   "4": {
+    "bg": null,
+    "base": "#6B00FF",
+    "hi": "#E2DEA1",
+    "wordmark": "#C8B949",
+    "accent": "#C8B949"
+   },
+   "5": {
+    "bg": null,
+    "base": "#6B00FF",
+    "hi": "#E2DEA1",
+    "wordmark": "#6B00FF",
+    "accent": "#C8B949"
+   },
+   "6": {
+    "bg": null,
+    "base": "#C8B949",
+    "hi": null,
+    "wordmark": "#C8B949",
+    "accent": "#C8B949"
+   }
+  },
+  "source": null,
+  "metrics": {
+   "contrastPurpleAux": 4.95,
+   "contrastAuxWhite": 1.38,
+   "contrastDeepWhite": 2.0,
+   "contrastDeepPurple": 3.42,
+   "oklch": [
+    0.889,
+    0.079,
+    104.729
+   ]
+  }
+ },
+ {
+  "id": "039",
+  "no": 39,
+  "name": "맑은 레몬",
+  "origin": "extended",
+  "badge": "확장 컬러",
+  "purple": "#6B00FF",
+  "aux": "#DFD65F",
+  "auxDeep": "#D4C000",
+  "mapping": {
+   "1": {
+    "bg": null,
+    "base": "#6B00FF",
+    "hi": "#DFD65F",
+    "wordmark": "#6B00FF",
+    "accent": "#6B00FF"
+   },
+   "2": {
+    "bg": "#6B00FF",
+    "base": "#6B00FF",
+    "hi": "#DFD65F",
+    "wordmark": "#DFD65F",
+    "accent": "#DFD65F"
+   },
+   "3": {
+    "bg": "#DFD65F",
+    "base": null,
+    "hi": "#6B00FF",
+    "wordmark": "#6B00FF",
+    "accent": "#6B00FF"
+   },
+   "4": {
+    "bg": null,
+    "base": "#6B00FF",
+    "hi": "#DFD65F",
+    "wordmark": "#D4C000",
+    "accent": "#D4C000"
+   },
+   "5": {
+    "bg": null,
+    "base": "#6B00FF",
+    "hi": "#DFD65F",
+    "wordmark": "#6B00FF",
+    "accent": "#D4C000"
+   },
+   "6": {
+    "bg": null,
+    "base": "#D4C000",
+    "hi": null,
+    "wordmark": "#D4C000",
+    "accent": "#D4C000"
+   }
+  },
+  "source": null,
+  "metrics": {
+   "contrastPurpleAux": 4.54,
+   "contrastAuxWhite": 1.51,
+   "contrastDeepWhite": 1.85,
+   "contrastDeepPurple": 3.69,
+   "oklch": [
+    0.86,
+    0.14,
+    104.952
+   ]
+  }
+ },
+ {
+  "id": "040",
+  "no": 40,
+  "name": "맑은 레몬 2",
+  "origin": "extended",
+  "badge": "확장 컬러",
+  "purple": "#6B00FF",
+  "aux": "#E3F068",
+  "auxDeep": "#CED32E",
+  "mapping": {
+   "1": {
+    "bg": null,
+    "base": "#6B00FF",
+    "hi": "#E3F068",
+    "wordmark": "#6B00FF",
+    "accent": "#6B00FF"
+   },
+   "2": {
+    "bg": "#6B00FF",
+    "base": "#6B00FF",
+    "hi": "#E3F068",
+    "wordmark": "#E3F068",
+    "accent": "#E3F068"
+   },
+   "3": {
+    "bg": "#E3F068",
+    "base": null,
+    "hi": "#6B00FF",
+    "wordmark": "#6B00FF",
+    "accent": "#6B00FF"
+   },
+   "4": {
+    "bg": null,
+    "base": "#6B00FF",
+    "hi": "#E3F068",
+    "wordmark": "#CED32E",
+    "accent": "#CED32E"
+   },
+   "5": {
+    "bg": null,
+    "base": "#6B00FF",
+    "hi": "#E3F068",
+    "wordmark": "#6B00FF",
+    "accent": "#CED32E"
+   },
+   "6": {
+    "bg": null,
+    "base": "#CED32E",
+    "hi": null,
+    "wordmark": "#CED32E",
+    "accent": "#CED32E"
+   }
+  },
+  "source": null,
+  "metrics": {
+   "contrastPurpleAux": 5.52,
+   "contrastAuxWhite": 1.24,
+   "contrastDeepWhite": 1.62,
+   "contrastDeepPurple": 4.23,
+   "oklch": [
+    0.919,
+    0.159,
+    114.123
+   ]
+  }
+ },
+ {
+  "id": "041",
+  "no": 41,
+  "name": "선명한 라임",
+  "origin": "extended",
+  "badge": "확장 컬러",
+  "purple": "#6B00FF",
+  "aux": "#B4E553",
+  "auxDeep": "#B1D73D",
+  "mapping": {
+   "1": {
+    "bg": null,
+    "base": "#6B00FF",
+    "hi": "#B4E553",
+    "wordmark": "#6B00FF",
+    "accent": "#6B00FF"
+   },
+   "2": {
+    "bg": "#6B00FF",
+    "base": "#6B00FF",
+    "hi": "#B4E553",
+    "wordmark": "#B4E553",
+    "accent": "#B4E553"
+   },
+   "3": {
+    "bg": "#B4E553",
+    "base": null,
+    "hi": "#6B00FF",
+    "wordmark": "#6B00FF",
+    "accent": "#6B00FF"
+   },
+   "4": {
+    "bg": null,
+    "base": "#6B00FF",
+    "hi": "#B4E553",
+    "wordmark": "#B1D73D",
+    "accent": "#B1D73D"
+   },
+   "5": {
+    "bg": null,
+    "base": "#6B00FF",
+    "hi": "#B4E553",
+    "wordmark": "#6B00FF",
+    "accent": "#B1D73D"
+   },
+   "6": {
+    "bg": null,
+    "base": "#B1D73D",
+    "hi": null,
+    "wordmark": "#B1D73D",
+    "accent": "#B1D73D"
+   }
+  },
+  "source": null,
+  "metrics": {
+   "contrastPurpleAux": 4.65,
+   "contrastAuxWhite": 1.47,
+   "contrastDeepWhite": 1.66,
+   "contrastDeepPurple": 4.12,
+   "oklch": [
+    0.86,
+    0.18,
+    125.842
+   ]
+  }
+ },
+ {
+  "id": "042",
+  "no": 42,
+  "name": "부드러운 라임",
+  "origin": "extended",
+  "badge": "확장 컬러",
+  "purple": "#6B00FF",
+  "aux": "#BDDF87",
+  "auxDeep": "#A4C840",
+  "mapping": {
+   "1": {
+    "bg": null,
+    "base": "#6B00FF",
+    "hi": "#BDDF87",
+    "wordmark": "#6B00FF",
+    "accent": "#6B00FF"
+   },
+   "2": {
+    "bg": "#6B00FF",
+    "base": "#6B00FF",
+    "hi": "#BDDF87",
+    "wordmark": "#BDDF87",
+    "accent": "#BDDF87"
+   },
+   "3": {
+    "bg": "#BDDF87",
+    "base": null,
+    "hi": "#6B00FF",
+    "wordmark": "#6B00FF",
+    "accent": "#6B00FF"
+   },
+   "4": {
+    "bg": null,
+    "base": "#6B00FF",
+    "hi": "#BDDF87",
+    "wordmark": "#A4C840",
+    "accent": "#A4C840"
+   },
+   "5": {
+    "bg": null,
+    "base": "#6B00FF",
+    "hi": "#BDDF87",
+    "wordmark": "#6B00FF",
+    "accent": "#A4C840"
+   },
+   "6": {
+    "bg": null,
+    "base": "#A4C840",
+    "hi": null,
+    "wordmark": "#A4C840",
+    "accent": "#A4C840"
+   }
+  },
+  "source": null,
+  "metrics": {
+   "contrastPurpleAux": 4.58,
+   "contrastAuxWhite": 1.49,
+   "contrastDeepWhite": 1.92,
+   "contrastDeepPurple": 3.56,
+   "oklch": [
+    0.859,
+    0.12,
+    126.026
+   ]
+  }
+ },
+ {
+  "id": "043",
+  "no": 43,
+  "name": "맑은 라임",
+  "origin": "extended",
+  "badge": "확장 컬러",
+  "purple": "#6B00FF",
+  "aux": "#A2CF69",
+  "auxDeep": "#90BD2D",
+  "mapping": {
+   "1": {
+    "bg": null,
+    "base": "#6B00FF",
+    "hi": "#A2CF69",
+    "wordmark": "#6B00FF",
+    "accent": "#6B00FF"
+   },
+   "2": {
+    "bg": "#6B00FF",
+    "base": "#6B00FF",
+    "hi": "#A2CF69",
+    "wordmark": "#A2CF69",
+    "accent": "#A2CF69"
+   },
+   "3": {
+    "bg": "#A2CF69",
+    "base": null,
+    "hi": "#6B00FF",
+    "wordmark": "#6B00FF",
+    "accent": "#6B00FF"
+   },
+   "4": {
+    "bg": null,
+    "base": "#6B00FF",
+    "hi": "#A2CF69",
+    "wordmark": "#90BD2D",
+    "accent": "#90BD2D"
+   },
+   "5": {
+    "bg": null,
+    "base": "#6B00FF",
+    "hi": "#A2CF69",
+    "wordmark": "#6B00FF",
+    "accent": "#90BD2D"
+   },
+   "6": {
+    "bg": null,
+    "base": "#90BD2D",
+    "hi": null,
+    "wordmark": "#90BD2D",
+    "accent": "#90BD2D"
+   }
+  },
+  "source": null,
+  "metrics": {
+   "contrastPurpleAux": 3.8,
+   "contrastAuxWhite": 1.8,
+   "contrastDeepWhite": 2.21,
+   "contrastDeepPurple": 3.1,
+   "oklch": [
+    0.8,
+    0.14,
+    128.78
+   ]
+  }
+ },
+ {
+  "id": "044",
+  "no": 44,
+  "name": "부드러운 라임 2",
+  "origin": "extended",
+  "badge": "확장 컬러",
+  "purple": "#6B00FF",
+  "aux": "#D0F2AB",
+  "auxDeep": "#ADD763",
+  "mapping": {
+   "1": {
+    "bg": null,
+    "base": "#6B00FF",
+    "hi": "#D0F2AB",
+    "wordmark": "#6B00FF",
+    "accent": "#6B00FF"
+   },
+   "2": {
+    "bg": "#6B00FF",
+    "base": "#6B00FF",
+    "hi": "#D0F2AB",
+    "wordmark": "#D0F2AB",
+    "accent": "#D0F2AB"
+   },
+   "3": {
+    "bg": "#D0F2AB",
+    "base": null,
+    "hi": "#6B00FF",
+    "wordmark": "#6B00FF",
+    "accent": "#6B00FF"
+   },
+   "4": {
+    "bg": null,
+    "base": "#6B00FF",
+    "hi": "#D0F2AB",
+    "wordmark": "#ADD763",
+    "accent": "#ADD763"
+   },
+   "5": {
+    "bg": null,
+    "base": "#6B00FF",
+    "hi": "#D0F2AB",
+    "wordmark": "#6B00FF",
+    "accent": "#ADD763"
+   },
+   "6": {
+    "bg": null,
+    "base": "#ADD763",
+    "hi": null,
+    "wordmark": "#ADD763",
+    "accent": "#ADD763"
+   }
+  },
+  "source": null,
+  "metrics": {
+   "contrastPurpleAux": 5.53,
+   "contrastAuxWhite": 1.24,
+   "contrastDeepWhite": 1.66,
+   "contrastDeepPurple": 4.13,
+   "oklch": [
+    0.92,
+    0.099,
+    128.987
+   ]
+  }
+ },
+ {
+  "id": "045",
+  "no": 45,
+  "name": "선명한 라임 2",
+  "origin": "extended",
+  "badge": "확장 컬러",
+  "purple": "#6B00FF",
+  "aux": "#92D600",
+  "auxDeep": "#94C700",
+  "mapping": {
+   "1": {
+    "bg": null,
+    "base": "#6B00FF",
+    "hi": "#92D600",
+    "wordmark": "#6B00FF",
+    "accent": "#6B00FF"
+   },
+   "2": {
+    "bg": "#6B00FF",
+    "base": "#6B00FF",
+    "hi": "#92D600",
+    "wordmark": "#92D600",
+    "accent": "#92D600"
+   },
+   "3": {
+    "bg": "#92D600",
+    "base": null,
+    "hi": "#6B00FF",
+    "wordmark": "#6B00FF",
+    "accent": "#6B00FF"
+   },
+   "4": {
+    "bg": null,
+    "base": "#6B00FF",
+    "hi": "#92D600",
+    "wordmark": "#94C700",
+    "accent": "#94C700"
+   },
+   "5": {
+    "bg": null,
+    "base": "#6B00FF",
+    "hi": "#92D600",
+    "wordmark": "#6B00FF",
+    "accent": "#94C700"
+   },
+   "6": {
+    "bg": null,
+    "base": "#94C700",
+    "hi": null,
+    "wordmark": "#94C700",
+    "accent": "#94C700"
+   }
+  },
+  "source": null,
+  "metrics": {
+   "contrastPurpleAux": 3.86,
+   "contrastAuxWhite": 1.77,
+   "contrastDeepWhite": 2.01,
+   "contrastDeepPurple": 3.4,
+   "oklch": [
+    0.8,
+    0.212,
+    129.016
+   ]
+  }
+ },
+ {
+  "id": "046",
+  "no": 46,
+  "name": "선명한 라임 3",
+  "origin": "extended",
+  "badge": "확장 컬러",
+  "purple": "#6B00FF",
+  "aux": "#83C100",
+  "auxDeep": "#84B200",
+  "mapping": {
+   "1": {
+    "bg": null,
+    "base": "#6B00FF",
+    "hi": "#83C100",
+    "wordmark": "#6B00FF",
+    "accent": "#6B00FF"
+   },
+   "2": {
+    "bg": "#6B00FF",
+    "base": "#6B00FF",
+    "hi": "#83C100",
+    "wordmark": "#83C100",
+    "accent": "#83C100"
+   },
+   "3": {
+    "bg": "#83C100",
+    "base": null,
+    "hi": "#6B00FF",
+    "wordmark": "#6B00FF",
+    "accent": "#6B00FF"
+   },
+   "4": {
+    "bg": null,
+    "base": "#6B00FF",
+    "hi": "#83C100",
+    "wordmark": "#84B200",
+    "accent": "#84B200"
+   },
+   "5": {
+    "bg": null,
+    "base": "#6B00FF",
+    "hi": "#83C100",
+    "wordmark": "#6B00FF",
+    "accent": "#84B200"
+   },
+   "6": {
+    "bg": null,
+    "base": "#84B200",
+    "hi": null,
+    "wordmark": "#84B200",
+    "accent": "#84B200"
+   }
+  },
+  "source": null,
+  "metrics": {
+   "contrastPurpleAux": 3.13,
+   "contrastAuxWhite": 2.19,
+   "contrastDeepWhite": 2.52,
+   "contrastDeepPurple": 2.72,
+   "oklch": [
+    0.74,
+    0.197,
+    129.077
+   ]
+  }
+ },
+ {
+  "id": "047",
+  "no": 47,
+  "name": "선명한 라임 4",
+  "origin": "extended",
+  "badge": "확장 컬러",
+  "purple": "#6B00FF",
+  "aux": "#9AFA00",
+  "auxDeep": "#99DF00",
+  "mapping": {
+   "1": {
+    "bg": null,
+    "base": "#6B00FF",
+    "hi": "#9AFA00",
+    "wordmark": "#6B00FF",
+    "accent": "#6B00FF"
+   },
+   "2": {
+    "bg": "#6B00FF",
+    "base": "#6B00FF",
+    "hi": "#9AFA00",
+    "wordmark": "#9AFA00",
+    "accent": "#9AFA00"
+   },
+   "3": {
+    "bg": "#9AFA00",
+    "base": null,
+    "hi": "#6B00FF",
+    "wordmark": "#6B00FF",
+    "accent": "#6B00FF"
+   },
+   "4": {
+    "bg": null,
+    "base": "#6B00FF",
+    "hi": "#9AFA00",
+    "wordmark": "#99DF00",
+    "accent": "#99DF00"
+   },
+   "5": {
+    "bg": null,
+    "base": "#6B00FF",
+    "hi": "#9AFA00",
+    "wordmark": "#6B00FF",
+    "accent": "#99DF00"
+   },
+   "6": {
+    "bg": null,
+    "base": "#99DF00",
+    "hi": null,
+    "wordmark": "#99DF00",
+    "accent": "#99DF00"
+   }
+  },
+  "source": null,
+  "metrics": {
+   "contrastPurpleAux": 5.23,
+   "contrastAuxWhite": 1.31,
+   "contrastDeepWhite": 1.63,
+   "contrastDeepPurple": 4.21,
+   "oklch": [
+    0.89,
+    0.247,
+    131.962
+   ]
+  }
+ },
+ {
+  "id": "048",
+  "no": 48,
+  "name": "선명한 연두",
+  "origin": "extended",
+  "badge": "확장 컬러",
+  "purple": "#6B00FF",
+  "aux": "#66EA1B",
+  "auxDeep": "#73DA00",
+  "mapping": {
+   "1": {
+    "bg": null,
+    "base": "#6B00FF",
+    "hi": "#66EA1B",
+    "wordmark": "#6B00FF",
+    "accent": "#6B00FF"
+   },
+   "2": {
+    "bg": "#6B00FF",
+    "base": "#6B00FF",
+    "hi": "#66EA1B",
+    "wordmark": "#66EA1B",
+    "accent": "#66EA1B"
+   },
+   "3": {
+    "bg": "#66EA1B",
+    "base": null,
+    "hi": "#6B00FF",
+    "wordmark": "#6B00FF",
+    "accent": "#6B00FF"
+   },
+   "4": {
+    "bg": null,
+    "base": "#6B00FF",
+    "hi": "#66EA1B",
+    "wordmark": "#73DA00",
+    "accent": "#73DA00"
+   },
+   "5": {
+    "bg": null,
+    "base": "#6B00FF",
+    "hi": "#66EA1B",
+    "wordmark": "#6B00FF",
+    "accent": "#73DA00"
+   },
+   "6": {
+    "bg": null,
+    "base": "#73DA00",
+    "hi": null,
+    "wordmark": "#73DA00",
+    "accent": "#73DA00"
+   }
+  },
+  "source": null,
+  "metrics": {
+   "contrastPurpleAux": 4.35,
+   "contrastAuxWhite": 1.57,
+   "contrastDeepWhite": 1.79,
+   "contrastDeepPurple": 3.83,
+   "oklch": [
+    0.829,
+    0.25,
+    138.036
+   ]
+  }
+ },
+ {
+  "id": "049",
+  "no": 49,
+  "name": "맑은 연두",
+  "origin": "extended",
+  "badge": "확장 컬러",
+  "purple": "#6B00FF",
+  "aux": "#A6F299",
+  "auxDeep": "#8BDF6C",
+  "mapping": {
+   "1": {
+    "bg": null,
+    "base": "#6B00FF",
+    "hi": "#A6F299",
+    "wordmark": "#6B00FF",
+    "accent": "#6B00FF"
+   },
+   "2": {
+    "bg": "#6B00FF",
+    "base": "#6B00FF",
+    "hi": "#A6F299",
+    "wordmark": "#A6F299",
+    "accent": "#A6F299"
+   },
+   "3": {
+    "bg": "#A6F299",
+    "base": null,
+    "hi": "#6B00FF",
+    "wordmark": "#6B00FF",
+    "accent": "#6B00FF"
+   },
+   "4": {
+    "bg": null,
+    "base": "#6B00FF",
+    "hi": "#A6F299",
+    "wordmark": "#8BDF6C",
+    "accent": "#8BDF6C"
+   },
+   "5": {
+    "bg": null,
+    "base": "#6B00FF",
+    "hi": "#A6F299",
+    "wordmark": "#6B00FF",
+    "accent": "#8BDF6C"
+   },
+   "6": {
+    "bg": null,
+    "base": "#8BDF6C",
+    "hi": null,
+    "wordmark": "#8BDF6C",
+    "accent": "#8BDF6C"
+   }
+  },
+  "source": null,
+  "metrics": {
+   "contrastPurpleAux": 5.14,
+   "contrastAuxWhite": 1.33,
+   "contrastDeepWhite": 1.63,
+   "contrastDeepPurple": 4.19,
+   "oklch": [
+    0.89,
+    0.141,
+    140.859
+   ]
+  }
+ },
+ {
+  "id": "050",
+  "no": 50,
+  "name": "선명한 연두 2",
+  "origin": "extended",
+  "badge": "확장 컬러",
+  "purple": "#6B00FF",
+  "aux": "#89FA77",
+  "auxDeep": "#7FE258",
+  "mapping": {
+   "1": {
+    "bg": null,
+    "base": "#6B00FF",
+    "hi": "#89FA77",
+    "wordmark": "#6B00FF",
+    "accent": "#6B00FF"
+   },
+   "2": {
+    "bg": "#6B00FF",
+    "base": "#6B00FF",
+    "hi": "#89FA77",
+    "wordmark": "#89FA77",
+    "accent": "#89FA77"
+   },
+   "3": {
+    "bg": "#89FA77",
+    "base": null,
+    "hi": "#6B00FF",
+    "wordmark": "#6B00FF",
+    "accent": "#6B00FF"
+   },
+   "4": {
+    "bg": null,
+    "base": "#6B00FF",
+    "hi": "#89FA77",
+    "wordmark": "#7FE258",
+    "accent": "#7FE258"
+   },
+   "5": {
+    "bg": null,
+    "base": "#6B00FF",
+    "hi": "#89FA77",
+    "wordmark": "#6B00FF",
+    "accent": "#7FE258"
+   },
+   "6": {
+    "bg": null,
+    "base": "#7FE258",
+    "hi": null,
+    "wordmark": "#7FE258",
+    "accent": "#7FE258"
+   }
+  },
+  "source": null,
+  "metrics": {
+   "contrastPurpleAux": 5.21,
+   "contrastAuxWhite": 1.31,
+   "contrastDeepWhite": 1.63,
+   "contrastDeepPurple": 4.21,
+   "oklch": [
+    0.889,
+    0.199,
+    140.999
+   ]
+  }
+ },
+ {
+  "id": "051",
+  "no": 51,
+  "name": "부드러운 연두",
+  "origin": "extended",
+  "badge": "확장 컬러",
+  "purple": "#6B00FF",
+  "aux": "#87BB7F",
+  "auxDeep": "#5BA340",
+  "mapping": {
+   "1": {
+    "bg": null,
+    "base": "#6B00FF",
+    "hi": "#87BB7F",
+    "wordmark": "#6B00FF",
+    "accent": "#6B00FF"
+   },
+   "2": {
+    "bg": "#6B00FF",
+    "base": "#6B00FF",
+    "hi": "#87BB7F",
+    "wordmark": "#87BB7F",
+    "accent": "#87BB7F"
+   },
+   "3": {
+    "bg": "#87BB7F",
+    "base": null,
+    "hi": "#6B00FF",
+    "wordmark": "#6B00FF",
+    "accent": "#6B00FF"
+   },
+   "4": {
+    "bg": null,
+    "base": "#6B00FF",
+    "hi": "#87BB7F",
+    "wordmark": "#5BA340",
+    "accent": "#5BA340"
+   },
+   "5": {
+    "bg": null,
+    "base": "#6B00FF",
+    "hi": "#87BB7F",
+    "wordmark": "#6B00FF",
+    "accent": "#5BA340"
+   },
+   "6": {
+    "bg": null,
+    "base": "#5BA340",
+    "hi": null,
+    "wordmark": "#5BA340",
+    "accent": "#5BA340"
+   }
+  },
+  "source": null,
+  "metrics": {
+   "contrastPurpleAux": 3.08,
+   "contrastAuxWhite": 2.22,
+   "contrastDeepWhite": 3.11,
+   "contrastDeepPurple": 2.2,
+   "oklch": [
+    0.74,
+    0.101,
+    141.223
+   ]
+  }
+ },
+ {
+  "id": "052",
+  "no": 52,
+  "name": "연한 연두",
+  "origin": "extended",
+  "badge": "확장 컬러",
+  "purple": "#6B00FF",
+  "aux": "#AFE0B3",
+  "auxDeep": "#76C476",
+  "mapping": {
+   "1": {
+    "bg": null,
+    "base": "#6B00FF",
+    "hi": "#AFE0B3",
+    "wordmark": "#6B00FF",
+    "accent": "#6B00FF"
+   },
+   "2": {
+    "bg": "#6B00FF",
+    "base": "#6B00FF",
+    "hi": "#AFE0B3",
+    "wordmark": "#AFE0B3",
+    "accent": "#AFE0B3"
+   },
+   "3": {
+    "bg": "#AFE0B3",
+    "base": null,
+    "hi": "#6B00FF",
+    "wordmark": "#6B00FF",
+    "accent": "#6B00FF"
+   },
+   "4": {
+    "bg": null,
+    "base": "#6B00FF",
+    "hi": "#AFE0B3",
+    "wordmark": "#76C476",
+    "accent": "#76C476"
+   },
+   "5": {
+    "bg": null,
+    "base": "#6B00FF",
+    "hi": "#AFE0B3",
+    "wordmark": "#6B00FF",
+    "accent": "#76C476"
+   },
+   "6": {
+    "bg": null,
+    "base": "#76C476",
+    "hi": null,
+    "wordmark": "#76C476",
+    "accent": "#76C476"
+   }
+  },
+  "source": null,
+  "metrics": {
+   "contrastPurpleAux": 4.61,
+   "contrastAuxWhite": 1.49,
+   "contrastDeepWhite": 2.12,
+   "contrastDeepPurple": 3.23,
+   "oklch": [
+    0.86,
+    0.08,
+    146.983
+   ]
+  }
+ },
+ {
+  "id": "053",
+  "no": 53,
+  "name": "선명한 연두 3",
+  "origin": "extended",
+  "badge": "확장 컬러",
+  "purple": "#6B00FF",
+  "aux": "#23D756",
+  "auxDeep": "#2FCA3D",
+  "mapping": {
+   "1": {
+    "bg": null,
+    "base": "#6B00FF",
+    "hi": "#23D756",
+    "wordmark": "#6B00FF",
+    "accent": "#6B00FF"
+   },
+   "2": {
+    "bg": "#6B00FF",
+    "base": "#6B00FF",
+    "hi": "#23D756",
+    "wordmark": "#23D756",
+    "accent": "#23D756"
+   },
+   "3": {
+    "bg": "#23D756",
+    "base": null,
+    "hi": "#6B00FF",
+    "wordmark": "#6B00FF",
+    "accent": "#6B00FF"
+   },
+   "4": {
+    "bg": null,
+    "base": "#6B00FF",
+    "hi": "#23D756",
+    "wordmark": "#2FCA3D",
+    "accent": "#2FCA3D"
+   },
+   "5": {
+    "bg": null,
+    "base": "#6B00FF",
+    "hi": "#23D756",
+    "wordmark": "#6B00FF",
+    "accent": "#2FCA3D"
+   },
+   "6": {
+    "bg": null,
+    "base": "#2FCA3D",
+    "hi": null,
+    "wordmark": "#2FCA3D",
+    "accent": "#2FCA3D"
+   }
+  },
+  "source": null,
+  "metrics": {
+   "contrastPurpleAux": 3.56,
+   "contrastAuxWhite": 1.92,
+   "contrastDeepWhite": 2.18,
+   "contrastDeepPurple": 3.14,
+   "oklch": [
+    0.769,
+    0.219,
+    147.019
+   ]
+  }
+ },
+ {
+  "id": "054",
+  "no": 54,
+  "name": "연한 연두 2",
+  "origin": "extended",
+  "badge": "확장 컬러",
+  "purple": "#6B00FF",
+  "aux": "#CEEFD3",
+  "auxDeep": "#90CB95",
+  "mapping": {
+   "1": {
+    "bg": null,
+    "base": "#6B00FF",
+    "hi": "#CEEFD3",
+    "wordmark": "#6B00FF",
+    "accent": "#6B00FF"
+   },
+   "2": {
+    "bg": "#6B00FF",
+    "base": "#6B00FF",
+    "hi": "#CEEFD3",
+    "wordmark": "#CEEFD3",
+    "accent": "#CEEFD3"
+   },
+   "3": {
+    "bg": "#CEEFD3",
+    "base": null,
+    "hi": "#6B00FF",
+    "wordmark": "#6B00FF",
+    "accent": "#6B00FF"
+   },
+   "4": {
+    "bg": null,
+    "base": "#6B00FF",
+    "hi": "#CEEFD3",
+    "wordmark": "#90CB95",
+    "accent": "#90CB95"
+   },
+   "5": {
+    "bg": null,
+    "base": "#6B00FF",
+    "hi": "#CEEFD3",
+    "wordmark": "#6B00FF",
+    "accent": "#90CB95"
+   },
+   "6": {
+    "bg": null,
+    "base": "#90CB95",
+    "hi": null,
+    "wordmark": "#90CB95",
+    "accent": "#90CB95"
+   }
+  },
+  "source": null,
+  "metrics": {
+   "contrastPurpleAux": 5.51,
+   "contrastAuxWhite": 1.24,
+   "contrastDeepWhite": 1.88,
+   "contrastDeepPurple": 3.64,
+   "oklch": [
+    0.921,
+    0.051,
+    149.547
+   ]
+  }
+ },
+ {
+  "id": "055",
+  "no": 55,
+  "name": "맑은 연두 2",
+  "origin": "extended",
+  "badge": "확장 컬러",
+  "purple": "#6B00FF",
+  "aux": "#62C37A",
+  "auxDeep": "#3CB353",
+  "mapping": {
+   "1": {
+    "bg": null,
+    "base": "#6B00FF",
+    "hi": "#62C37A",
+    "wordmark": "#6B00FF",
+    "accent": "#6B00FF"
+   },
+   "2": {
+    "bg": "#6B00FF",
+    "base": "#6B00FF",
+    "hi": "#62C37A",
+    "wordmark": "#62C37A",
+    "accent": "#62C37A"
+   },
+   "3": {
+    "bg": "#62C37A",
+    "base": null,
+    "hi": "#6B00FF",
+    "wordmark": "#6B00FF",
+    "accent": "#6B00FF"
+   },
+   "4": {
+    "bg": null,
+    "base": "#6B00FF",
+    "hi": "#62C37A",
+    "wordmark": "#3CB353",
+    "accent": "#3CB353"
+   },
+   "5": {
+    "bg": null,
+    "base": "#6B00FF",
+    "hi": "#62C37A",
+    "wordmark": "#6B00FF",
+    "accent": "#3CB353"
+   },
+   "6": {
+    "bg": null,
+    "base": "#3CB353",
+    "hi": null,
+    "wordmark": "#3CB353",
+    "accent": "#3CB353"
+   }
+  },
+  "source": null,
+  "metrics": {
+   "contrastPurpleAux": 3.13,
+   "contrastAuxWhite": 2.19,
+   "contrastDeepWhite": 2.7,
+   "contrastDeepPurple": 2.53,
+   "oklch": [
+    0.74,
+    0.14,
+    149.87
+   ]
+  }
+ },
+ {
+  "id": "056",
+  "no": 56,
+  "name": "부드러운 연두 2",
+  "origin": "extended",
+  "badge": "확장 컬러",
+  "purple": "#6B00FF",
+  "aux": "#ABEEB8",
+  "auxDeep": "#73D781",
+  "mapping": {
+   "1": {
+    "bg": null,
+    "base": "#6B00FF",
+    "hi": "#ABEEB8",
+    "wordmark": "#6B00FF",
+    "accent": "#6B00FF"
+   },
+   "2": {
+    "bg": "#6B00FF",
+    "base": "#6B00FF",
+    "hi": "#ABEEB8",
+    "wordmark": "#ABEEB8",
+    "accent": "#ABEEB8"
+   },
+   "3": {
+    "bg": "#ABEEB8",
+    "base": null,
+    "hi": "#6B00FF",
+    "wordmark": "#6B00FF",
+    "accent": "#6B00FF"
+   },
+   "4": {
+    "bg": null,
+    "base": "#6B00FF",
+    "hi": "#ABEEB8",
+    "wordmark": "#73D781",
+    "accent": "#73D781"
+   },
+   "5": {
+    "bg": null,
+    "base": "#6B00FF",
+    "hi": "#ABEEB8",
+    "wordmark": "#6B00FF",
+    "accent": "#73D781"
+   },
+   "6": {
+    "bg": null,
+    "base": "#73D781",
+    "hi": null,
+    "wordmark": "#73D781",
+    "accent": "#73D781"
+   }
+  },
+  "source": null,
+  "metrics": {
+   "contrastPurpleAux": 5.1,
+   "contrastAuxWhite": 1.34,
+   "contrastDeepWhite": 1.78,
+   "contrastDeepPurple": 3.83,
+   "oklch": [
+    0.89,
+    0.1,
+    149.977
+   ]
+  }
+ },
+ {
+  "id": "057",
+  "no": 57,
+  "name": "선명한 초록",
+  "origin": "extended",
+  "badge": "확장 컬러",
+  "purple": "#6B00FF",
+  "aux": "#00FA76",
+  "auxDeep": "#20EB5D",
+  "mapping": {
+   "1": {
+    "bg": null,
+    "base": "#6B00FF",
+    "hi": "#00FA76",
+    "wordmark": "#6B00FF",
+    "accent": "#6B00FF"
+   },
+   "2": {
+    "bg": "#6B00FF",
+    "base": "#6B00FF",
+    "hi": "#00FA76",
+    "wordmark": "#00FA76",
+    "accent": "#00FA76"
+   },
+   "3": {
+    "bg": "#00FA76",
+    "base": null,
+    "hi": "#6B00FF",
+    "wordmark": "#6B00FF",
+    "accent": "#6B00FF"
+   },
+   "4": {
+    "bg": null,
+    "base": "#6B00FF",
+    "hi": "#00FA76",
+    "wordmark": "#20EB5D",
+    "accent": "#20EB5D"
+   },
+   "5": {
+    "bg": null,
+    "base": "#6B00FF",
+    "hi": "#00FA76",
+    "wordmark": "#6B00FF",
+    "accent": "#20EB5D"
+   },
+   "6": {
+    "bg": null,
+    "base": "#20EB5D",
+    "hi": null,
+    "wordmark": "#20EB5D",
+    "accent": "#20EB5D"
+   }
+  },
+  "source": null,
+  "metrics": {
+   "contrastPurpleAux": 4.87,
+   "contrastAuxWhite": 1.41,
+   "contrastDeepWhite": 1.6,
+   "contrastDeepPurple": 4.27,
+   "oklch": [
+    0.861,
+    0.237,
+    150.029
+   ]
+  }
+ },
+ {
+  "id": "058",
+  "no": 58,
+  "name": "맑은 초록",
+  "origin": "extended",
+  "badge": "확장 컬러",
+  "purple": "#6B00FF",
+  "aux": "#67D897",
+  "auxDeep": "#37C974",
+  "mapping": {
+   "1": {
+    "bg": null,
+    "base": "#6B00FF",
+    "hi": "#67D897",
+    "wordmark": "#6B00FF",
+    "accent": "#6B00FF"
+   },
+   "2": {
+    "bg": "#6B00FF",
+    "base": "#6B00FF",
+    "hi": "#67D897",
+    "wordmark": "#67D897",
+    "accent": "#67D897"
+   },
+   "3": {
+    "bg": "#67D897",
+    "base": null,
+    "hi": "#6B00FF",
+    "wordmark": "#6B00FF",
+    "accent": "#6B00FF"
+   },
+   "4": {
+    "bg": null,
+    "base": "#6B00FF",
+    "hi": "#67D897",
+    "wordmark": "#37C974",
+    "accent": "#37C974"
+   },
+   "5": {
+    "bg": null,
+    "base": "#6B00FF",
+    "hi": "#67D897",
+    "wordmark": "#6B00FF",
+    "accent": "#37C974"
+   },
+   "6": {
+    "bg": null,
+    "base": "#37C974",
+    "hi": null,
+    "wordmark": "#37C974",
+    "accent": "#37C974"
+   }
+  },
+  "source": null,
+  "metrics": {
+   "contrastPurpleAux": 3.86,
+   "contrastAuxWhite": 1.77,
+   "contrastDeepWhite": 2.15,
+   "contrastDeepPurple": 3.18,
+   "oklch": [
+    0.799,
+    0.14,
+    156.022
+   ]
+  }
+ },
+ {
+  "id": "059",
+  "no": 59,
+  "name": "선명한 초록 2",
+  "origin": "extended",
+  "badge": "확장 컬러",
+  "purple": "#6B00FF",
+  "aux": "#00E187",
+  "auxDeep": "#12D474",
+  "mapping": {
+   "1": {
+    "bg": null,
+    "base": "#6B00FF",
+    "hi": "#00E187",
+    "wordmark": "#6B00FF",
+    "accent": "#6B00FF"
+   },
+   "2": {
+    "bg": "#6B00FF",
+    "base": "#6B00FF",
+    "hi": "#00E187",
+    "wordmark": "#00E187",
+    "accent": "#00E187"
+   },
+   "3": {
+    "bg": "#00E187",
+    "base": null,
+    "hi": "#6B00FF",
+    "wordmark": "#6B00FF",
+    "accent": "#6B00FF"
+   },
+   "4": {
+    "bg": null,
+    "base": "#6B00FF",
+    "hi": "#00E187",
+    "wordmark": "#12D474",
+    "accent": "#12D474"
+   },
+   "5": {
+    "bg": null,
+    "base": "#6B00FF",
+    "hi": "#00E187",
+    "wordmark": "#6B00FF",
+    "accent": "#12D474"
+   },
+   "6": {
+    "bg": null,
+    "base": "#12D474",
+    "hi": null,
+    "wordmark": "#12D474",
+    "accent": "#12D474"
+   }
+  },
+  "source": null,
+  "metrics": {
+   "contrastPurpleAux": 3.95,
+   "contrastAuxWhite": 1.73,
+   "contrastDeepWhite": 1.96,
+   "contrastDeepPurple": 3.48,
+   "oklch": [
+    0.8,
+    0.194,
+    156.11
+   ]
+  }
+ },
+ {
+  "id": "060",
+  "no": 60,
+  "name": "부드러운 초록",
+  "origin": "extended",
+  "badge": "확장 컬러",
+  "purple": "#6B00FF",
+  "aux": "#ADF9C9",
+  "auxDeep": "#6DE296",
+  "mapping": {
+   "1": {
+    "bg": null,
+    "base": "#6B00FF",
+    "hi": "#ADF9C9",
+    "wordmark": "#6B00FF",
+    "accent": "#6B00FF"
+   },
+   "2": {
+    "bg": "#6B00FF",
+    "base": "#6B00FF",
+    "hi": "#ADF9C9",
+    "wordmark": "#ADF9C9",
+    "accent": "#ADF9C9"
+   },
+   "3": {
+    "bg": "#ADF9C9",
+    "base": null,
+    "hi": "#6B00FF",
+    "wordmark": "#6B00FF",
+    "accent": "#6B00FF"
+   },
+   "4": {
+    "bg": null,
+    "base": "#6B00FF",
+    "hi": "#ADF9C9",
+    "wordmark": "#6DE296",
+    "accent": "#6DE296"
+   },
+   "5": {
+    "bg": null,
+    "base": "#6B00FF",
+    "hi": "#ADF9C9",
+    "wordmark": "#6B00FF",
+    "accent": "#6DE296"
+   },
+   "6": {
+    "bg": null,
+    "base": "#6DE296",
+    "hi": null,
+    "wordmark": "#6DE296",
+    "accent": "#6DE296"
+   }
+  },
+  "source": null,
+  "metrics": {
+   "contrastPurpleAux": 5.59,
+   "contrastAuxWhite": 1.22,
+   "contrastDeepWhite": 1.62,
+   "contrastDeepPurple": 4.23,
+   "oklch": [
+    0.92,
+    0.1,
+    156.15
+   ]
+  }
+ },
+ {
+  "id": "061",
+  "no": 61,
+  "name": "부드러운 초록 2",
+  "origin": "extended",
+  "badge": "확장 컬러",
+  "purple": "#6B00FF",
+  "aux": "#7DEABD",
+  "auxDeep": "#25D897",
+  "mapping": {
+   "1": {
+    "bg": null,
+    "base": "#6B00FF",
+    "hi": "#7DEABD",
+    "wordmark": "#6B00FF",
+    "accent": "#6B00FF"
+   },
+   "2": {
+    "bg": "#6B00FF",
+    "base": "#6B00FF",
+    "hi": "#7DEABD",
+    "wordmark": "#7DEABD",
+    "accent": "#7DEABD"
+   },
+   "3": {
+    "bg": "#7DEABD",
+    "base": null,
+    "hi": "#6B00FF",
+    "wordmark": "#6B00FF",
+    "accent": "#6B00FF"
+   },
+   "4": {
+    "bg": null,
+    "base": "#6B00FF",
+    "hi": "#7DEABD",
+    "wordmark": "#25D897",
+    "accent": "#25D897"
+   },
+   "5": {
+    "bg": null,
+    "base": "#6B00FF",
+    "hi": "#7DEABD",
+    "wordmark": "#6B00FF",
+    "accent": "#25D897"
+   },
+   "6": {
+    "bg": null,
+    "base": "#25D897",
+    "hi": null,
+    "wordmark": "#25D897",
+    "accent": "#25D897"
+   }
+  },
+  "source": null,
+  "metrics": {
+   "contrastPurpleAux": 4.68,
+   "contrastAuxWhite": 1.46,
+   "contrastDeepWhite": 1.85,
+   "contrastDeepPurple": 3.7,
+   "oklch": [
+    0.86,
+    0.12,
+    164.857
+   ]
+  }
+ },
+ {
+  "id": "062",
+  "no": 62,
+  "name": "맑은 초록 2",
+  "origin": "extended",
+  "badge": "확장 컬러",
+  "purple": "#6B00FF",
+  "aux": "#00C992",
+  "auxDeep": "#00B97F",
+  "mapping": {
+   "1": {
+    "bg": null,
+    "base": "#6B00FF",
+    "hi": "#00C992",
+    "wordmark": "#6B00FF",
+    "accent": "#6B00FF"
+   },
+   "2": {
+    "bg": "#6B00FF",
+    "base": "#6B00FF",
+    "hi": "#00C992",
+    "wordmark": "#00C992",
+    "accent": "#00C992"
+   },
+   "3": {
+    "bg": "#00C992",
+    "base": null,
+    "hi": "#6B00FF",
+    "wordmark": "#6B00FF",
+    "accent": "#6B00FF"
+   },
+   "4": {
+    "bg": null,
+    "base": "#6B00FF",
+    "hi": "#00C992",
+    "wordmark": "#00B97F",
+    "accent": "#00B97F"
+   },
+   "5": {
+    "bg": null,
+    "base": "#6B00FF",
+    "hi": "#00C992",
+    "wordmark": "#6B00FF",
+    "accent": "#00B97F"
+   },
+   "6": {
+    "bg": null,
+    "base": "#00B97F",
+    "hi": null,
+    "wordmark": "#00B97F",
+    "accent": "#00B97F"
+   }
+  },
+  "source": null,
+  "metrics": {
+   "contrastPurpleAux": 3.18,
+   "contrastAuxWhite": 2.15,
+   "contrastDeepWhite": 2.55,
+   "contrastDeepPurple": 2.69,
+   "oklch": [
+    0.741,
+    0.156,
+    164.947
+   ]
+  }
+ },
+ {
+  "id": "063",
+  "no": 63,
+  "name": "연한 민트",
+  "origin": "extended",
+  "badge": "확장 컬러",
+  "purple": "#6B00FF",
+  "aux": "#B1E9D3",
+  "auxDeep": "#61CBA2",
+  "mapping": {
+   "1": {
+    "bg": null,
+    "base": "#6B00FF",
+    "hi": "#B1E9D3",
+    "wordmark": "#6B00FF",
+    "accent": "#6B00FF"
+   },
+   "2": {
+    "bg": "#6B00FF",
+    "base": "#6B00FF",
+    "hi": "#B1E9D3",
+    "wordmark": "#B1E9D3",
+    "accent": "#B1E9D3"
+   },
+   "3": {
+    "bg": "#B1E9D3",
+    "base": null,
+    "hi": "#6B00FF",
+    "wordmark": "#6B00FF",
+    "accent": "#6B00FF"
+   },
+   "4": {
+    "bg": null,
+    "base": "#6B00FF",
+    "hi": "#B1E9D3",
+    "wordmark": "#61CBA2",
+    "accent": "#61CBA2"
+   },
+   "5": {
+    "bg": null,
+    "base": "#6B00FF",
+    "hi": "#B1E9D3",
+    "wordmark": "#6B00FF",
+    "accent": "#61CBA2"
+   },
+   "6": {
+    "bg": null,
+    "base": "#61CBA2",
+    "hi": null,
+    "wordmark": "#61CBA2",
+    "accent": "#61CBA2"
+   }
+  },
+  "source": null,
+  "metrics": {
+   "contrastPurpleAux": 5.04,
+   "contrastAuxWhite": 1.36,
+   "contrastDeepWhite": 1.99,
+   "contrastDeepPurple": 3.44,
+   "oklch": [
+    0.889,
+    0.065,
+    168.744
+   ]
+  }
+ },
+ {
+  "id": "064",
+  "no": 64,
+  "name": "선명한 민트",
+  "origin": "extended",
+  "badge": "확장 컬러",
+  "purple": "#6B00FF",
+  "aux": "#00FFCB",
+  "auxDeep": "#00E7B1",
+  "mapping": {
+   "1": {
+    "bg": null,
+    "base": "#6B00FF",
+    "hi": "#00FFCB",
+    "wordmark": "#6B00FF",
+    "accent": "#6B00FF"
+   },
+   "2": {
+    "bg": "#6B00FF",
+    "base": "#6B00FF",
+    "hi": "#00FFCB",
+    "wordmark": "#00FFCB",
+    "accent": "#00FFCB"
+   },
+   "3": {
+    "bg": "#00FFCB",
+    "base": null,
+    "hi": "#6B00FF",
+    "wordmark": "#6B00FF",
+    "accent": "#6B00FF"
+   },
+   "4": {
+    "bg": null,
+    "base": "#6B00FF",
+    "hi": "#00FFCB",
+    "wordmark": "#00E7B1",
+    "accent": "#00E7B1"
+   },
+   "5": {
+    "bg": null,
+    "base": "#6B00FF",
+    "hi": "#00FFCB",
+    "wordmark": "#6B00FF",
+    "accent": "#00E7B1"
+   },
+   "6": {
+    "bg": null,
+    "base": "#00E7B1",
+    "hi": null,
+    "wordmark": "#00E7B1",
+    "accent": "#00E7B1"
+   }
+  },
+  "source": null,
+  "metrics": {
+   "contrastPurpleAux": 5.27,
+   "contrastAuxWhite": 1.3,
+   "contrastDeepWhite": 1.61,
+   "contrastDeepPurple": 4.26,
+   "oklch": [
+    0.89,
+    0.175,
+    170.885
+   ]
+  }
+ },
+ {
+  "id": "065",
+  "no": 65,
+  "name": "맑은 민트",
+  "origin": "extended",
+  "badge": "확장 컬러",
+  "purple": "#6B00FF",
+  "aux": "#00DDB0",
+  "auxDeep": "#00CD9C",
+  "mapping": {
+   "1": {
+    "bg": null,
+    "base": "#6B00FF",
+    "hi": "#00DDB0",
+    "wordmark": "#6B00FF",
+    "accent": "#6B00FF"
+   },
+   "2": {
+    "bg": "#6B00FF",
+    "base": "#6B00FF",
+    "hi": "#00DDB0",
+    "wordmark": "#00DDB0",
+    "accent": "#00DDB0"
+   },
+   "3": {
+    "bg": "#00DDB0",
+    "base": null,
+    "hi": "#6B00FF",
+    "wordmark": "#6B00FF",
+    "accent": "#6B00FF"
+   },
+   "4": {
+    "bg": null,
+    "base": "#6B00FF",
+    "hi": "#00DDB0",
+    "wordmark": "#00CD9C",
+    "accent": "#00CD9C"
+   },
+   "5": {
+    "bg": null,
+    "base": "#6B00FF",
+    "hi": "#00DDB0",
+    "wordmark": "#6B00FF",
+    "accent": "#00CD9C"
+   },
+   "6": {
+    "bg": null,
+    "base": "#00CD9C",
+    "hi": null,
+    "wordmark": "#00CD9C",
+    "accent": "#00CD9C"
+   }
+  },
+  "source": null,
+  "metrics": {
+   "contrastPurpleAux": 3.9,
+   "contrastAuxWhite": 1.75,
+   "contrastDeepWhite": 2.06,
+   "contrastDeepPurple": 3.33,
+   "oklch": [
+    0.799,
+    0.156,
+    171.073
+   ]
+  }
+ },
+ {
+  "id": "066",
+  "no": 66,
+  "name": "부드러운 민트",
+  "origin": "extended",
+  "badge": "확장 컬러",
+  "purple": "#6B00FF",
+  "aux": "#5EC0A6",
+  "auxDeep": "#00A784",
+  "mapping": {
+   "1": {
+    "bg": null,
+    "base": "#6B00FF",
+    "hi": "#5EC0A6",
+    "wordmark": "#6B00FF",
+    "accent": "#6B00FF"
+   },
+   "2": {
+    "bg": "#6B00FF",
+    "base": "#6B00FF",
+    "hi": "#5EC0A6",
+    "wordmark": "#5EC0A6",
+    "accent": "#5EC0A6"
+   },
+   "3": {
+    "bg": "#5EC0A6",
+    "base": null,
+    "hi": "#6B00FF",
+    "wordmark": "#6B00FF",
+    "accent": "#6B00FF"
+   },
+   "4": {
+    "bg": null,
+    "base": "#6B00FF",
+    "hi": "#5EC0A6",
+    "wordmark": "#00A784",
+    "accent": "#00A784"
+   },
+   "5": {
+    "bg": null,
+    "base": "#6B00FF",
+    "hi": "#5EC0A6",
+    "wordmark": "#6B00FF",
+    "accent": "#00A784"
+   },
+   "6": {
+    "bg": null,
+    "base": "#00A784",
+    "hi": null,
+    "wordmark": "#00A784",
+    "accent": "#00A784"
+   }
+  },
+  "source": null,
+  "metrics": {
+   "contrastPurpleAux": 3.12,
+   "contrastAuxWhite": 2.2,
+   "contrastDeepWhite": 3.06,
+   "contrastDeepPurple": 2.24,
+   "oklch": [
+    0.741,
+    0.101,
+    173.79
+   ]
+  }
+ },
+ {
+  "id": "067",
+  "no": 67,
+  "name": "부드러운 민트 2",
+  "origin": "extended",
+  "badge": "확장 컬러",
+  "purple": "#6B00FF",
+  "aux": "#72D3B9",
+  "auxDeep": "#00BC95",
+  "mapping": {
+   "1": {
+    "bg": null,
+    "base": "#6B00FF",
+    "hi": "#72D3B9",
+    "wordmark": "#6B00FF",
+    "accent": "#6B00FF"
+   },
+   "2": {
+    "bg": "#6B00FF",
+    "base": "#6B00FF",
+    "hi": "#72D3B9",
+    "wordmark": "#72D3B9",
+    "accent": "#72D3B9"
+   },
+   "3": {
+    "bg": "#72D3B9",
+    "base": null,
+    "hi": "#6B00FF",
+    "wordmark": "#6B00FF",
+    "accent": "#6B00FF"
+   },
+   "4": {
+    "bg": null,
+    "base": "#6B00FF",
+    "hi": "#72D3B9",
+    "wordmark": "#00BC95",
+    "accent": "#00BC95"
+   },
+   "5": {
+    "bg": null,
+    "base": "#6B00FF",
+    "hi": "#72D3B9",
+    "wordmark": "#6B00FF",
+    "accent": "#00BC95"
+   },
+   "6": {
+    "bg": null,
+    "base": "#00BC95",
+    "hi": null,
+    "wordmark": "#00BC95",
+    "accent": "#00BC95"
+   }
+  },
+  "source": null,
+  "metrics": {
+   "contrastPurpleAux": 3.82,
+   "contrastAuxWhite": 1.79,
+   "contrastDeepWhite": 2.43,
+   "contrastDeepPurple": 2.81,
+   "oklch": [
+    0.8,
+    0.1,
+    174.187
+   ]
+  }
+ },
+ {
+  "id": "068",
+  "no": 68,
+  "name": "맑은 민트 2",
+  "origin": "extended",
+  "badge": "확장 컬러",
+  "purple": "#6B00FF",
+  "aux": "#4DEFCF",
+  "auxDeep": "#00DDB6",
+  "mapping": {
+   "1": {
+    "bg": null,
+    "base": "#6B00FF",
+    "hi": "#4DEFCF",
+    "wordmark": "#6B00FF",
+    "accent": "#6B00FF"
+   },
+   "2": {
+    "bg": "#6B00FF",
+    "base": "#6B00FF",
+    "hi": "#4DEFCF",
+    "wordmark": "#4DEFCF",
+    "accent": "#4DEFCF"
+   },
+   "3": {
+    "bg": "#4DEFCF",
+    "base": null,
+    "hi": "#6B00FF",
+    "wordmark": "#6B00FF",
+    "accent": "#6B00FF"
+   },
+   "4": {
+    "bg": null,
+    "base": "#6B00FF",
+    "hi": "#4DEFCF",
+    "wordmark": "#00DDB6",
+    "accent": "#00DDB6"
+   },
+   "5": {
+    "bg": null,
+    "base": "#6B00FF",
+    "hi": "#4DEFCF",
+    "wordmark": "#6B00FF",
+    "accent": "#00DDB6"
+   },
+   "6": {
+    "bg": null,
+    "base": "#00DDB6",
+    "hi": null,
+    "wordmark": "#00DDB6",
+    "accent": "#00DDB6"
+   }
+  },
+  "source": null,
+  "metrics": {
+   "contrastPurpleAux": 4.74,
+   "contrastAuxWhite": 1.44,
+   "contrastDeepWhite": 1.75,
+   "contrastDeepPurple": 3.92,
+   "oklch": [
+    0.861,
+    0.14,
+    176.716
+   ]
+  }
+ },
+ {
+  "id": "069",
+  "no": 69,
+  "name": "맑은 민트 3",
+  "origin": "extended",
+  "badge": "확장 컬러",
+  "purple": "#6B00FF",
+  "aux": "#00C6A9",
+  "auxDeep": "#00B091",
+  "mapping": {
+   "1": {
+    "bg": null,
+    "base": "#6B00FF",
+    "hi": "#00C6A9",
+    "wordmark": "#6B00FF",
+    "accent": "#6B00FF"
+   },
+   "2": {
+    "bg": "#6B00FF",
+    "base": "#6B00FF",
+    "hi": "#00C6A9",
+    "wordmark": "#00C6A9",
+    "accent": "#00C6A9"
+   },
+   "3": {
+    "bg": "#00C6A9",
+    "base": null,
+    "hi": "#6B00FF",
+    "wordmark": "#6B00FF",
+    "accent": "#6B00FF"
+   },
+   "4": {
+    "bg": null,
+    "base": "#6B00FF",
+    "hi": "#00C6A9",
+    "wordmark": "#00B091",
+    "accent": "#00B091"
+   },
+   "5": {
+    "bg": null,
+    "base": "#6B00FF",
+    "hi": "#00C6A9",
+    "wordmark": "#6B00FF",
+    "accent": "#00B091"
+   },
+   "6": {
+    "bg": null,
+    "base": "#00B091",
+    "hi": null,
+    "wordmark": "#00B091",
+    "accent": "#00B091"
+   }
+  },
+  "source": null,
+  "metrics": {
+   "contrastPurpleAux": 3.14,
+   "contrastAuxWhite": 2.18,
+   "contrastDeepWhite": 2.76,
+   "contrastDeepPurple": 2.48,
+   "oklch": [
+    0.739,
+    0.137,
+    177.096
+   ]
+  }
+ },
+ {
+  "id": "070",
+  "no": 70,
+  "name": "맑은 민트 4",
+  "origin": "extended",
+  "badge": "확장 컬러",
+  "purple": "#6B00FF",
+  "aux": "#00E6CB",
+  "auxDeep": "#00D4B5",
+  "mapping": {
+   "1": {
+    "bg": null,
+    "base": "#6B00FF",
+    "hi": "#00E6CB",
+    "wordmark": "#6B00FF",
+    "accent": "#6B00FF"
+   },
+   "2": {
+    "bg": "#6B00FF",
+    "base": "#6B00FF",
+    "hi": "#00E6CB",
+    "wordmark": "#00E6CB",
+    "accent": "#00E6CB"
+   },
+   "3": {
+    "bg": "#00E6CB",
+    "base": null,
+    "hi": "#6B00FF",
+    "wordmark": "#6B00FF",
+    "accent": "#6B00FF"
+   },
+   "4": {
+    "bg": null,
+    "base": "#6B00FF",
+    "hi": "#00E6CB",
+    "wordmark": "#00D4B5",
+    "accent": "#00D4B5"
+   },
+   "5": {
+    "bg": null,
+    "base": "#6B00FF",
+    "hi": "#00E6CB",
+    "wordmark": "#6B00FF",
+    "accent": "#00D4B5"
+   },
+   "6": {
+    "bg": null,
+    "base": "#00D4B5",
+    "hi": null,
+    "wordmark": "#00D4B5",
+    "accent": "#00D4B5"
+   }
+  },
+  "source": null,
+  "metrics": {
+   "contrastPurpleAux": 4.29,
+   "contrastAuxWhite": 1.59,
+   "contrastDeepWhite": 1.89,
+   "contrastDeepPurple": 3.61,
+   "oklch": [
+    0.829,
+    0.15,
+    180.223
+   ]
+  }
+ },
+ {
+  "id": "071",
+  "no": 71,
+  "name": "연한 청록",
+  "origin": "extended",
+  "badge": "확장 컬러",
+  "purple": "#6B00FF",
+  "aux": "#94E3D6",
+  "auxDeep": "#14C9B1",
+  "mapping": {
+   "1": {
+    "bg": null,
+    "base": "#6B00FF",
+    "hi": "#94E3D6",
+    "wordmark": "#6B00FF",
+    "accent": "#6B00FF"
+   },
+   "2": {
+    "bg": "#6B00FF",
+    "base": "#6B00FF",
+    "hi": "#94E3D6",
+    "wordmark": "#94E3D6",
+    "accent": "#94E3D6"
+   },
+   "3": {
+    "bg": "#94E3D6",
+    "base": null,
+    "hi": "#6B00FF",
+    "wordmark": "#6B00FF",
+    "accent": "#6B00FF"
+   },
+   "4": {
+    "bg": null,
+    "base": "#6B00FF",
+    "hi": "#94E3D6",
+    "wordmark": "#14C9B1",
+    "accent": "#14C9B1"
+   },
+   "5": {
+    "bg": null,
+    "base": "#6B00FF",
+    "hi": "#94E3D6",
+    "wordmark": "#6B00FF",
+    "accent": "#14C9B1"
+   },
+   "6": {
+    "bg": null,
+    "base": "#14C9B1",
+    "hi": null,
+    "wordmark": "#14C9B1",
+    "accent": "#14C9B1"
+   }
+  },
+  "source": null,
+  "metrics": {
+   "contrastPurpleAux": 4.63,
+   "contrastAuxWhite": 1.48,
+   "contrastDeepWhite": 2.1,
+   "contrastDeepPurple": 3.26,
+   "oklch": [
+    0.861,
+    0.08,
+    182.882
+   ]
+  }
+ },
+ {
+  "id": "072",
+  "no": 72,
+  "name": "부드러운 청록",
+  "origin": "extended",
+  "badge": "확장 컬러",
+  "purple": "#6B00FF",
+  "aux": "#60EAE1",
+  "auxDeep": "#00D4C6",
+  "mapping": {
+   "1": {
+    "bg": null,
+    "base": "#6B00FF",
+    "hi": "#60EAE1",
+    "wordmark": "#6B00FF",
+    "accent": "#6B00FF"
+   },
+   "2": {
+    "bg": "#6B00FF",
+    "base": "#6B00FF",
+    "hi": "#60EAE1",
+    "wordmark": "#60EAE1",
+    "accent": "#60EAE1"
+   },
+   "3": {
+    "bg": "#60EAE1",
+    "base": null,
+    "hi": "#6B00FF",
+    "wordmark": "#6B00FF",
+    "accent": "#6B00FF"
+   },
+   "4": {
+    "bg": null,
+    "base": "#6B00FF",
+    "hi": "#60EAE1",
+    "wordmark": "#00D4C6",
+    "accent": "#00D4C6"
+   },
+   "5": {
+    "bg": null,
+    "base": "#6B00FF",
+    "hi": "#60EAE1",
+    "wordmark": "#6B00FF",
+    "accent": "#00D4C6"
+   },
+   "6": {
+    "bg": null,
+    "base": "#00D4C6",
+    "hi": null,
+    "wordmark": "#00D4C6",
+    "accent": "#00D4C6"
+   }
+  },
+  "source": null,
+  "metrics": {
+   "contrastPurpleAux": 4.68,
+   "contrastAuxWhite": 1.46,
+   "contrastDeepWhite": 1.87,
+   "contrastDeepPurple": 3.66,
+   "oklch": [
+    0.859,
+    0.12,
+    189.201
+   ]
+  }
+ },
+ {
+  "id": "073",
+  "no": 73,
+  "name": "부드러운 청록 2",
+  "origin": "extended",
+  "badge": "확장 컬러",
+  "purple": "#6B00FF",
+  "aux": "#38CCC8",
+  "auxDeep": "#00B4AC",
+  "mapping": {
+   "1": {
+    "bg": null,
+    "base": "#6B00FF",
+    "hi": "#38CCC8",
+    "wordmark": "#6B00FF",
+    "accent": "#6B00FF"
+   },
+   "2": {
+    "bg": "#6B00FF",
+    "base": "#6B00FF",
+    "hi": "#38CCC8",
+    "wordmark": "#38CCC8",
+    "accent": "#38CCC8"
+   },
+   "3": {
+    "bg": "#38CCC8",
+    "base": null,
+    "hi": "#6B00FF",
+    "wordmark": "#6B00FF",
+    "accent": "#6B00FF"
+   },
+   "4": {
+    "bg": null,
+    "base": "#6B00FF",
+    "hi": "#38CCC8",
+    "wordmark": "#00B4AC",
+    "accent": "#00B4AC"
+   },
+   "5": {
+    "bg": null,
+    "base": "#6B00FF",
+    "hi": "#38CCC8",
+    "wordmark": "#6B00FF",
+    "accent": "#00B4AC"
+   },
+   "6": {
+    "bg": null,
+    "base": "#00B4AC",
+    "hi": null,
+    "wordmark": "#00B4AC",
+    "accent": "#00B4AC"
+   }
+  },
+  "source": null,
+  "metrics": {
+   "contrastPurpleAux": 3.47,
+   "contrastAuxWhite": 1.97,
+   "contrastDeepWhite": 2.58,
+   "contrastDeepPurple": 2.65,
+   "oklch": [
+    0.77,
+    0.12,
+    192.226
+   ]
+  }
+ },
+ {
+  "id": "074",
+  "no": 74,
+  "name": "부드러운 청록 3",
+  "origin": "extended",
+  "badge": "확장 컬러",
+  "purple": "#6B00FF",
+  "aux": "#50BFBE",
+  "auxDeep": "#00A49F",
+  "mapping": {
+   "1": {
+    "bg": null,
+    "base": "#6B00FF",
+    "hi": "#50BFBE",
+    "wordmark": "#6B00FF",
+    "accent": "#6B00FF"
+   },
+   "2": {
+    "bg": "#6B00FF",
+    "base": "#6B00FF",
+    "hi": "#50BFBE",
+    "wordmark": "#50BFBE",
+    "accent": "#50BFBE"
+   },
+   "3": {
+    "bg": "#50BFBE",
+    "base": null,
+    "hi": "#6B00FF",
+    "wordmark": "#6B00FF",
+    "accent": "#6B00FF"
+   },
+   "4": {
+    "bg": null,
+    "base": "#6B00FF",
+    "hi": "#50BFBE",
+    "wordmark": "#00A49F",
+    "accent": "#00A49F"
+   },
+   "5": {
+    "bg": null,
+    "base": "#6B00FF",
+    "hi": "#50BFBE",
+    "wordmark": "#6B00FF",
+    "accent": "#00A49F"
+   },
+   "6": {
+    "bg": null,
+    "base": "#00A49F",
+    "hi": null,
+    "wordmark": "#00A49F",
+    "accent": "#00A49F"
+   }
+  },
+  "source": null,
+  "metrics": {
+   "contrastPurpleAux": 3.11,
+   "contrastAuxWhite": 2.2,
+   "contrastDeepWhite": 3.08,
+   "contrastDeepPurple": 2.22,
+   "oklch": [
+    0.741,
+    0.1,
+    194.385
+   ]
+  }
+ },
+ {
+  "id": "075",
+  "no": 75,
+  "name": "부드러운 청록 4",
+  "origin": "extended",
+  "badge": "확장 컬러",
+  "purple": "#6B00FF",
+  "aux": "#50DFE3",
+  "auxDeep": "#00C8C8",
+  "mapping": {
+   "1": {
+    "bg": null,
+    "base": "#6B00FF",
+    "hi": "#50DFE3",
+    "wordmark": "#6B00FF",
+    "accent": "#6B00FF"
+   },
+   "2": {
+    "bg": "#6B00FF",
+    "base": "#6B00FF",
+    "hi": "#50DFE3",
+    "wordmark": "#50DFE3",
+    "accent": "#50DFE3"
+   },
+   "3": {
+    "bg": "#50DFE3",
+    "base": null,
+    "hi": "#6B00FF",
+    "wordmark": "#6B00FF",
+    "accent": "#6B00FF"
+   },
+   "4": {
+    "bg": null,
+    "base": "#6B00FF",
+    "hi": "#50DFE3",
+    "wordmark": "#00C8C8",
+    "accent": "#00C8C8"
+   },
+   "5": {
+    "bg": null,
+    "base": "#6B00FF",
+    "hi": "#50DFE3",
+    "wordmark": "#6B00FF",
+    "accent": "#00C8C8"
+   },
+   "6": {
+    "bg": null,
+    "base": "#00C8C8",
+    "hi": null,
+    "wordmark": "#00C8C8",
+    "accent": "#00C8C8"
+   }
+  },
+  "source": null,
+  "metrics": {
+   "contrastPurpleAux": 4.24,
+   "contrastAuxWhite": 1.61,
+   "contrastDeepWhite": 2.08,
+   "contrastDeepPurple": 3.29,
+   "oklch": [
+    0.83,
+    0.12,
+    197.763
+   ]
+  }
+ },
+ {
+  "id": "076",
+  "no": 76,
+  "name": "맑은 청록",
+  "origin": "extended",
+  "badge": "확장 컬러",
+  "purple": "#6B00FF",
+  "aux": "#00F9FF",
+  "auxDeep": "#00E2E2",
+  "mapping": {
+   "1": {
+    "bg": null,
+    "base": "#6B00FF",
+    "hi": "#00F9FF",
+    "wordmark": "#6B00FF",
+    "accent": "#6B00FF"
+   },
+   "2": {
+    "bg": "#6B00FF",
+    "base": "#6B00FF",
+    "hi": "#00F9FF",
+    "wordmark": "#00F9FF",
+    "accent": "#00F9FF"
+   },
+   "3": {
+    "bg": "#00F9FF",
+    "base": null,
+    "hi": "#6B00FF",
+    "wordmark": "#6B00FF",
+    "accent": "#6B00FF"
+   },
+   "4": {
+    "bg": null,
+    "base": "#6B00FF",
+    "hi": "#00F9FF",
+    "wordmark": "#00E2E2",
+    "accent": "#00E2E2"
+   },
+   "5": {
+    "bg": null,
+    "base": "#6B00FF",
+    "hi": "#00F9FF",
+    "wordmark": "#6B00FF",
+    "accent": "#00E2E2"
+   },
+   "6": {
+    "bg": null,
+    "base": "#00E2E2",
+    "hi": null,
+    "wordmark": "#00E2E2",
+    "accent": "#00E2E2"
+   }
+  },
+  "source": null,
+  "metrics": {
+   "contrastPurpleAux": 5.21,
+   "contrastAuxWhite": 1.31,
+   "contrastDeepWhite": 1.62,
+   "contrastDeepPurple": 4.23,
+   "oklch": [
+    0.891,
+    0.152,
+    197.906
+   ]
+  }
+ },
+ {
+  "id": "077",
+  "no": 77,
+  "name": "부드러운 청록 5",
+  "origin": "extended",
+  "badge": "확장 컬러",
+  "purple": "#6B00FF",
+  "aux": "#83EFF3",
+  "auxDeep": "#00D7D8",
+  "mapping": {
+   "1": {
+    "bg": null,
+    "base": "#6B00FF",
+    "hi": "#83EFF3",
+    "wordmark": "#6B00FF",
+    "accent": "#6B00FF"
+   },
+   "2": {
+    "bg": "#6B00FF",
+    "base": "#6B00FF",
+    "hi": "#83EFF3",
+    "wordmark": "#83EFF3",
+    "accent": "#83EFF3"
+   },
+   "3": {
+    "bg": "#83EFF3",
+    "base": null,
+    "hi": "#6B00FF",
+    "wordmark": "#6B00FF",
+    "accent": "#6B00FF"
+   },
+   "4": {
+    "bg": null,
+    "base": "#6B00FF",
+    "hi": "#83EFF3",
+    "wordmark": "#00D7D8",
+    "accent": "#00D7D8"
+   },
+   "5": {
+    "bg": null,
+    "base": "#6B00FF",
+    "hi": "#83EFF3",
+    "wordmark": "#6B00FF",
+    "accent": "#00D7D8"
+   },
+   "6": {
+    "bg": null,
+    "base": "#00D7D8",
+    "hi": null,
+    "wordmark": "#00D7D8",
+    "accent": "#00D7D8"
+   }
+  },
+  "source": null,
+  "metrics": {
+   "contrastPurpleAux": 5.08,
+   "contrastAuxWhite": 1.35,
+   "contrastDeepWhite": 1.79,
+   "contrastDeepPurple": 3.82,
+   "oklch": [
+    0.889,
+    0.1,
+    198.654
+   ]
+  }
+ },
+ {
+  "id": "078",
+  "no": 78,
+  "name": "부드러운 하늘",
+  "origin": "extended",
+  "badge": "확장 컬러",
+  "purple": "#6B00FF",
+  "aux": "#00C1D3",
+  "auxDeep": "#00A9B5",
+  "mapping": {
+   "1": {
+    "bg": null,
+    "base": "#6B00FF",
+    "hi": "#00C1D3",
+    "wordmark": "#6B00FF",
+    "accent": "#6B00FF"
+   },
+   "2": {
+    "bg": "#6B00FF",
+    "base": "#6B00FF",
+    "hi": "#00C1D3",
+    "wordmark": "#00C1D3",
+    "accent": "#00C1D3"
+   },
+   "3": {
+    "bg": "#00C1D3",
+    "base": null,
+    "hi": "#6B00FF",
+    "wordmark": "#6B00FF",
+    "accent": "#6B00FF"
+   },
+   "4": {
+    "bg": null,
+    "base": "#6B00FF",
+    "hi": "#00C1D3",
+    "wordmark": "#00A9B5",
+    "accent": "#00A9B5"
+   },
+   "5": {
+    "bg": null,
+    "base": "#6B00FF",
+    "hi": "#00C1D3",
+    "wordmark": "#6B00FF",
+    "accent": "#00A9B5"
+   },
+   "6": {
+    "bg": null,
+    "base": "#00A9B5",
+    "hi": null,
+    "wordmark": "#00A9B5",
+    "accent": "#00A9B5"
+   }
+  },
+  "source": null,
+  "metrics": {
+   "contrastPurpleAux": 3.12,
+   "contrastAuxWhite": 2.19,
+   "contrastDeepWhite": 2.86,
+   "contrastDeepPurple": 2.39,
+   "oklch": [
+    0.741,
+    0.127,
+    206.639
+   ]
+  }
+ },
+ {
+  "id": "079",
+  "no": 79,
+  "name": "부드러운 하늘 2",
+  "origin": "extended",
+  "badge": "확장 컬러",
+  "purple": "#6B00FF",
+  "aux": "#65D0DE",
+  "auxDeep": "#00B6C2",
+  "mapping": {
+   "1": {
+    "bg": null,
+    "base": "#6B00FF",
+    "hi": "#65D0DE",
+    "wordmark": "#6B00FF",
+    "accent": "#6B00FF"
+   },
+   "2": {
+    "bg": "#6B00FF",
+    "base": "#6B00FF",
+    "hi": "#65D0DE",
+    "wordmark": "#65D0DE",
+    "accent": "#65D0DE"
+   },
+   "3": {
+    "bg": "#65D0DE",
+    "base": null,
+    "hi": "#6B00FF",
+    "wordmark": "#6B00FF",
+    "accent": "#6B00FF"
+   },
+   "4": {
+    "bg": null,
+    "base": "#6B00FF",
+    "hi": "#65D0DE",
+    "wordmark": "#00B6C2",
+    "accent": "#00B6C2"
+   },
+   "5": {
+    "bg": null,
+    "base": "#6B00FF",
+    "hi": "#65D0DE",
+    "wordmark": "#6B00FF",
+    "accent": "#00B6C2"
+   },
+   "6": {
+    "bg": null,
+    "base": "#00B6C2",
+    "hi": null,
+    "wordmark": "#00B6C2",
+    "accent": "#00B6C2"
+   }
+  },
+  "source": null,
+  "metrics": {
+   "contrastPurpleAux": 3.79,
+   "contrastAuxWhite": 1.81,
+   "contrastDeepWhite": 2.48,
+   "contrastDeepPurple": 2.76,
+   "oklch": [
+    0.8,
+    0.1,
+    206.78
+   ]
+  }
+ },
+ {
+  "id": "080",
+  "no": 80,
+  "name": "맑은 하늘",
+  "origin": "extended",
+  "badge": "확장 컬러",
+  "purple": "#6B00FF",
+  "aux": "#00D5EF",
+  "auxDeep": "#00C0D3",
+  "mapping": {
+   "1": {
+    "bg": null,
+    "base": "#6B00FF",
+    "hi": "#00D5EF",
+    "wordmark": "#6B00FF",
+    "accent": "#6B00FF"
+   },
+   "2": {
+    "bg": "#6B00FF",
+    "base": "#6B00FF",
+    "hi": "#00D5EF",
+    "wordmark": "#00D5EF",
+    "accent": "#00D5EF"
+   },
+   "3": {
+    "bg": "#00D5EF",
+    "base": null,
+    "hi": "#6B00FF",
+    "wordmark": "#6B00FF",
+    "accent": "#6B00FF"
+   },
+   "4": {
+    "bg": null,
+    "base": "#6B00FF",
+    "hi": "#00D5EF",
+    "wordmark": "#00C0D3",
+    "accent": "#00C0D3"
+   },
+   "5": {
+    "bg": null,
+    "base": "#6B00FF",
+    "hi": "#00D5EF",
+    "wordmark": "#6B00FF",
+    "accent": "#00C0D3"
+   },
+   "6": {
+    "bg": null,
+    "base": "#00C0D3",
+    "hi": null,
+    "wordmark": "#00C0D3",
+    "accent": "#00C0D3"
+   }
+  },
+  "source": null,
+  "metrics": {
+   "contrastPurpleAux": 3.83,
+   "contrastAuxWhite": 1.79,
+   "contrastDeepWhite": 2.22,
+   "contrastDeepPurple": 3.09,
+   "oklch": [
+    0.8,
+    0.138,
+    210.265
+   ]
+  }
+ },
+ {
+  "id": "081",
+  "no": 81,
+  "name": "부드러운 하늘 3",
+  "origin": "extended",
+  "badge": "확장 컬러",
+  "purple": "#6B00FF",
+  "aux": "#52E7FF",
+  "auxDeep": "#00D2E6",
+  "mapping": {
+   "1": {
+    "bg": null,
+    "base": "#6B00FF",
+    "hi": "#52E7FF",
+    "wordmark": "#6B00FF",
+    "accent": "#6B00FF"
+   },
+   "2": {
+    "bg": "#6B00FF",
+    "base": "#6B00FF",
+    "hi": "#52E7FF",
+    "wordmark": "#52E7FF",
+    "accent": "#52E7FF"
+   },
+   "3": {
+    "bg": "#52E7FF",
+    "base": null,
+    "hi": "#6B00FF",
+    "wordmark": "#6B00FF",
+    "accent": "#6B00FF"
+   },
+   "4": {
+    "bg": null,
+    "base": "#6B00FF",
+    "hi": "#52E7FF",
+    "wordmark": "#00D2E6",
+    "accent": "#00D2E6"
+   },
+   "5": {
+    "bg": null,
+    "base": "#6B00FF",
+    "hi": "#52E7FF",
+    "wordmark": "#6B00FF",
+    "accent": "#00D2E6"
+   },
+   "6": {
+    "bg": null,
+    "base": "#00D2E6",
+    "hi": null,
+    "wordmark": "#00D2E6",
+    "accent": "#00D2E6"
+   }
+  },
+  "source": null,
+  "metrics": {
+   "contrastPurpleAux": 4.64,
+   "contrastAuxWhite": 1.48,
+   "contrastDeepWhite": 1.85,
+   "contrastDeepPurple": 3.7,
+   "oklch": [
+    0.859,
+    0.127,
+    210.307
+   ]
+  }
+ },
+ {
+  "id": "082",
+  "no": 82,
+  "name": "부드러운 하늘 4",
+  "origin": "extended",
+  "badge": "확장 컬러",
+  "purple": "#6B00FF",
+  "aux": "#84E0FF",
+  "auxDeep": "#00C7EE",
+  "mapping": {
+   "1": {
+    "bg": null,
+    "base": "#6B00FF",
+    "hi": "#84E0FF",
+    "wordmark": "#6B00FF",
+    "accent": "#6B00FF"
+   },
+   "2": {
+    "bg": "#6B00FF",
+    "base": "#6B00FF",
+    "hi": "#84E0FF",
+    "wordmark": "#84E0FF",
+    "accent": "#84E0FF"
+   },
+   "3": {
+    "bg": "#84E0FF",
+    "base": null,
+    "hi": "#6B00FF",
+    "wordmark": "#6B00FF",
+    "accent": "#6B00FF"
+   },
+   "4": {
+    "bg": null,
+    "base": "#6B00FF",
+    "hi": "#84E0FF",
+    "wordmark": "#00C7EE",
+    "accent": "#00C7EE"
+   },
+   "5": {
+    "bg": null,
+    "base": "#6B00FF",
+    "hi": "#84E0FF",
+    "wordmark": "#6B00FF",
+    "accent": "#00C7EE"
+   },
+   "6": {
+    "bg": null,
+    "base": "#00C7EE",
+    "hi": null,
+    "wordmark": "#00C7EE",
+    "accent": "#00C7EE"
+   }
+  },
+  "source": null,
+  "metrics": {
+   "contrastPurpleAux": 4.59,
+   "contrastAuxWhite": 1.49,
+   "contrastDeepWhite": 2.02,
+   "contrastDeepPurple": 3.39,
+   "oklch": [
+    0.86,
+    0.098,
+    221.819
+   ]
+  }
+ },
+ {
+  "id": "083",
+  "no": 83,
+  "name": "맑은 하늘 2",
+  "origin": "extended",
+  "badge": "확장 컬러",
+  "purple": "#6B00FF",
+  "aux": "#00BDE8",
+  "auxDeep": "#00A8CA",
+  "mapping": {
+   "1": {
+    "bg": null,
+    "base": "#6B00FF",
+    "hi": "#00BDE8",
+    "wordmark": "#6B00FF",
+    "accent": "#6B00FF"
+   },
+   "2": {
+    "bg": "#6B00FF",
+    "base": "#6B00FF",
+    "hi": "#00BDE8",
+    "wordmark": "#00BDE8",
+    "accent": "#00BDE8"
+   },
+   "3": {
+    "bg": "#00BDE8",
+    "base": null,
+    "hi": "#6B00FF",
+    "wordmark": "#6B00FF",
+    "accent": "#6B00FF"
+   },
+   "4": {
+    "bg": null,
+    "base": "#6B00FF",
+    "hi": "#00BDE8",
+    "wordmark": "#00A8CA",
+    "accent": "#00A8CA"
+   },
+   "5": {
+    "bg": null,
+    "base": "#6B00FF",
+    "hi": "#00BDE8",
+    "wordmark": "#6B00FF",
+    "accent": "#00A8CA"
+   },
+   "6": {
+    "bg": null,
+    "base": "#00A8CA",
+    "hi": null,
+    "wordmark": "#00A8CA",
+    "accent": "#00A8CA"
+   }
+  },
+  "source": null,
+  "metrics": {
+   "contrastPurpleAux": 3.08,
+   "contrastAuxWhite": 2.22,
+   "contrastDeepWhite": 2.82,
+   "contrastDeepPurple": 2.43,
+   "oklch": [
+    0.74,
+    0.137,
+    221.918
+   ]
+  }
+ },
+ {
+  "id": "084",
+  "no": 84,
+  "name": "부드러운 파랑",
+  "origin": "extended",
+  "badge": "확장 컬러",
+  "purple": "#6B00FF",
+  "aux": "#5CB8DA",
+  "auxDeep": "#009DC2",
+  "mapping": {
+   "1": {
+    "bg": null,
+    "base": "#6B00FF",
+    "hi": "#5CB8DA",
+    "wordmark": "#6B00FF",
+    "accent": "#6B00FF"
+   },
+   "2": {
+    "bg": "#6B00FF",
+    "base": "#6B00FF",
+    "hi": "#5CB8DA",
+    "wordmark": "#5CB8DA",
+    "accent": "#5CB8DA"
+   },
+   "3": {
+    "bg": "#5CB8DA",
+    "base": null,
+    "hi": "#6B00FF",
+    "wordmark": "#6B00FF",
+    "accent": "#6B00FF"
+   },
+   "4": {
+    "bg": null,
+    "base": "#6B00FF",
+    "hi": "#5CB8DA",
+    "wordmark": "#009DC2",
+    "accent": "#009DC2"
+   },
+   "5": {
+    "bg": null,
+    "base": "#6B00FF",
+    "hi": "#5CB8DA",
+    "wordmark": "#6B00FF",
+    "accent": "#009DC2"
+   },
+   "6": {
+    "bg": null,
+    "base": "#009DC2",
+    "hi": null,
+    "wordmark": "#009DC2",
+    "accent": "#009DC2"
+   }
+  },
+  "source": null,
+  "metrics": {
+   "contrastPurpleAux": 3.04,
+   "contrastAuxWhite": 2.25,
+   "contrastDeepWhite": 3.18,
+   "contrastDeepPurple": 2.15,
+   "oklch": [
+    0.739,
+    0.1,
+    224.859
+   ]
+  }
+ },
+ {
+  "id": "085",
+  "no": 85,
+  "name": "부드러운 파랑 2",
+  "origin": "extended",
+  "badge": "확장 컬러",
+  "purple": "#6B00FF",
+  "aux": "#58CEF8",
+  "auxDeep": "#00B8E2",
+  "mapping": {
+   "1": {
+    "bg": null,
+    "base": "#6B00FF",
+    "hi": "#58CEF8",
+    "wordmark": "#6B00FF",
+    "accent": "#6B00FF"
+   },
+   "2": {
+    "bg": "#6B00FF",
+    "base": "#6B00FF",
+    "hi": "#58CEF8",
+    "wordmark": "#58CEF8",
+    "accent": "#58CEF8"
+   },
+   "3": {
+    "bg": "#58CEF8",
+    "base": null,
+    "hi": "#6B00FF",
+    "wordmark": "#6B00FF",
+    "accent": "#6B00FF"
+   },
+   "4": {
+    "bg": null,
+    "base": "#6B00FF",
+    "hi": "#58CEF8",
+    "wordmark": "#00B8E2",
+    "accent": "#00B8E2"
+   },
+   "5": {
+    "bg": null,
+    "base": "#6B00FF",
+    "hi": "#58CEF8",
+    "wordmark": "#6B00FF",
+    "accent": "#00B8E2"
+   },
+   "6": {
+    "bg": null,
+    "base": "#00B8E2",
+    "hi": null,
+    "wordmark": "#00B8E2",
+    "accent": "#00B8E2"
+   }
+  },
+  "source": null,
+  "metrics": {
+   "contrastPurpleAux": 3.78,
+   "contrastAuxWhite": 1.81,
+   "contrastDeepWhite": 2.35,
+   "contrastDeepPurple": 2.92,
+   "oklch": [
+    0.801,
+    0.12,
+    224.927
+   ]
+  }
+ },
+ {
+  "id": "086",
+  "no": 86,
+  "name": "부드러운 파랑 3",
+  "origin": "extended",
+  "badge": "확장 컬러",
+  "purple": "#6B00FF",
+  "aux": "#83D2FF",
+  "auxDeep": "#00B9F7",
+  "mapping": {
+   "1": {
+    "bg": null,
+    "base": "#6B00FF",
+    "hi": "#83D2FF",
+    "wordmark": "#6B00FF",
+    "accent": "#6B00FF"
+   },
+   "2": {
+    "bg": "#6B00FF",
+    "base": "#6B00FF",
+    "hi": "#83D2FF",
+    "wordmark": "#83D2FF",
+    "accent": "#83D2FF"
+   },
+   "3": {
+    "bg": "#83D2FF",
+    "base": null,
+    "hi": "#6B00FF",
+    "wordmark": "#6B00FF",
+    "accent": "#6B00FF"
+   },
+   "4": {
+    "bg": null,
+    "base": "#6B00FF",
+    "hi": "#83D2FF",
+    "wordmark": "#00B9F7",
+    "accent": "#00B9F7"
+   },
+   "5": {
+    "bg": null,
+    "base": "#6B00FF",
+    "hi": "#83D2FF",
+    "wordmark": "#6B00FF",
+    "accent": "#00B9F7"
+   },
+   "6": {
+    "bg": null,
+    "base": "#00B9F7",
+    "hi": null,
+    "wordmark": "#00B9F7",
+    "accent": "#00B9F7"
+   }
+  },
+  "source": null,
+  "metrics": {
+   "contrastPurpleAux": 4.11,
+   "contrastAuxWhite": 1.66,
+   "contrastDeepWhite": 2.26,
+   "contrastDeepPurple": 3.02,
+   "oklch": [
+    0.829,
+    0.1,
+    234.763
+   ]
+  }
+ },
+ {
+  "id": "087",
+  "no": 87,
+  "name": "맑은 파랑",
+  "origin": "extended",
+  "badge": "확장 컬러",
+  "purple": "#6B00FF",
+  "aux": "#22B7FF",
+  "auxDeep": "#00A9E7",
+  "mapping": {
+   "1": {
+    "bg": null,
+    "base": "#6B00FF",
+    "hi": "#22B7FF",
+    "wordmark": "#6B00FF",
+    "accent": "#6B00FF"
+   },
+   "2": {
+    "bg": "#6B00FF",
+    "base": "#6B00FF",
+    "hi": "#22B7FF",
+    "wordmark": "#22B7FF",
+    "accent": "#22B7FF"
+   },
+   "3": {
+    "bg": "#22B7FF",
+    "base": null,
+    "hi": "#6B00FF",
+    "wordmark": "#6B00FF",
+    "accent": "#6B00FF"
+   },
+   "4": {
+    "bg": null,
+    "base": "#6B00FF",
+    "hi": "#22B7FF",
+    "wordmark": "#00A9E7",
+    "accent": "#00A9E7"
+   },
+   "5": {
+    "bg": null,
+    "base": "#6B00FF",
+    "hi": "#22B7FF",
+    "wordmark": "#6B00FF",
+    "accent": "#00A9E7"
+   },
+   "6": {
+    "bg": null,
+    "base": "#00A9E7",
+    "hi": null,
+    "wordmark": "#00A9E7",
+    "accent": "#00A9E7"
+   }
+  },
+  "source": null,
+  "metrics": {
+   "contrastPurpleAux": 3.03,
+   "contrastAuxWhite": 2.26,
+   "contrastDeepWhite": 2.68,
+   "contrastDeepPurple": 2.55,
+   "oklch": [
+    0.739,
+    0.154,
+    237.123
+   ]
+  }
+ },
+ {
+  "id": "088",
+  "no": 88,
+  "name": "부드러운 파랑 4",
+  "origin": "extended",
+  "badge": "확장 컬러",
+  "purple": "#6B00FF",
+  "aux": "#5CB4EF",
+  "auxDeep": "#009EE1",
+  "mapping": {
+   "1": {
+    "bg": null,
+    "base": "#6B00FF",
+    "hi": "#5CB4EF",
+    "wordmark": "#6B00FF",
+    "accent": "#6B00FF"
+   },
+   "2": {
+    "bg": "#6B00FF",
+    "base": "#6B00FF",
+    "hi": "#5CB4EF",
+    "wordmark": "#5CB4EF",
+    "accent": "#5CB4EF"
+   },
+   "3": {
+    "bg": "#5CB4EF",
+    "base": null,
+    "hi": "#6B00FF",
+    "wordmark": "#6B00FF",
+    "accent": "#6B00FF"
+   },
+   "4": {
+    "bg": null,
+    "base": "#6B00FF",
+    "hi": "#5CB4EF",
+    "wordmark": "#009EE1",
+    "accent": "#009EE1"
+   },
+   "5": {
+    "bg": null,
+    "base": "#6B00FF",
+    "hi": "#5CB4EF",
+    "wordmark": "#6B00FF",
+    "accent": "#009EE1"
+   },
+   "6": {
+    "bg": null,
+    "base": "#009EE1",
+    "hi": null,
+    "wordmark": "#009EE1",
+    "accent": "#009EE1"
+   }
+  },
+  "source": null,
+  "metrics": {
+   "contrastPurpleAux": 3.01,
+   "contrastAuxWhite": 2.28,
+   "contrastDeepWhite": 3.01,
+   "contrastDeepPurple": 2.27,
+   "oklch": [
+    0.74,
+    0.12,
+    240.442
+   ]
+  }
+ },
+ {
+  "id": "089",
+  "no": 89,
+  "name": "부드러운 파랑 5",
+  "origin": "extended",
+  "badge": "확장 컬러",
+  "purple": "#6B00FF",
+  "aux": "#7CC6FF",
+  "auxDeep": "#16AEFC",
+  "mapping": {
+   "1": {
+    "bg": null,
+    "base": "#6B00FF",
+    "hi": "#7CC6FF",
+    "wordmark": "#6B00FF",
+    "accent": "#6B00FF"
+   },
+   "2": {
+    "bg": "#6B00FF",
+    "base": "#6B00FF",
+    "hi": "#7CC6FF",
+    "wordmark": "#7CC6FF",
+    "accent": "#7CC6FF"
+   },
+   "3": {
+    "bg": "#7CC6FF",
+    "base": null,
+    "hi": "#6B00FF",
+    "wordmark": "#6B00FF",
+    "accent": "#6B00FF"
+   },
+   "4": {
+    "bg": null,
+    "base": "#6B00FF",
+    "hi": "#7CC6FF",
+    "wordmark": "#16AEFC",
+    "accent": "#16AEFC"
+   },
+   "5": {
+    "bg": null,
+    "base": "#6B00FF",
+    "hi": "#7CC6FF",
+    "wordmark": "#6B00FF",
+    "accent": "#16AEFC"
+   },
+   "6": {
+    "bg": null,
+    "base": "#16AEFC",
+    "hi": null,
+    "wordmark": "#16AEFC",
+    "accent": "#16AEFC"
+   }
+  },
+  "source": null,
+  "metrics": {
+   "contrastPurpleAux": 3.71,
+   "contrastAuxWhite": 1.85,
+   "contrastDeepWhite": 2.47,
+   "contrastDeepPurple": 2.77,
+   "oklch": [
+    0.8,
+    0.11,
+    242.968
+   ]
+  }
+ },
+ {
+  "id": "090",
+  "no": 90,
+  "name": "부드러운 파랑 6",
+  "origin": "extended",
+  "badge": "확장 컬러",
+  "purple": "#6B00FF",
+  "aux": "#70BBFC",
+  "auxDeep": "#11A5F9",
+  "mapping": {
+   "1": {
+    "bg": null,
+    "base": "#6B00FF",
+    "hi": "#70BBFC",
+    "wordmark": "#6B00FF",
+    "accent": "#6B00FF"
+   },
+   "2": {
+    "bg": "#6B00FF",
+    "base": "#6B00FF",
+    "hi": "#70BBFC",
+    "wordmark": "#70BBFC",
+    "accent": "#70BBFC"
+   },
+   "3": {
+    "bg": "#70BBFC",
+    "base": null,
+    "hi": "#6B00FF",
+    "wordmark": "#6B00FF",
+    "accent": "#6B00FF"
+   },
+   "4": {
+    "bg": null,
+    "base": "#6B00FF",
+    "hi": "#70BBFC",
+    "wordmark": "#11A5F9",
+    "accent": "#11A5F9"
+   },
+   "5": {
+    "bg": null,
+    "base": "#6B00FF",
+    "hi": "#70BBFC",
+    "wordmark": "#6B00FF",
+    "accent": "#11A5F9"
+   },
+   "6": {
+    "bg": null,
+    "base": "#11A5F9",
+    "hi": null,
+    "wordmark": "#11A5F9",
+    "accent": "#11A5F9"
+   }
+  },
+  "source": null,
+  "metrics": {
+   "contrastPurpleAux": 3.32,
+   "contrastAuxWhite": 2.06,
+   "contrastDeepWhite": 2.7,
+   "contrastDeepPurple": 2.53,
+   "oklch": [
+    0.769,
+    0.12,
+    246.31
+   ]
+  }
+ },
+ {
+  "id": "091",
+  "no": 91,
+  "name": "연한 파랑",
+  "origin": "extended",
+  "badge": "확장 컬러",
+  "purple": "#6B00FF",
+  "aux": "#AFD6FA",
+  "auxDeep": "#64B2EE",
+  "mapping": {
+   "1": {
+    "bg": null,
+    "base": "#6B00FF",
+    "hi": "#AFD6FA",
+    "wordmark": "#6B00FF",
+    "accent": "#6B00FF"
+   },
+   "2": {
+    "bg": "#6B00FF",
+    "base": "#6B00FF",
+    "hi": "#AFD6FA",
+    "wordmark": "#AFD6FA",
+    "accent": "#AFD6FA"
+   },
+   "3": {
+    "bg": "#AFD6FA",
+    "base": null,
+    "hi": "#6B00FF",
+    "wordmark": "#6B00FF",
+    "accent": "#6B00FF"
+   },
+   "4": {
+    "bg": null,
+    "base": "#6B00FF",
+    "hi": "#AFD6FA",
+    "wordmark": "#64B2EE",
+    "accent": "#64B2EE"
+   },
+   "5": {
+    "bg": null,
+    "base": "#6B00FF",
+    "hi": "#AFD6FA",
+    "wordmark": "#6B00FF",
+    "accent": "#64B2EE"
+   },
+   "6": {
+    "bg": null,
+    "base": "#64B2EE",
+    "hi": null,
+    "wordmark": "#64B2EE",
+    "accent": "#64B2EE"
+   }
+  },
+  "source": null,
+  "metrics": {
+   "contrastPurpleAux": 4.5,
+   "contrastAuxWhite": 1.52,
+   "contrastDeepWhite": 2.3,
+   "contrastDeepPurple": 2.98,
+   "oklch": [
+    0.86,
+    0.065,
+    246.489
+   ]
+  }
+ },
+ {
+  "id": "092",
+  "no": 92,
+  "name": "선명한 자홍",
+  "origin": "extended",
+  "badge": "확장 컬러",
+  "purple": "#6B00FF",
+  "aux": "#F990F9",
+  "auxDeep": "#E986F2",
+  "mapping": {
+   "1": {
+    "bg": null,
+    "base": "#6B00FF",
+    "hi": "#F990F9",
+    "wordmark": "#6B00FF",
+    "accent": "#6B00FF"
+   },
+   "2": {
+    "bg": "#6B00FF",
+    "base": "#6B00FF",
+    "hi": "#F990F9",
+    "wordmark": "#F990F9",
+    "accent": "#F990F9"
+   },
+   "3": {
+    "bg": "#F990F9",
+    "base": null,
+    "hi": "#6B00FF",
+    "wordmark": "#6B00FF",
+    "accent": "#6B00FF"
+   },
+   "4": {
+    "bg": null,
+    "base": "#6B00FF",
+    "hi": "#F990F9",
+    "wordmark": "#E986F2",
+    "accent": "#E986F2"
+   },
+   "5": {
+    "bg": null,
+    "base": "#6B00FF",
+    "hi": "#F990F9",
+    "wordmark": "#6B00FF",
+    "accent": "#E986F2"
+   },
+   "6": {
+    "bg": null,
+    "base": "#E986F2",
+    "hi": null,
+    "wordmark": "#E986F2",
+    "accent": "#E986F2"
+   }
+  },
+  "source": null,
+  "metrics": {
+   "contrastPurpleAux": 3.38,
+   "contrastAuxWhite": 2.02,
+   "contrastDeepWhite": 2.29,
+   "contrastDeepPurple": 2.98,
+   "oklch": [
+    0.799,
+    0.18,
+    327.097
+   ]
+  }
+ },
+ {
+  "id": "093",
+  "no": 93,
+  "name": "부드러운 자홍",
+  "origin": "extended",
+  "badge": "확장 컬러",
+  "purple": "#6B00FF",
+  "aux": "#D38FD2",
+  "auxDeep": "#C36BCB",
+  "mapping": {
+   "1": {
+    "bg": null,
+    "base": "#6B00FF",
+    "hi": "#D38FD2",
+    "wordmark": "#6B00FF",
+    "accent": "#6B00FF"
+   },
+   "2": {
+    "bg": "#6B00FF",
+    "base": "#6B00FF",
+    "hi": "#D38FD2",
+    "wordmark": "#D38FD2",
+    "accent": "#D38FD2"
+   },
+   "3": {
+    "bg": "#D38FD2",
+    "base": null,
+    "hi": "#6B00FF",
+    "wordmark": "#6B00FF",
+    "accent": "#6B00FF"
+   },
+   "4": {
+    "bg": null,
+    "base": "#6B00FF",
+    "hi": "#D38FD2",
+    "wordmark": "#C36BCB",
+    "accent": "#C36BCB"
+   },
+   "5": {
+    "bg": null,
+    "base": "#6B00FF",
+    "hi": "#D38FD2",
+    "wordmark": "#6B00FF",
+    "accent": "#C36BCB"
+   },
+   "6": {
+    "bg": null,
+    "base": "#C36BCB",
+    "hi": null,
+    "wordmark": "#C36BCB",
+    "accent": "#C36BCB"
+   }
+  },
+  "source": null,
+  "metrics": {
+   "contrastPurpleAux": 2.81,
+   "contrastAuxWhite": 2.43,
+   "contrastDeepWhite": 3.34,
+   "contrastDeepPurple": 2.05,
+   "oklch": [
+    0.74,
+    0.12,
+    327.203
+   ]
+  }
+ },
+ {
+  "id": "094",
+  "no": 94,
+  "name": "부드러운 자홍 2",
+  "origin": "extended",
+  "badge": "확장 컬러",
+  "purple": "#6B00FF",
+  "aux": "#E3A6DD",
+  "auxDeep": "#D27CD2",
+  "mapping": {
+   "1": {
+    "bg": null,
+    "base": "#6B00FF",
+    "hi": "#E3A6DD",
+    "wordmark": "#6B00FF",
+    "accent": "#6B00FF"
+   },
+   "2": {
+    "bg": "#6B00FF",
+    "base": "#6B00FF",
+    "hi": "#E3A6DD",
+    "wordmark": "#E3A6DD",
+    "accent": "#E3A6DD"
+   },
+   "3": {
+    "bg": "#E3A6DD",
+    "base": null,
+    "hi": "#6B00FF",
+    "wordmark": "#6B00FF",
+    "accent": "#6B00FF"
+   },
+   "4": {
+    "bg": null,
+    "base": "#6B00FF",
+    "hi": "#E3A6DD",
+    "wordmark": "#D27CD2",
+    "accent": "#D27CD2"
+   },
+   "5": {
+    "bg": null,
+    "base": "#6B00FF",
+    "hi": "#E3A6DD",
+    "wordmark": "#6B00FF",
+    "accent": "#D27CD2"
+   },
+   "6": {
+    "bg": null,
+    "base": "#D27CD2",
+    "hi": null,
+    "wordmark": "#D27CD2",
+    "accent": "#D27CD2"
+   }
+  },
+  "source": null,
+  "metrics": {
+   "contrastPurpleAux": 3.51,
+   "contrastAuxWhite": 1.95,
+   "contrastDeepWhite": 2.78,
+   "contrastDeepPurple": 2.46,
+   "oklch": [
+    0.8,
+    0.101,
+    329.851
+   ]
+  }
+ },
+ {
+  "id": "095",
+  "no": 95,
+  "name": "선명한 자홍 2",
+  "origin": "extended",
+  "badge": "확장 컬러",
+  "purple": "#6B00FF",
+  "aux": "#FF76F6",
+  "auxDeep": "#EF6CF0",
+  "mapping": {
+   "1": {
+    "bg": null,
+    "base": "#6B00FF",
+    "hi": "#FF76F6",
+    "wordmark": "#6B00FF",
+    "accent": "#6B00FF"
+   },
+   "2": {
+    "bg": "#6B00FF",
+    "base": "#6B00FF",
+    "hi": "#FF76F6",
+    "wordmark": "#FF76F6",
+    "accent": "#FF76F6"
+   },
+   "3": {
+    "bg": "#FF76F6",
+    "base": null,
+    "hi": "#6B00FF",
+    "wordmark": "#6B00FF",
+    "accent": "#6B00FF"
+   },
+   "4": {
+    "bg": null,
+    "base": "#6B00FF",
+    "hi": "#FF76F6",
+    "wordmark": "#EF6CF0",
+    "accent": "#EF6CF0"
+   },
+   "5": {
+    "bg": null,
+    "base": "#6B00FF",
+    "hi": "#FF76F6",
+    "wordmark": "#6B00FF",
+    "accent": "#EF6CF0"
+   },
+   "6": {
+    "bg": null,
+    "base": "#EF6CF0",
+    "hi": null,
+    "wordmark": "#EF6CF0",
+    "accent": "#EF6CF0"
+   }
+  },
+  "source": null,
+  "metrics": {
+   "contrastPurpleAux": 2.99,
+   "contrastAuxWhite": 2.29,
+   "contrastDeepWhite": 2.6,
+   "contrastDeepPurple": 2.63,
+   "oklch": [
+    0.77,
+    0.222,
+    330.042
+   ]
+  }
+ },
+ {
+  "id": "096",
+  "no": 96,
+  "name": "연한 자홍",
+  "origin": "extended",
+  "badge": "확장 컬러",
+  "purple": "#6B00FF",
+  "aux": "#ECC2E4",
+  "auxDeep": "#D48FCE",
+  "mapping": {
+   "1": {
+    "bg": null,
+    "base": "#6B00FF",
+    "hi": "#ECC2E4",
+    "wordmark": "#6B00FF",
+    "accent": "#6B00FF"
+   },
+   "2": {
+    "bg": "#6B00FF",
+    "base": "#6B00FF",
+    "hi": "#ECC2E4",
+    "wordmark": "#ECC2E4",
+    "accent": "#ECC2E4"
+   },
+   "3": {
+    "bg": "#ECC2E4",
+    "base": null,
+    "hi": "#6B00FF",
+    "wordmark": "#6B00FF",
+    "accent": "#6B00FF"
+   },
+   "4": {
+    "bg": null,
+    "base": "#6B00FF",
+    "hi": "#ECC2E4",
+    "wordmark": "#D48FCE",
+    "accent": "#D48FCE"
+   },
+   "5": {
+    "bg": null,
+    "base": "#6B00FF",
+    "hi": "#ECC2E4",
+    "wordmark": "#6B00FF",
+    "accent": "#D48FCE"
+   },
+   "6": {
+    "bg": null,
+    "base": "#D48FCE",
+    "hi": null,
+    "wordmark": "#D48FCE",
+    "accent": "#D48FCE"
+   }
+  },
+  "source": null,
+  "metrics": {
+   "contrastPurpleAux": 4.37,
+   "contrastAuxWhite": 1.57,
+   "contrastDeepWhite": 2.44,
+   "contrastDeepPurple": 2.81,
+   "oklch": [
+    0.861,
+    0.065,
+    332.716
+   ]
+  }
+ },
+ {
+  "id": "097",
+  "no": 97,
+  "name": "부드러운 자홍 3",
+  "origin": "extended",
+  "badge": "확장 컬러",
+  "purple": "#6B00FF",
+  "aux": "#F9B9ED",
+  "auxDeep": "#E88DE0",
+  "mapping": {
+   "1": {
+    "bg": null,
+    "base": "#6B00FF",
+    "hi": "#F9B9ED",
+    "wordmark": "#6B00FF",
+    "accent": "#6B00FF"
+   },
+   "2": {
+    "bg": "#6B00FF",
+    "base": "#6B00FF",
+    "hi": "#F9B9ED",
+    "wordmark": "#F9B9ED",
+    "accent": "#F9B9ED"
+   },
+   "3": {
+    "bg": "#F9B9ED",
+    "base": null,
+    "hi": "#6B00FF",
+    "wordmark": "#6B00FF",
+    "accent": "#6B00FF"
+   },
+   "4": {
+    "bg": null,
+    "base": "#6B00FF",
+    "hi": "#F9B9ED",
+    "wordmark": "#E88DE0",
+    "accent": "#E88DE0"
+   },
+   "5": {
+    "bg": null,
+    "base": "#6B00FF",
+    "hi": "#F9B9ED",
+    "wordmark": "#6B00FF",
+    "accent": "#E88DE0"
+   },
+   "6": {
+    "bg": null,
+    "base": "#E88DE0",
+    "hi": null,
+    "wordmark": "#E88DE0",
+    "accent": "#E88DE0"
+   }
+  },
+  "source": null,
+  "metrics": {
+   "contrastPurpleAux": 4.3,
+   "contrastAuxWhite": 1.59,
+   "contrastDeepWhite": 2.25,
+   "contrastDeepPurple": 3.04,
+   "oklch": [
+    0.86,
+    0.099,
+    333.12
+   ]
+  }
+ },
+ {
+  "id": "098",
+  "no": 98,
+  "name": "맑은 자홍",
+  "origin": "extended",
+  "badge": "확장 컬러",
+  "purple": "#6B00FF",
+  "aux": "#F28ADB",
+  "auxDeep": "#E479D5",
+  "mapping": {
+   "1": {
+    "bg": null,
+    "base": "#6B00FF",
+    "hi": "#F28ADB",
+    "wordmark": "#6B00FF",
+    "accent": "#6B00FF"
+   },
+   "2": {
+    "bg": "#6B00FF",
+    "base": "#6B00FF",
+    "hi": "#F28ADB",
+    "wordmark": "#F28ADB",
+    "accent": "#F28ADB"
+   },
+   "3": {
+    "bg": "#F28ADB",
+    "base": null,
+    "hi": "#6B00FF",
+    "wordmark": "#6B00FF",
+    "accent": "#6B00FF"
+   },
+   "4": {
+    "bg": null,
+    "base": "#6B00FF",
+    "hi": "#F28ADB",
+    "wordmark": "#E479D5",
+    "accent": "#E479D5"
+   },
+   "5": {
+    "bg": null,
+    "base": "#6B00FF",
+    "hi": "#F28ADB",
+    "wordmark": "#6B00FF",
+    "accent": "#E479D5"
+   },
+   "6": {
+    "bg": null,
+    "base": "#E479D5",
+    "hi": null,
+    "wordmark": "#E479D5",
+    "accent": "#E479D5"
+   }
+  },
+  "source": null,
+  "metrics": {
+   "contrastPurpleAux": 3.07,
+   "contrastAuxWhite": 2.23,
+   "contrastDeepWhite": 2.63,
+   "contrastDeepPurple": 2.6,
+   "oklch": [
+    0.77,
+    0.16,
+    335.779
+   ]
+  }
+ },
+ {
+  "id": "099",
+  "no": 99,
+  "name": "부드러운 자홍 4",
+  "origin": "extended",
+  "badge": "확장 컬러",
+  "purple": "#6B00FF",
+  "aux": "#E795CE",
+  "auxDeep": "#DA70C4",
+  "mapping": {
+   "1": {
+    "bg": null,
+    "base": "#6B00FF",
+    "hi": "#E795CE",
+    "wordmark": "#6B00FF",
+    "accent": "#6B00FF"
+   },
+   "2": {
+    "bg": "#6B00FF",
+    "base": "#6B00FF",
+    "hi": "#E795CE",
+    "wordmark": "#E795CE",
+    "accent": "#E795CE"
+   },
+   "3": {
+    "bg": "#E795CE",
+    "base": null,
+    "hi": "#6B00FF",
+    "wordmark": "#6B00FF",
+    "accent": "#6B00FF"
+   },
+   "4": {
+    "bg": null,
+    "base": "#6B00FF",
+    "hi": "#E795CE",
+    "wordmark": "#DA70C4",
+    "accent": "#DA70C4"
+   },
+   "5": {
+    "bg": null,
+    "base": "#6B00FF",
+    "hi": "#E795CE",
+    "wordmark": "#6B00FF",
+    "accent": "#DA70C4"
+   },
+   "6": {
+    "bg": null,
+    "base": "#DA70C4",
+    "hi": null,
+    "wordmark": "#DA70C4",
+    "accent": "#DA70C4"
+   }
+  },
+  "source": null,
+  "metrics": {
+   "contrastPurpleAux": 3.12,
+   "contrastAuxWhite": 2.19,
+   "contrastDeepWhite": 2.96,
+   "contrastDeepPurple": 2.31,
+   "oklch": [
+    0.77,
+    0.122,
+    338.859
+   ]
+  }
+ },
+ {
+  "id": "100",
+  "no": 100,
+  "name": "연한 자홍 2",
+  "origin": "extended",
+  "badge": "확장 컬러",
+  "purple": "#6B00FF",
+  "aux": "#FFC8E9",
+  "auxDeep": "#EC95D1",
+  "mapping": {
+   "1": {
+    "bg": null,
+    "base": "#6B00FF",
+    "hi": "#FFC8E9",
+    "wordmark": "#6B00FF",
+    "accent": "#6B00FF"
+   },
+   "2": {
+    "bg": "#6B00FF",
+    "base": "#6B00FF",
+    "hi": "#FFC8E9",
+    "wordmark": "#FFC8E9",
+    "accent": "#FFC8E9"
+   },
+   "3": {
+    "bg": "#FFC8E9",
+    "base": null,
+    "hi": "#6B00FF",
+    "wordmark": "#6B00FF",
+    "accent": "#6B00FF"
+   },
+   "4": {
+    "bg": null,
+    "base": "#6B00FF",
+    "hi": "#FFC8E9",
+    "wordmark": "#EC95D1",
+    "accent": "#EC95D1"
+   },
+   "5": {
+    "bg": null,
+    "base": "#6B00FF",
+    "hi": "#FFC8E9",
+    "wordmark": "#6B00FF",
+    "accent": "#EC95D1"
+   },
+   "6": {
+    "bg": null,
+    "base": "#EC95D1",
+    "hi": null,
+    "wordmark": "#EC95D1",
+    "accent": "#EC95D1"
+   }
+  },
+  "source": null,
+  "metrics": {
+   "contrastPurpleAux": 4.79,
+   "contrastAuxWhite": 1.43,
+   "contrastDeepWhite": 2.15,
+   "contrastDeepPurple": 3.19,
+   "oklch": [
+    0.891,
+    0.075,
+    342.051
+   ]
+  }
+ }
+]

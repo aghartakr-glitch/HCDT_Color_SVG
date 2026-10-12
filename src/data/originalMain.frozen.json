@@ -1,0 +1,797 @@
+{
+ "_comment": "원본 AI(PDF) 9~16페이지에서 읽은 메인 8개의 색 매핑. 수정하지 않는다. 검증 스크립트가 colorways.json의 앞 8개와 대조한다.",
+ "items": [
+  {
+   "no": 1,
+   "page": 9,
+   "name": "라임",
+   "stripColor": "#DAF61F",
+   "rawMapping": {
+    "1": {
+     "bg": null,
+     "base": "#6B00FF",
+     "hi": "#DAF61F",
+     "wordmark": "#6B00FF",
+     "accent": "#6B00FF"
+    },
+    "2": {
+     "bg": "#6B00FF",
+     "base": "#6B00FF",
+     "hi": "#DAF61F",
+     "wordmark": "#DAF61F",
+     "accent": "#DAF61F"
+    },
+    "3": {
+     "bg": "#DAF61F",
+     "base": "#5960D8",
+     "hi": "#6B00FF",
+     "wordmark": "#6B00FF",
+     "accent": "#6B00FF"
+    },
+    "4": {
+     "bg": null,
+     "base": "#6B00FF",
+     "hi": "#DAF61F",
+     "wordmark": "#CFE500",
+     "accent": "#CFE500"
+    },
+    "5": {
+     "bg": null,
+     "base": "#6B00FF",
+     "hi": "#DAF61F",
+     "wordmark": "#6B00FF",
+     "accent": "#CFE500"
+    },
+    "6": {
+     "bg": null,
+     "base": "#CFE500",
+     "hi": null,
+     "wordmark": "#CFE500",
+     "accent": "#CFE500"
+    }
+   },
+   "occludedLayers": {
+    "3": [
+     "base"
+    ]
+   },
+   "visibleMapping": {
+    "1": {
+     "bg": null,
+     "base": "#6B00FF",
+     "hi": "#DAF61F",
+     "wordmark": "#6B00FF",
+     "accent": "#6B00FF"
+    },
+    "2": {
+     "bg": "#6B00FF",
+     "base": "#6B00FF",
+     "hi": "#DAF61F",
+     "wordmark": "#DAF61F",
+     "accent": "#DAF61F"
+    },
+    "3": {
+     "bg": "#DAF61F",
+     "base": null,
+     "hi": "#6B00FF",
+     "wordmark": "#6B00FF",
+     "accent": "#6B00FF"
+    },
+    "4": {
+     "bg": null,
+     "base": "#6B00FF",
+     "hi": "#DAF61F",
+     "wordmark": "#CFE500",
+     "accent": "#CFE500"
+    },
+    "5": {
+     "bg": null,
+     "base": "#6B00FF",
+     "hi": "#DAF61F",
+     "wordmark": "#6B00FF",
+     "accent": "#CFE500"
+    },
+    "6": {
+     "bg": null,
+     "base": "#CFE500",
+     "hi": null,
+     "wordmark": "#CFE500",
+     "accent": "#CFE500"
+    }
+   }
+  },
+  {
+   "no": 2,
+   "page": 10,
+   "name": "오렌지",
+   "stripColor": "#FD8C53",
+   "rawMapping": {
+    "1": {
+     "bg": null,
+     "base": "#6B00FF",
+     "hi": "#FD8C53",
+     "wordmark": "#6B00FF",
+     "accent": "#6B00FF"
+    },
+    "2": {
+     "bg": "#6B00FF",
+     "base": "#6B00FF",
+     "hi": "#FD8C53",
+     "wordmark": "#FD8C53",
+     "accent": "#FD8C53"
+    },
+    "3": {
+     "bg": "#FD8C53",
+     "base": "#5960D8",
+     "hi": "#6B00FF",
+     "wordmark": "#6B00FF",
+     "accent": "#6B00FF"
+    },
+    "4": {
+     "bg": null,
+     "base": "#6B00FF",
+     "hi": "#FD8C53",
+     "wordmark": "#F77C46",
+     "accent": "#F77C46"
+    },
+    "5": {
+     "bg": null,
+     "base": "#6B00FF",
+     "hi": "#FD8C53",
+     "wordmark": "#6B00FF",
+     "accent": "#F77C46"
+    },
+    "6": {
+     "bg": null,
+     "base": "#F77C46",
+     "hi": null,
+     "wordmark": "#F77C46",
+     "accent": "#F77C46"
+    }
+   },
+   "occludedLayers": {
+    "3": [
+     "base"
+    ]
+   },
+   "visibleMapping": {
+    "1": {
+     "bg": null,
+     "base": "#6B00FF",
+     "hi": "#FD8C53",
+     "wordmark": "#6B00FF",
+     "accent": "#6B00FF"
+    },
+    "2": {
+     "bg": "#6B00FF",
+     "base": "#6B00FF",
+     "hi": "#FD8C53",
+     "wordmark": "#FD8C53",
+     "accent": "#FD8C53"
+    },
+    "3": {
+     "bg": "#FD8C53",
+     "base": null,
+     "hi": "#6B00FF",
+     "wordmark": "#6B00FF",
+     "accent": "#6B00FF"
+    },
+    "4": {
+     "bg": null,
+     "base": "#6B00FF",
+     "hi": "#FD8C53",
+     "wordmark": "#F77C46",
+     "accent": "#F77C46"
+    },
+    "5": {
+     "bg": null,
+     "base": "#6B00FF",
+     "hi": "#FD8C53",
+     "wordmark": "#6B00FF",
+     "accent": "#F77C46"
+    },
+    "6": {
+     "bg": null,
+     "base": "#F77C46",
+     "hi": null,
+     "wordmark": "#F77C46",
+     "accent": "#F77C46"
+    }
+   }
+  },
+  {
+   "no": 3,
+   "page": 11,
+   "name": "민트그린",
+   "stripColor": "#6FEF9A",
+   "rawMapping": {
+    "1": {
+     "bg": null,
+     "base": "#6B00FF",
+     "hi": "#6FEF9A",
+     "wordmark": "#6B00FF",
+     "accent": "#6B00FF"
+    },
+    "2": {
+     "bg": "#6B00FF",
+     "base": "#6B00FF",
+     "hi": "#6FEF9A",
+     "wordmark": "#6FEF9A",
+     "accent": "#6FEF9A"
+    },
+    "3": {
+     "bg": "#6FEF9A",
+     "base": "#5960D8",
+     "hi": "#6B00FF",
+     "wordmark": "#6B00FF",
+     "accent": "#6B00FF"
+    },
+    "4": {
+     "bg": null,
+     "base": "#6B00FF",
+     "hi": "#6FEF9A",
+     "wordmark": "#53E580",
+     "accent": "#53E580"
+    },
+    "5": {
+     "bg": null,
+     "base": "#6B00FF",
+     "hi": "#6FEF9A",
+     "wordmark": "#6B00FF",
+     "accent": "#53E580"
+    },
+    "6": {
+     "bg": null,
+     "base": "#53E580",
+     "hi": null,
+     "wordmark": "#53E580",
+     "accent": "#53E580"
+    }
+   },
+   "occludedLayers": {
+    "3": [
+     "base"
+    ]
+   },
+   "visibleMapping": {
+    "1": {
+     "bg": null,
+     "base": "#6B00FF",
+     "hi": "#6FEF9A",
+     "wordmark": "#6B00FF",
+     "accent": "#6B00FF"
+    },
+    "2": {
+     "bg": "#6B00FF",
+     "base": "#6B00FF",
+     "hi": "#6FEF9A",
+     "wordmark": "#6FEF9A",
+     "accent": "#6FEF9A"
+    },
+    "3": {
+     "bg": "#6FEF9A",
+     "base": null,
+     "hi": "#6B00FF",
+     "wordmark": "#6B00FF",
+     "accent": "#6B00FF"
+    },
+    "4": {
+     "bg": null,
+     "base": "#6B00FF",
+     "hi": "#6FEF9A",
+     "wordmark": "#53E580",
+     "accent": "#53E580"
+    },
+    "5": {
+     "bg": null,
+     "base": "#6B00FF",
+     "hi": "#6FEF9A",
+     "wordmark": "#6B00FF",
+     "accent": "#53E580"
+    },
+    "6": {
+     "bg": null,
+     "base": "#53E580",
+     "hi": null,
+     "wordmark": "#53E580",
+     "accent": "#53E580"
+    }
+   }
+  },
+  {
+   "no": 4,
+   "page": 12,
+   "name": "옐로",
+   "stripColor": "#FFD54A",
+   "rawMapping": {
+    "1": {
+     "bg": null,
+     "base": "#6B00FF",
+     "hi": "#FFD54A",
+     "wordmark": "#6B00FF",
+     "accent": "#6B00FF"
+    },
+    "2": {
+     "bg": "#6B00FF",
+     "base": "#6B00FF",
+     "hi": "#FFD54A",
+     "wordmark": "#FFD54A",
+     "accent": "#FFD54A"
+    },
+    "3": {
+     "bg": "#FFD54A",
+     "base": "#5960D8",
+     "hi": "#6B00FF",
+     "wordmark": "#6B00FF",
+     "accent": "#6B00FF"
+    },
+    "4": {
+     "bg": null,
+     "base": "#6B00FF",
+     "hi": "#FFD54A",
+     "wordmark": "#EFB920",
+     "accent": "#EFB920"
+    },
+    "5": {
+     "bg": null,
+     "base": "#6B00FF",
+     "hi": "#FFD54A",
+     "wordmark": "#6B00FF",
+     "accent": "#EFB920"
+    },
+    "6": {
+     "bg": null,
+     "base": "#EFB920",
+     "hi": null,
+     "wordmark": "#EFB920",
+     "accent": "#EFB920"
+    }
+   },
+   "occludedLayers": {
+    "3": [
+     "base"
+    ]
+   },
+   "visibleMapping": {
+    "1": {
+     "bg": null,
+     "base": "#6B00FF",
+     "hi": "#FFD54A",
+     "wordmark": "#6B00FF",
+     "accent": "#6B00FF"
+    },
+    "2": {
+     "bg": "#6B00FF",
+     "base": "#6B00FF",
+     "hi": "#FFD54A",
+     "wordmark": "#FFD54A",
+     "accent": "#FFD54A"
+    },
+    "3": {
+     "bg": "#FFD54A",
+     "base": null,
+     "hi": "#6B00FF",
+     "wordmark": "#6B00FF",
+     "accent": "#6B00FF"
+    },
+    "4": {
+     "bg": null,
+     "base": "#6B00FF",
+     "hi": "#FFD54A",
+     "wordmark": "#EFB920",
+     "accent": "#EFB920"
+    },
+    "5": {
+     "bg": null,
+     "base": "#6B00FF",
+     "hi": "#FFD54A",
+     "wordmark": "#6B00FF",
+     "accent": "#EFB920"
+    },
+    "6": {
+     "bg": null,
+     "base": "#EFB920",
+     "hi": null,
+     "wordmark": "#EFB920",
+     "accent": "#EFB920"
+    }
+   }
+  },
+  {
+   "no": 5,
+   "page": 13,
+   "name": "피치",
+   "stripColor": "#FFDCA4",
+   "rawMapping": {
+    "1": {
+     "bg": null,
+     "base": "#6B00FF",
+     "hi": "#FFDCA4",
+     "wordmark": "#6B00FF",
+     "accent": "#6B00FF"
+    },
+    "2": {
+     "bg": "#6B00FF",
+     "base": "#6B00FF",
+     "hi": "#FFDCA4",
+     "wordmark": "#FFDCA4",
+     "accent": "#FFDCA4"
+    },
+    "3": {
+     "bg": "#FFDCA4",
+     "base": "#5960D8",
+     "hi": "#6B00FF",
+     "wordmark": "#6B00FF",
+     "accent": "#6B00FF"
+    },
+    "4": {
+     "bg": null,
+     "base": "#6B00FF",
+     "hi": "#FFDCA4",
+     "wordmark": "#EAAD54",
+     "accent": "#EAAD54"
+    },
+    "5": {
+     "bg": null,
+     "base": "#6B00FF",
+     "hi": "#FFDCA4",
+     "wordmark": "#6B00FF",
+     "accent": "#EAAD54"
+    },
+    "6": {
+     "bg": null,
+     "base": "#EAAD54",
+     "hi": null,
+     "wordmark": "#EAAD54",
+     "accent": "#EAAD54"
+    }
+   },
+   "occludedLayers": {
+    "3": [
+     "base"
+    ]
+   },
+   "visibleMapping": {
+    "1": {
+     "bg": null,
+     "base": "#6B00FF",
+     "hi": "#FFDCA4",
+     "wordmark": "#6B00FF",
+     "accent": "#6B00FF"
+    },
+    "2": {
+     "bg": "#6B00FF",
+     "base": "#6B00FF",
+     "hi": "#FFDCA4",
+     "wordmark": "#FFDCA4",
+     "accent": "#FFDCA4"
+    },
+    "3": {
+     "bg": "#FFDCA4",
+     "base": null,
+     "hi": "#6B00FF",
+     "wordmark": "#6B00FF",
+     "accent": "#6B00FF"
+    },
+    "4": {
+     "bg": null,
+     "base": "#6B00FF",
+     "hi": "#FFDCA4",
+     "wordmark": "#EAAD54",
+     "accent": "#EAAD54"
+    },
+    "5": {
+     "bg": null,
+     "base": "#6B00FF",
+     "hi": "#FFDCA4",
+     "wordmark": "#6B00FF",
+     "accent": "#EAAD54"
+    },
+    "6": {
+     "bg": null,
+     "base": "#EAAD54",
+     "hi": null,
+     "wordmark": "#EAAD54",
+     "accent": "#EAAD54"
+    }
+   }
+  },
+  {
+   "no": 6,
+   "page": 14,
+   "name": "핑크",
+   "stripColor": "#FCB4C0",
+   "rawMapping": {
+    "1": {
+     "bg": null,
+     "base": "#6B00FF",
+     "hi": "#FCB4C0",
+     "wordmark": "#6B00FF",
+     "accent": "#6B00FF"
+    },
+    "2": {
+     "bg": "#6B00FF",
+     "base": "#6B00FF",
+     "hi": "#FCB4C0",
+     "wordmark": "#FCB4C0",
+     "accent": "#FCB4C0"
+    },
+    "3": {
+     "bg": "#FCB4C0",
+     "base": "#5960D8",
+     "hi": "#6B00FF",
+     "wordmark": "#6B00FF",
+     "accent": "#6B00FF"
+    },
+    "4": {
+     "bg": null,
+     "base": "#6B00FF",
+     "hi": "#FCB4C0",
+     "wordmark": "#F4718E",
+     "accent": "#F4718E"
+    },
+    "5": {
+     "bg": null,
+     "base": "#6B00FF",
+     "hi": "#FCB4C0",
+     "wordmark": "#6B00FF",
+     "accent": "#F4718E"
+    },
+    "6": {
+     "bg": null,
+     "base": "#F4718E",
+     "hi": null,
+     "wordmark": "#F4718E",
+     "accent": "#F4718E"
+    }
+   },
+   "occludedLayers": {
+    "3": [
+     "base"
+    ]
+   },
+   "visibleMapping": {
+    "1": {
+     "bg": null,
+     "base": "#6B00FF",
+     "hi": "#FCB4C0",
+     "wordmark": "#6B00FF",
+     "accent": "#6B00FF"
+    },
+    "2": {
+     "bg": "#6B00FF",
+     "base": "#6B00FF",
+     "hi": "#FCB4C0",
+     "wordmark": "#FCB4C0",
+     "accent": "#FCB4C0"
+    },
+    "3": {
+     "bg": "#FCB4C0",
+     "base": null,
+     "hi": "#6B00FF",
+     "wordmark": "#6B00FF",
+     "accent": "#6B00FF"
+    },
+    "4": {
+     "bg": null,
+     "base": "#6B00FF",
+     "hi": "#FCB4C0",
+     "wordmark": "#F4718E",
+     "accent": "#F4718E"
+    },
+    "5": {
+     "bg": null,
+     "base": "#6B00FF",
+     "hi": "#FCB4C0",
+     "wordmark": "#6B00FF",
+     "accent": "#F4718E"
+    },
+    "6": {
+     "bg": null,
+     "base": "#F4718E",
+     "hi": null,
+     "wordmark": "#F4718E",
+     "accent": "#F4718E"
+    }
+   }
+  },
+  {
+   "no": 7,
+   "page": 15,
+   "name": "라이트블루",
+   "stripColor": "#BCECF7",
+   "rawMapping": {
+    "1": {
+     "bg": null,
+     "base": "#6B00FF",
+     "hi": "#BCECF7",
+     "wordmark": "#6B00FF",
+     "accent": "#6B00FF"
+    },
+    "2": {
+     "bg": "#6B00FF",
+     "base": "#6B00FF",
+     "hi": "#BCECF7",
+     "wordmark": "#BCECF7",
+     "accent": "#BCECF7"
+    },
+    "3": {
+     "bg": "#BCECF7",
+     "base": "#5960D8",
+     "hi": "#6B00FF",
+     "wordmark": "#6B00FF",
+     "accent": "#6B00FF"
+    },
+    "4": {
+     "bg": null,
+     "base": "#6B00FF",
+     "hi": "#BCECF7",
+     "wordmark": "#7FD7E5",
+     "accent": "#7FD7E5"
+    },
+    "5": {
+     "bg": null,
+     "base": "#6B00FF",
+     "hi": "#BCECF7",
+     "wordmark": "#6B00FF",
+     "accent": "#7FD7E5"
+    },
+    "6": {
+     "bg": null,
+     "base": "#7FD7E5",
+     "hi": null,
+     "wordmark": "#7FD7E5",
+     "accent": "#7FD7E5"
+    }
+   },
+   "occludedLayers": {
+    "3": [
+     "base"
+    ]
+   },
+   "visibleMapping": {
+    "1": {
+     "bg": null,
+     "base": "#6B00FF",
+     "hi": "#BCECF7",
+     "wordmark": "#6B00FF",
+     "accent": "#6B00FF"
+    },
+    "2": {
+     "bg": "#6B00FF",
+     "base": "#6B00FF",
+     "hi": "#BCECF7",
+     "wordmark": "#BCECF7",
+     "accent": "#BCECF7"
+    },
+    "3": {
+     "bg": "#BCECF7",
+     "base": null,
+     "hi": "#6B00FF",
+     "wordmark": "#6B00FF",
+     "accent": "#6B00FF"
+    },
+    "4": {
+     "bg": null,
+     "base": "#6B00FF",
+     "hi": "#BCECF7",
+     "wordmark": "#7FD7E5",
+     "accent": "#7FD7E5"
+    },
+    "5": {
+     "bg": null,
+     "base": "#6B00FF",
+     "hi": "#BCECF7",
+     "wordmark": "#6B00FF",
+     "accent": "#7FD7E5"
+    },
+    "6": {
+     "bg": null,
+     "base": "#7FD7E5",
+     "hi": null,
+     "wordmark": "#7FD7E5",
+     "accent": "#7FD7E5"
+    }
+   }
+  },
+  {
+   "no": 8,
+   "page": 16,
+   "name": "아쿠아",
+   "stripColor": "#7CFCE9",
+   "rawMapping": {
+    "1": {
+     "bg": null,
+     "base": "#6B00FF",
+     "hi": "#7CFCE9",
+     "wordmark": "#6B00FF",
+     "accent": "#6B00FF"
+    },
+    "2": {
+     "bg": "#6B00FF",
+     "base": "#6B00FF",
+     "hi": "#7CFCE9",
+     "wordmark": "#7CFCE9",
+     "accent": "#7CFCE9"
+    },
+    "3": {
+     "bg": "#7CFCE9",
+     "base": "#5960D8",
+     "hi": "#6B00FF",
+     "wordmark": "#6B00FF",
+     "accent": "#6B00FF"
+    },
+    "4": {
+     "bg": null,
+     "base": "#6B00FF",
+     "hi": "#7CFCE9",
+     "wordmark": "#3DE0C5",
+     "accent": "#3DE0C5"
+    },
+    "5": {
+     "bg": null,
+     "base": "#6B00FF",
+     "hi": "#7CFCE9",
+     "wordmark": "#6B00FF",
+     "accent": "#3DE0C5"
+    },
+    "6": {
+     "bg": null,
+     "base": "#3DE0C5",
+     "hi": null,
+     "wordmark": "#3DE0C5",
+     "accent": "#3DE0C5"
+    }
+   },
+   "occludedLayers": {
+    "3": [
+     "base"
+    ]
+   },
+   "visibleMapping": {
+    "1": {
+     "bg": null,
+     "base": "#6B00FF",
+     "hi": "#7CFCE9",
+     "wordmark": "#6B00FF",
+     "accent": "#6B00FF"
+    },
+    "2": {
+     "bg": "#6B00FF",
+     "base": "#6B00FF",
+     "hi": "#7CFCE9",
+     "wordmark": "#7CFCE9",
+     "accent": "#7CFCE9"
+    },
+    "3": {
+     "bg": "#7CFCE9",
+     "base": null,
+     "hi": "#6B00FF",
+     "wordmark": "#6B00FF",
+     "accent": "#6B00FF"
+    },
+    "4": {
+     "bg": null,
+     "base": "#6B00FF",
+     "hi": "#7CFCE9",
+     "wordmark": "#3DE0C5",
+     "accent": "#3DE0C5"
+    },
+    "5": {
+     "bg": null,
+     "base": "#6B00FF",
+     "hi": "#7CFCE9",
+     "wordmark": "#6B00FF",
+     "accent": "#3DE0C5"
+    },
+    "6": {
+     "bg": null,
+     "base": "#3DE0C5",
+     "hi": null,
+     "wordmark": "#3DE0C5",
+     "accent": "#3DE0C5"
+    }
+   }
+  }
+ ]
+}

@@ -1,0 +1,29 @@
+{
+  "name": "hcdt-logo-colors",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "description": "HCDT 로고 컬러 100종 탐색 및 SVG 다운로드",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc --noEmit && vite build",
+    "preview": "vite preview",
+    "test": "vitest run",
+    "data": "python3 scripts/extract_assets.py && python3 scripts/generate_palettes.py"
+  },
+  "dependencies": {
+    "jszip": "^3.10.2",
+    "react": "^19.3.0",
+    "react-dom": "^19.3.0"
+  },
+  "devDependencies": {
+    "@types/node": "^26.6.5",
+    "@types/react": "^19.3.0",
+    "@types/react-dom": "^19.3.0",
+    "@vitejs/plugin-react": "^6.1.2",
+    "@xmldom/xmldom": "^0.9.12",
+    "typescript": "^7.0.2",
+    "vite": "^8.3.4",
+    "vitest": "^5.0.3"
+  }
+}
