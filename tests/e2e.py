@@ -55,45 +55,49 @@ with sync_playwright() as pw:
     # 2) 필터
     pg.get_by_role("button", name=re.compile(r"^메인 컬러 8")).click()
     check("필터: 메인 8", pg.locator("[data-card]").count() == 8)
-    pg.get_by_role("button", name=re.compile(r"^확장 컬러 300")).click()
-    check("필터: 확장 300", pg.locator("[data-card]").count() == 300)
+    check("필터 버튼은 메인·전체 2개뿐(확장 버튼 없음)", pg.locator(".pill", has_text=re.compile(r"^확장 컬러 \d+")).count() == 0)
     pg.get_by_role("button", name=re.compile(r"^전체 308")).click()
     check("필터: 전체 308", pg.locator("[data-card]").count() == 308)
 
     # 2-1) 색 계열 버튼 · 정렬 · 접근성 표시
-    fam_btns = pg.locator('.toolbar-row[role=group] .pill.fam')
-    check("색 계열 버튼 9개", fam_btns.count() == 9)
-    tot = 0
-    for i in range(9):
-        tot += int(fam_btns.nth(i).locator("b").inner_text())
+    fam_btns = pg.locator('.toolbar-row .dot:not(.dot-all)')
+    check("색 계열 버튼 9개(색 점)", fam_btns.count() == 9)
+    check("계열 버튼에 글자 없음", all(fam_btns.nth(i).inner_text().strip() == "" for i in range(9)))
+    num = lambda i: int(re.search(r"\((\d+)\)", fam_btns.nth(i).get_attribute("aria-label")).group(1))
+    tot = sum(num(i) for i in range(9))
     check("계열별 개수 합 = 현재 목록(308)", tot == 308, str(tot))
     fam_btns.nth(5).click()   # 초록
     n_green = pg.locator("[data-card]").count()
     ok_green = pg.locator("[data-card]").evaluate_all("els => els.map(e => e.getAttribute('data-card'))")
-    check("초록 계열만 표시, 버튼 개수와 일치", n_green == int(fam_btns.nth(5).locator("b").inner_text()) and all(CW[int(i)-1]["family"] == "green" for i in ok_green))
-    pg.get_by_role("button", name=re.compile(r"^모든 계열")).click()
+    check("초록 계열만 표시, 버튼 개수와 일치", n_green == num(5) and all(CW[int(i)-1]["family"] == "green" for i in ok_green))
+    pg.locator(".dot-all").click()
     check("모든 계열 → 308 복귀", pg.locator("[data-card]").count() == 308)
     sort_row = pg.locator('.toolbar-row[aria-label="정렬"]')
     def order(): return pg.locator("[data-card]").evaluate_all("els => els.map(e => e.getAttribute('data-card'))")
-    sort_row.get_by_role("button", name=re.compile("^가시성 점수")).click()
+    check("정렬 버튼: 기본 / 가시성 점수 / 시각적 위험도 3개 (스펙트럼 없음)", sort_row.locator(".pill").count() == 3 and sort_row.get_by_role("button", name=re.compile("^기본")).count() == 1)
+    vb_ = sort_row.get_by_role("button", name=re.compile("^가시성 점수"))
+    check("가시성 점수 버튼 처음엔 '높은 순' 글자", "높은 순" in vb_.inner_text(), vb_.inner_text())
+    vb_.click()
     o = order(); vis = [CW[int(i)-1]["metrics"]["visibility"] for i in o]
-    check("정렬: 가시성 점수 높은 순", vis == sorted(vis, reverse=True))
-    sort_row.get_by_role("button", name=re.compile("^가시성 점수")).click()
+    check("정렬: 가시성 점수 높은 순", vis == sorted(vis, reverse=True) and "높은 순" in vb_.inner_text())
+    vb_.click()
     vis = [CW[int(i)-1]["metrics"]["visibility"] for i in order()]
-    check("같은 버튼 다시 누르면 낮은 순", vis == sorted(vis))
-    sort_row.get_by_role("button", name=re.compile("^시각적 위험도")).click()
+    check("같은 버튼 다시 누르면 낮은 순 + 글자도 '낮은 순'", vis == sorted(vis) and "낮은 순" in vb_.inner_text(), vb_.inner_text())
+    rb_ = sort_row.get_by_role("button", name=re.compile("^시각적 위험도"))
+    check("위험도 버튼 처음엔 '낮은 순' 글자", "낮은 순" in rb_.inner_text(), rb_.inner_text())
+    rb_.click()
     rk = [CW[int(i)-1]["metrics"]["cvdRisk"] for i in order()]
     check("정렬: 시각적 위험도 낮은 순", rk == sorted(rk))
-    sort_row.get_by_role("button", name=re.compile("^색채 스펙트럼")).click()
-    hue = [(CW[int(i)-1]["metrics"]["oklch"][2] + 15) % 360 for i in order()]
-    check("정렬: 색채 스펙트럼(색상각 순)", all(hue[k] <= hue[k+1] + 1e-9 for k in range(len(hue)-1)))
-    sort_row.get_by_role("button", name=re.compile("^번호순")).click()
-    check("정렬: 번호순 복귀", order() == [f"{i:03d}" for i in range(1, 309)])
+    rb_.click()
+    rk = [CW[int(i)-1]["metrics"]["cvdRisk"] for i in order()]
+    check("위험도 다시 누르면 높은 순 + 글자 '높은 순'", rk == sorted(rk, reverse=True) and "높은 순" in rb_.inner_text(), rb_.inner_text())
+    sort_row.get_by_role("button", name=re.compile("^기본")).click()
+    check("정렬: 기본(번호순) 복귀", order() == [f"{i:03d}" for i in range(1, 309)])
     acc = pg.locator("[data-card='050'] .card-access").text_content()
     m50 = CW[49]["metrics"]
     check("카드에 가시성 점수·색각 3종 표시", str(m50["visibility"]) in acc and "적" in acc and "녹" in acc and "청" in acc, acc)
     pg.get_by_role("button", name=re.compile(r"^메인 컬러 8")).click()
-    check("메인 컬러에서는 정렬 줄 숨김", pg.locator('.toolbar-row[aria-label="정렬"]').count() == 0)
+    check("메인 컬러에서는 색 계열·정렬 줄 숨김", pg.locator('.toolbar-row[aria-label="정렬"]').count() == 0 and pg.locator('.toolbar-row .dot').count() == 0)
     pg.get_by_role("button", name=re.compile(r"^전체 308")).click()
 
     # 3) 형식 전환 → 갤러리 대표 로고

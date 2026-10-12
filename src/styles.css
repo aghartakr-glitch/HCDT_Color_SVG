@@ -206,3 +206,10 @@ h1 { margin: 0 0 10px; font-size: clamp(28px, 4vw, 40px); line-height: 1.15; let
   .toolbar-row { flex-wrap: nowrap; overflow-x: auto; padding-bottom: 6px; margin-right: -20px; padding-right: 20px; scrollbar-width: thin; -webkit-overflow-scrolling: touch; }
   .toolbar-row > * { flex: none; }
 }
+
+/* 색 계열: 글자 없이 색 점만 */
+.dot { width: 30px; height: 30px; border-radius: 50%; border: 2px solid #fff; box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.22); padding: 0; flex: none; }
+.dot:hover { box-shadow: 0 0 0 2px rgba(0, 0, 0, 0.45); }
+.dot.is-on { box-shadow: 0 0 0 3px var(--ink); }
+.dot-all { background: conic-gradient(#f9a8d4, #ff9a8a, #ffb874, #ffe45e, #c8f25c, #6fe08e, #5fe6d2, #8ed8ff, #86a8ff, #f9a8d4); }
+.toolbar-row .dot { margin: 3px 2px; }

@@ -24,7 +24,7 @@ export function readHash(validIds: Set<string>): Partial<UrlState> {
   const fam = p.get('fam');
   if (fam) out.fam = fam;
   const so = p.get('s');
-  if (so === 'id' || so === 'spectrum' || so === 'visibility' || so === 'risk') out.sort = so;
+  if (so === 'id' || so === 'visibility' || so === 'risk') out.sort = so;
   const l = p.get('l');
   if (l === 'ko' || l === 'en') out.lang = l;
   return out;

@@ -7,9 +7,9 @@ import { useMediaQuery } from './lib/hooks';
 import { readHash, writeHash } from './lib/hash';
 import type { FormatKey, VariantId } from './types';
 
-type Filter = 'all' | 'main' | 'extended';
-type SortKey = 'id' | 'spectrum' | 'visibility' | 'risk';
-const SORT_KEYS: SortKey[] = ['id', 'spectrum', 'visibility', 'risk'];
+type Filter = 'all' | 'main';
+type SortKey = 'id' | 'visibility' | 'risk';
+const SORT_KEYS: SortKey[] = ['id', 'visibility', 'risk'];
 const FAM_KEYS = new Set<string>(FAMILIES.map((f) => f.key));
 const IDS = new Set(COLORWAYS.map((c) => c.id));
 
@@ -20,7 +20,7 @@ export default function App() {
   const [variant, setVariant] = useState<VariantId>(initial.variant ?? 1);
   const [includeBg, setIncludeBg] = useState<boolean>(initial.bg ?? false);
   const [family, setFamily] = useState<string>(initial.fam && FAM_KEYS.has(initial.fam) ? initial.fam : 'all');
-  const [sort, setSort] = useState<SortKey>((initial.sort as SortKey) ?? 'id');
+  const [sort, setSort] = useState<SortKey>(initial.sort === 'visibility' || initial.sort === 'risk' ? initial.sort : 'id');
   const [sortRev, setSortRev] = useState(false);
   const [selectedId, setSelectedId] = useState<string>(initial.id ?? '001');
   const [lang, setLang] = useState<Lang>(() => {
@@ -36,21 +36,18 @@ export default function App() {
   const closeRef = useRef<HTMLButtonElement>(null);
   const toastTimer = useRef<number | undefined>(undefined);
 
-  const canSort = filter !== 'main';          // 정렬은 확장·전체에서만 (메인 8개는 원본 순서 고정)
-  const byOrigin = useMemo(() => COLORWAYS.filter((c) => filter === 'all' || c.origin === filter), [filter]);
+  const canSort = filter === 'all';           // 계열 버튼·정렬은 '전체'에서만 (메인 8개는 원본 순서 고정)
+  const byOrigin = useMemo(() => COLORWAYS.filter((c) => filter === 'all' || c.origin === 'main'), [filter]);
   const famCounts = useMemo(() => {
     const m: Record<string, number> = {};
     for (const c of byOrigin) m[c.family] = (m[c.family] ?? 0) + 1;
     return m;
   }, [byOrigin]);
   const items = useMemo(() => {
-    const list = byOrigin.filter((c) => family === 'all' || c.family === family);
+    const list = byOrigin.filter((c) => !canSort || family === 'all' || c.family === family);
     const eff: SortKey = canSort ? sort : 'id';
-    // 번호순이 기본. 색채 스펙트럼 = 색상각(핑크→빨강→주황→노랑→초록→청록→하늘→파랑), 같은 색상각이면 밝은 순
-    const hueKey = (c: (typeof list)[number]) => (c.metrics.oklch[2] + 15) % 360;
     const cmp: Record<SortKey, (a: (typeof list)[number], b: (typeof list)[number]) => number> = {
       id: (a, b) => a.no - b.no,
-      spectrum: (a, b) => hueKey(a) - hueKey(b) || b.metrics.oklch[0] - a.metrics.oklch[0] || a.no - b.no,
       visibility: (a, b) => b.metrics.visibility - a.metrics.visibility || a.metrics.cvdRisk - b.metrics.cvdRisk || a.no - b.no,
       risk: (a, b) => a.metrics.cvdRisk - b.metrics.cvdRisk || b.metrics.visibility - a.metrics.visibility || a.no - b.no,
     };
@@ -97,7 +94,6 @@ export default function App() {
 
   const filters: { key: Filter; label: string; count: number }[] = [
     { key: 'main', label: t('메인 컬러', 'Main color'), count: MAIN_COUNT },
-    { key: 'extended', label: t('확장 컬러', 'Extended color'), count: EXTENDED_COUNT },
     { key: 'all', label: t('전체', 'All'), count: COLORWAYS.length },
   ];
 
@@ -138,26 +134,40 @@ export default function App() {
             ))}
           </div>
         </div>
-        <div className="toolbar-row" role="group" aria-label={t('색 계열 필터', 'Color family filter')}>
-          <span className="toolbar-label">{t('색 계열', 'Color family')}</span>
-          <button type="button" className={`pill${family === 'all' ? ' is-on' : ''}`} aria-pressed={family === 'all'} onClick={() => setFamily('all')}>
-            {t('모든 계열', 'All families')} <b>{byOrigin.length}</b>
-          </button>
-          {FAMILIES.map((f) => (
-            <button key={f.key} type="button" className={`pill fam${family === f.key ? ' is-on' : ''}`} aria-pressed={family === f.key} onClick={() => setFamily(f.key)}>
-              <i style={{ background: f.sample }} aria-hidden="true" />
-              {t(f.ko, f.en)} <b>{famCounts[f.key] ?? 0}</b>
-            </button>
-          ))}
-        </div>
+        {canSort && (
+          <div className="toolbar-row" role="group" aria-label={t('색 계열 필터', 'Color family filter')}>
+            <button
+              type="button"
+              className={`dot dot-all${family === 'all' ? ' is-on' : ''}`}
+              aria-pressed={family === 'all'}
+              aria-label={t(`모든 계열 (${byOrigin.length})`, `All families (${byOrigin.length})`)}
+              title={t(`모든 계열 · ${byOrigin.length}`, `All families · ${byOrigin.length}`)}
+              onClick={() => setFamily('all')}
+            />
+            {FAMILIES.map((f) => (
+              <button
+                key={f.key}
+                type="button"
+                className={`dot${family === f.key ? ' is-on' : ''}`}
+                style={{ background: f.sample }}
+                aria-pressed={family === f.key}
+                aria-label={t(`${f.ko} (${famCounts[f.key] ?? 0})`, `${f.en} (${famCounts[f.key] ?? 0})`)}
+                title={t(`${f.ko} · ${famCounts[f.key] ?? 0}`, `${f.en} · ${famCounts[f.key] ?? 0}`)}
+                onClick={() => setFamily(family === f.key ? 'all' : f.key)}
+              />
+            ))}
+          </div>
+        )}
         {canSort && (
           <div className="toolbar-row" role="group" aria-label={t('정렬', 'Sort')}>
             <span className="toolbar-label">{t('정렬', 'Sort by')}</span>
             {SORT_KEYS.map((k) => {
               const on = sort === k;
-              const label = k === 'id' ? t('번호순', 'Number') : k === 'spectrum' ? t('색채 스펙트럼', 'Color spectrum') : k === 'visibility' ? t('가시성 점수', 'Visibility score') : t('시각적 위험도', 'Visual risk');
-              const hint = k === 'spectrum' ? t('핑크→파랑', 'pink→blue') : k === 'visibility' ? t('높은 순', 'high first') : k === 'risk' ? t('낮은 순', 'low first') : '';
-              const arrow = on && k !== 'id' ? (sortRev ? ' ↑' : ' ↓') : '';
+              const name = k === 'id' ? t('기본', 'Default') : k === 'visibility' ? t('가시성 점수', 'Visibility score') : t('시각적 위험도', 'Visual risk');
+              // 가시성은 '높은 순'이 처음 방향, 위험도는 '낮은 순'이 처음 방향. 같은 버튼을 다시 누르면 반대로 바뀌고 글자도 같이 바뀐다.
+              const firstHigh = k === 'visibility';
+              const high = on && sortRev ? !firstHigh : firstHigh;
+              const dir = k === 'id' ? '' : high ? t('높은 순', 'High → Low') : t('낮은 순', 'Low → High');
               return (
                 <button
                   key={k}
@@ -166,7 +176,7 @@ export default function App() {
                   aria-pressed={on}
                   onClick={() => { if (on && k !== 'id') setSortRev((r) => !r); else { setSort(k); setSortRev(false); } }}
                 >
-                  {label}{hint && <small> {hint}</small>}{arrow}
+                  {name}{dir && <small> · {dir}</small>}
                 </button>
               );
             })}
