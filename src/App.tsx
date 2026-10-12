@@ -5,9 +5,10 @@ import { Gallery } from './components/Gallery';
 import { Detail } from './components/Detail';
 import { useMediaQuery } from './lib/hooks';
 import { readHash, writeHash } from './lib/hash';
+import { copyText } from './lib/download';
 import type { FormatKey, VariantId } from './types';
 
-type Filter = 'all' | 'main';
+type Filter = 'all' | 'main' | 'star';
 type SortKey = 'id' | 'visibility' | 'risk';
 const SORT_KEYS: SortKey[] = ['id', 'visibility', 'risk'];
 const FAM_KEYS = new Set<string>(FAMILIES.map((f) => f.key));
@@ -15,7 +16,15 @@ const IDS = new Set(COLORWAYS.map((c) => c.id));
 
 export default function App() {
   const initial = useMemo(() => readHash(IDS), []);
-  const [filter, setFilter] = useState<Filter>('main');
+  const [filter, setFilter] = useState<Filter>(initial.view === 'star' ? 'star' : 'main');
+  const [stars, setStars] = useState<Set<string>>(() => {
+    const s = new Set<string>(initial.keep ?? []);
+    try {
+      const saved = JSON.parse(window.localStorage.getItem('hcdt-stars') ?? '[]');
+      if (Array.isArray(saved)) for (const id of saved) if (IDS.has(id)) s.add(id);
+    } catch { /* 저장소 사용 불가 */ }
+    return s;
+  });
   const [format, setFormat] = useState<FormatKey>(initial.format ?? 'long');
   const [variant, setVariant] = useState<VariantId>(initial.variant ?? 1);
   const [includeBg, setIncludeBg] = useState<boolean>(initial.bg ?? false);
@@ -36,8 +45,11 @@ export default function App() {
   const closeRef = useRef<HTMLButtonElement>(null);
   const toastTimer = useRef<number | undefined>(undefined);
 
-  const canSort = filter === 'all';           // 계열 버튼·정렬은 '전체'에서만 (메인 8개는 원본 순서 고정)
-  const byOrigin = useMemo(() => COLORWAYS.filter((c) => filter === 'all' || c.origin === 'main'), [filter]);
+  const canSort = filter !== 'main';          // 계열 버튼·정렬은 '전체'·'별표'에서 (메인 8개는 원본 순서 고정)
+  const byOrigin = useMemo(
+    () => COLORWAYS.filter((c) => (filter === 'all' ? true : filter === 'star' ? stars.has(c.id) : c.origin === 'main')),
+    [filter, stars],
+  );
   const famCounts = useMemo(() => {
     const m: Record<string, number> = {};
     for (const c of byOrigin) m[c.family] = (m[c.family] ?? 0) + 1;
@@ -57,8 +69,12 @@ export default function App() {
   const cw = COLORWAYS.find((c) => c.id === selectedId) ?? COLORWAYS[0];
 
   useEffect(() => {
-    writeHash({ id: selectedId, format, variant, bg: includeBg, lang, fam: family, sort });
-  }, [selectedId, format, variant, includeBg, lang, family, sort]);
+    writeHash({ id: selectedId, format, variant, bg: includeBg, lang, fam: family, sort, view: filter === 'star' ? 'star' : '', keep: [...stars].sort() });
+  }, [selectedId, format, variant, includeBg, lang, family, sort, filter, stars]);
+
+  useEffect(() => {
+    try { window.localStorage.setItem('hcdt-stars', JSON.stringify([...stars].sort())); } catch { /* 무시 */ }
+  }, [stars]);
 
   useEffect(() => {
     document.documentElement.lang = lang;
@@ -70,6 +86,14 @@ export default function App() {
     setToast(msg);
     window.clearTimeout(toastTimer.current);
     toastTimer.current = window.setTimeout(() => setToast(''), 3200);
+  }, []);
+
+  const toggleStar = useCallback((id: string) => {
+    setStars((prev) => {
+      const next = new Set(prev);
+      if (next.has(id)) next.delete(id); else next.add(id);
+      return next;
+    });
   }, []);
 
   const onSelect = useCallback((id: string) => {
@@ -92,13 +116,22 @@ export default function App() {
     return () => { document.body.style.overflow = ''; window.removeEventListener('keydown', onKey); };
   }, [showOverlay, closeOverlay]);
 
+  const shareStars = useCallback(async () => {
+    const p = new URLSearchParams({ w: 'star', k: [...stars].sort().join('-') });
+    if (lang === 'en') p.set('l', 'en');
+    const url = `${window.location.origin}${window.location.pathname}#${p.toString()}`;
+    const ok = await copyText(url);
+    notify(ok ? t(`공유 링크 복사됨 (별표 ${stars.size}개)`, `Share link copied (${stars.size} stars)`) : t('복사하지 못했습니다. 주소창의 링크를 직접 복사하세요', 'Could not copy. Copy the link from the address bar'));
+  }, [stars, lang, notify, t]);
+
   const filters: { key: Filter; label: string; count: number }[] = [
     { key: 'main', label: t('메인 컬러', 'Main color'), count: MAIN_COUNT },
     { key: 'all', label: t('전체', 'All'), count: COLORWAYS.length },
+    { key: 'star', label: t('★ 별표', '★ Starred'), count: stars.size },
   ];
 
   const detail = (
-    <Detail cw={cw} format={format} setFormat={setFormat} variant={variant} setVariant={setVariant} includeBg={includeBg} setIncludeBg={setIncludeBg} notify={notify} />
+    <Detail cw={cw} format={format} setFormat={setFormat} variant={variant} setVariant={setVariant} includeBg={includeBg} setIncludeBg={setIncludeBg} notify={notify} starred={stars.has(cw.id)} onToggleStar={toggleStar} />
   );
 
   return (
@@ -187,7 +220,16 @@ export default function App() {
       <main className="layout">
         <section className="gallery" aria-label={t('컬러 갤러리', 'Color gallery')}>
           <p className="count" aria-live="polite">{t(`${items.length}개 시안 · 카드를 선택하면 상세가 열립니다`, `${items.length} colorways · select a card to open its details`)}</p>
-          <Gallery items={items} format={format} selectedId={selectedId} onSelect={onSelect} />
+          {filter === 'star' && (
+            <div className="share-bar">
+              <button type="button" className="btn btn-sm" disabled={stars.size === 0} onClick={shareStars}>{t('🔗 공유 링크 복사', '🔗 Copy share link')}</button>
+              <span className="hint">{t('링크를 받은 사람은 같은 별표 목록을 열어 볼 수 있고, 자기 별표에 합쳐집니다.', 'Anyone with the link opens the same starred list; it is merged into their own stars.')}</span>
+            </div>
+          )}
+          {filter === 'star' && stars.size === 0 && (
+            <p className="empty">{t('별표한 색이 아직 없습니다. 카드 오른쪽 위의 ☆를 눌러 모아 보세요.', 'No starred colors yet. Press ☆ at the top right of a card to collect them.')}</p>
+          )}
+          <Gallery items={items} format={format} selectedId={selectedId} stars={stars} onSelect={onSelect} onToggleStar={toggleStar} />
           <details className="criteria">
             <summary>{t('시안 구성 기준 보기', 'How the colorways were chosen')}</summary>
             <ul>

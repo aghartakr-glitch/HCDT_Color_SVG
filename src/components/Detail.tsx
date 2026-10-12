@@ -17,10 +17,12 @@ interface Props {
   includeBg: boolean;
   setIncludeBg: (b: boolean) => void;
   notify: (msg: string) => void;
+  starred: boolean;
+  onToggleStar: (id: string) => void;
 }
 
 
-export function Detail({ cw, format, setFormat, variant, setVariant, includeBg, setIncludeBg, notify }: Props) {
+export function Detail({ cw, format, setFormat, variant, setVariant, includeBg, setIncludeBg, notify, starred, onToggleStar }: Props) {
   const { lang, t } = useLang();
   const USE_ON_LABEL = {
     white: t('흰색 또는 밝은 배경', 'a white or light background'),
@@ -59,7 +61,12 @@ export function Detail({ cw, format, setFormat, variant, setVariant, includeBg, 
           <p className="detail-no">No. {cw.id}</p>
           <h2 className="detail-name">{cname}</h2>
         </div>
-        <span className={`badge badge-lg ${cw.origin === 'main' ? 'badge-main' : 'badge-ext'}`}>{badge}</span>
+        <div className="head-right">
+          <span className={`badge badge-lg ${cw.origin === 'main' ? 'badge-main' : 'badge-ext'}`}>{badge}</span>
+          <button type="button" className={`btn btn-sm star-detail${starred ? ' is-on' : ''}`} aria-pressed={starred} onClick={() => onToggleStar(cw.id)}>
+            {starred ? t('★ 별표됨', '★ Starred') : t('☆ 별표', '☆ Star')}
+          </button>
+        </div>
       </header>
 
       <section aria-labelledby="sec-format" className="block">

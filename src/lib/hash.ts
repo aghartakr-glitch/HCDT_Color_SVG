@@ -7,7 +7,9 @@ export interface UrlState {
   bg: boolean;
   lang: 'ko' | 'en';
   fam: string;   // 'all' 또는 색 계열 키
-  sort: string;  // id | spectrum | visibility | risk
+  sort: string;  // id | visibility | risk
+  view: 'star' | '';   // 별표 모아보기로 열기
+  keep: string[];      // 별표한 번호들 (공유 링크용)
 }
 
 /** 주소 뒤 #c=003&f=long&v=2&bg=1 형태로 선택 상태를 저장해 링크로 공유할 수 있다 */
@@ -25,6 +27,9 @@ export function readHash(validIds: Set<string>): Partial<UrlState> {
   if (fam) out.fam = fam;
   const so = p.get('s');
   if (so === 'id' || so === 'visibility' || so === 'risk') out.sort = so;
+  if (p.get('w') === 'star') out.view = 'star';
+  const k = p.get('k');
+  if (k) out.keep = k.split('-').filter((x) => validIds.has(x));
   const l = p.get('l');
   if (l === 'ko' || l === 'en') out.lang = l;
   return out;
@@ -35,6 +40,8 @@ export function writeHash(s: UrlState) {
   if (s.lang === 'en') p.set('l', 'en');
   if (s.fam !== 'all') p.set('fam', s.fam);
   if (s.sort !== 'id') p.set('s', s.sort);
+  if (s.view === 'star') p.set('w', 'star');
+  if (s.keep.length) p.set('k', s.keep.join('-'));
   try {
     window.history.replaceState(null, '', `#${p.toString()}`);
   } catch {

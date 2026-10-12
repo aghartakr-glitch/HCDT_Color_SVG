@@ -213,3 +213,15 @@ h1 { margin: 0 0 10px; font-size: clamp(28px, 4vw, 40px); line-height: 1.15; let
 .dot.is-on { box-shadow: 0 0 0 3px var(--ink); }
 .dot-all { background: conic-gradient(#f9a8d4, #ff9a8a, #ffb874, #ffe45e, #c8f25c, #6fe08e, #5fe6d2, #8ed8ff, #86a8ff, #f9a8d4); }
 .toolbar-row .dot { margin: 3px 2px; }
+
+/* 별표 · 공유 */
+.card-item { position: relative; }
+.star-btn { position: absolute; top: 6px; right: 6px; z-index: 2; width: 34px; height: 34px; border-radius: 50%; border: 1px solid var(--line); background: rgba(255, 255, 255, 0.95); font-size: 19px; line-height: 1; color: #6b6b75; display: grid; place-items: center; padding: 0; }
+.star-btn:hover { border-color: #b08900; color: #b08900; }
+.star-btn.is-on { background: #ffd54a; border-color: #d9a700; color: #5a4300; }
+.card-selected { right: 48px; }
+.head-right { display: flex; flex-direction: column; align-items: flex-end; gap: 8px; }
+.star-detail.is-on { background: #ffd54a; border-color: #d9a700; color: #4a3700; }
+.share-bar { display: flex; flex-wrap: wrap; gap: 8px 12px; align-items: center; margin: 0 0 12px; }
+.share-bar .hint { margin: 0; }
+.empty { padding: 28px 12px; text-align: center; color: var(--muted); border: 1px dashed var(--line); border-radius: var(--radius); }

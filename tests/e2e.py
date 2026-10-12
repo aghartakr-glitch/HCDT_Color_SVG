@@ -100,6 +100,32 @@ with sync_playwright() as pw:
     check("메인 컬러에서는 색 계열·정렬 줄 숨김", pg.locator('.toolbar-row[aria-label="정렬"]').count() == 0 and pg.locator('.toolbar-row .dot').count() == 0)
     pg.get_by_role("button", name=re.compile(r"^전체 308")).click()
 
+    # 2-2) 별표 모아보기 + 공유 링크
+    def star_of(cid): return pg.locator(".card-item", has=pg.locator(f"[data-card='{cid}']")).locator(".star-btn")
+    star_of("050").click(); star_of("012").click()
+    check("별표 2개 → 버튼 개수 표시", pg.get_by_role("button", name=re.compile(r"^★ 별표 2")).count() == 1)
+    check("별표 표시(aria-pressed)", star_of("050").get_attribute("aria-pressed") == "true" and star_of("051").get_attribute("aria-pressed") == "false")
+    pg.get_by_role("button", name=re.compile(r"^★ 별표 2")).click()
+    check("별표 모아보기: 2개만, 번호 순", order() == ["012", "050"], str(order()))
+    check("별표 모아보기에도 계열·정렬 줄 표시", pg.locator('.toolbar-row .dot').count() == 10 and pg.locator('.toolbar-row[aria-label="정렬"]').count() == 1)
+    pg.get_by_role("button", name=re.compile("공유 링크 복사")).click()
+    clip = pg.evaluate("navigator.clipboard.readText()")
+    check("공유 링크 = 별표 모아보기 + 번호 목록", "#w=star&k=012-050" in clip, clip)
+    pg.reload(); pg.wait_for_selector("[data-card]")
+    check("새로고침해도 별표 유지(같은 브라우저) + 별표 보기 유지", pg.get_by_role("button", name=re.compile(r"^★ 별표 2")).count() == 1 and pg.locator("[data-card]").count() == 2)
+    ctx2 = br.new_context(viewport={"width": 1600, "height": 1000})
+    p2 = ctx2.new_page(); p2.goto(URL + "#w=star&k=010-020-999"); p2.wait_for_selector("[data-card]")
+    ids2 = p2.locator("[data-card]").evaluate_all("els => els.map(e => e.getAttribute('data-card'))")
+    check("공유 링크를 받은 사람(새 브라우저): 같은 별표 목록 표시(잘못된 번호 무시)", ids2 == ["010", "020"], str(ids2))
+    ctx2.close()
+    pg.locator("[data-card='012']").click()
+    pg.locator(".panel .star-detail").click()
+    check("상세 패널 별표 버튼으로 해제", pg.get_by_role("button", name=re.compile(r"^★ 별표 1")).count() == 1)
+    star_of("050").click()
+    check("모두 해제하면 안내 문구", pg.locator(".empty").count() == 1 and pg.locator("[data-card]").count() == 0)
+    pg.get_by_role("button", name=re.compile(r"^전체 308")).click()
+    check("별표 해제 후 전체 308 복귀", pg.locator("[data-card]").count() == 308)
+
     # 3) 형식 전환 → 갤러리 대표 로고
     for key in ("longest", "short", "long"):
         label = {"longest": "The Longest", "long": "Long", "short": "Short"}[key]

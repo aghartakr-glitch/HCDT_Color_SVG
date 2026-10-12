@@ -8,10 +8,12 @@ interface CardProps {
   cw: Colorway;
   format: FormatKey;
   selected: boolean;
+  starred: boolean;
   onSelect: (id: string) => void;
+  onToggleStar: (id: string) => void;
 }
 
-const Card = memo(function Card({ cw, format, selected, onSelect }: CardProps) {
+const Card = memo(function Card({ cw, format, selected, starred, onSelect, onToggleStar }: CardProps) {
   const { lang, t } = useLang();
   const name = colorName(cw.name, lang);
   const badge = cw.origin === 'main' ? t('메인 컬러', 'Main color') : t('확장 컬러', 'Extended color');
@@ -21,6 +23,14 @@ const Card = memo(function Card({ cw, format, selected, onSelect }: CardProps) {
   const label = t(`${cw.id} ${cw.name}, ${cw.badge}. 기준 보라 ${cw.purple}, 보조색 ${cw.aux}. 가시성 ${m.visibility}점, 색각 이상 위험도: ${risks}`, `${cw.id} ${name}, ${badge}. Base purple ${cw.purple}, accent ${cw.aux}. Visibility ${m.visibility}, color-vision risk: ${risks}`);
   return (
     <li className="card-item">
+      <button
+        type="button"
+        className={`star-btn${starred ? ' is-on' : ''}`}
+        aria-pressed={starred}
+        aria-label={starred ? t(`${cw.id} 별표 해제`, `Remove star from ${cw.id}`) : t(`${cw.id} 별표 추가`, `Add star to ${cw.id}`)}
+        title={starred ? t('별표 해제', 'Remove star') : t('별표로 모아두기', 'Star to keep')}
+        onClick={() => onToggleStar(cw.id)}
+      >{starred ? '★' : '☆'}</button>
       <button
         type="button"
         className={`card${selected ? ' is-selected' : ''}`}
@@ -52,15 +62,17 @@ interface Props {
   items: Colorway[];
   format: FormatKey;
   selectedId: string;
+  stars: Set<string>;
   onSelect: (id: string) => void;
+  onToggleStar: (id: string) => void;
 }
 
-export function Gallery({ items, format, selectedId, onSelect }: Props) {
+export function Gallery({ items, format, selectedId, stars, onSelect, onToggleStar }: Props) {
   const { t } = useLang();
   return (
     <ul className="grid" aria-label={t('컬러 시안 목록', 'Colorway list')}>
       {items.map((cw) => (
-        <Card key={cw.id} cw={cw} format={format} selected={cw.id === selectedId} onSelect={onSelect} />
+        <Card key={cw.id} cw={cw} format={format} selected={cw.id === selectedId} starred={stars.has(cw.id)} onSelect={onSelect} onToggleStar={onToggleStar} />
       ))}
     </ul>
   );
