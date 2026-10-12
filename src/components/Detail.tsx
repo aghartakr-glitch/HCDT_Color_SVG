@@ -5,6 +5,7 @@ import { VARIANTS, VARIANT_BY_ID } from '../lib/variants';
 import { fileName, previewBackground, zipName } from '../lib/svg';
 import { copyText, downloadSvg, downloadZip } from '../lib/download';
 import { Logo, SymbolBig } from './Logo';
+import { AccessDetail } from './Access';
 import type { Colorway, FormatKey, VariantId } from '../types';
 
 interface Props {
@@ -158,6 +159,11 @@ export function Detail({ cw, format, setFormat, variant, setVariant, includeBg, 
             {t('3가지 형식 다운로드 (ZIP)', 'Download all 3 formats (ZIP)')} <small>The Longest · Long · Short</small>
           </button>
         </div>
+      </section>
+
+      <section aria-labelledby="sec-access" className="block">
+        <h3 id="sec-access" className="block-title">{t('가시성 · 색각 이상 위험도', 'Visibility · color-vision risk')}</h3>
+        <AccessDetail cw={cw} />
       </section>
 
       <section aria-labelledby="sec-hex" className="block">

@@ -3,7 +3,7 @@
   "private": true,
   "version": "1.0.0",
   "type": "module",
-  "description": "HCDT 로고 컬러 100종 탐색 및 SVG 다운로드",
+  "description": "HCDT 로고 컬러 308종 탐색 및 SVG 다운로드",
   "scripts": {
     "dev": "vite",
     "build": "tsc --noEmit && vite build",

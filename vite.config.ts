@@ -6,5 +6,6 @@ export default defineConfig({
   base: './',
   plugins: [react()],
   build: { target: 'es2022', sourcemap: false },
-  test: { environment: 'node', include: ['tests/**/*.test.ts'] },
+  test: {
+    testTimeout: 180000, environment: 'node', include: ['tests/**/*.test.ts'] },
 });

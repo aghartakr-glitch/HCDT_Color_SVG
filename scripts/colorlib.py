@@ -86,3 +86,18 @@ def delta_e(h1, h2):
 def hue_dist(a, b):
     d = abs(a - b) % 360
     return min(d, 360 - d)
+
+
+# ── 색각 이상 시뮬레이션: Machado, Oliveira, Fernandes (2009) 완전 이상(severity 1.0), 선형 RGB에 적용 ──
+CVD_MATRICES = {
+    "protan": ((0.152286, 1.052583, -0.204868), (0.114503, 0.786281, 0.099216), (-0.003882, -0.048116, 1.051998)),
+    "deutan": ((0.367322, 0.860646, -0.227968), (0.280085, 0.672501, 0.047413), (-0.011820, 0.042940, 0.968881)),
+    "tritan": ((1.255528, -0.076749, -0.178779), (-0.078411, 0.930809, 0.147602), (0.004733, 0.691367, 0.303900)),
+}
+
+
+def simulate_cvd(h, kind):
+    m = CVD_MATRICES[kind]
+    rgb = [lin(c) for c in hex_to_rgb(h)]
+    out = [max(0.0, min(1.0, sum(m[i][j] * rgb[j] for j in range(3)))) for i in range(3)]
+    return rgb_to_hex(tuple(delin(c) for c in out))

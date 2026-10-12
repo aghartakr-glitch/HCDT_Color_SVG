@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-확장 컬러 92개를 결정적(고정)으로 생성한다.  같은 입력이면 항상 같은 결과가 나온다(랜덤 없음).
+확장 컬러 EXT_N개(기본 300)를 결정적(고정)으로 생성한다.  같은 입력이면 항상 같은 결과가 나온다(랜덤 없음).
 
 규칙(원본 8개에서 읽은 구조를 그대로 따른다)
   기준 보라  #6B00FF              : 모든 시안 공통(8개 원본도 전부 동일)
@@ -29,6 +29,9 @@ BRIDGE = "#5960D8"
 LIM = dict(purple_vs_A=2.75, A_vs_white=1.22, B_vs_white=1.6, B_vs_purple=2.0, min_chroma=0.05, purple_hue_excl=40)
 MIN_DIST = float(__import__("os").environ.get("MIN_DIST", "0.038"))   # 보조색 A끼리 최소 거리(OKLab)
 MIN_DIST_B = float(__import__("os").environ.get("MIN_DIST_B", "0.028"))  # 진한 톤 B끼리 최소 거리
+EXT_N = int(__import__("os").environ.get("EXT_N", "300"))                  # 확장 컬러 개수
+FLOOR_A, FLOOR_B = 0.017, 0.012                                            # 단계적으로 낮추는 거리 기준의 하한
+SEED = ROOT / "scripts" / "seed_ext92.json"                                # 이미 공개한 확장 92개: 그대로 유지(번호만 색상순으로 다시 매김)
 
 
 def clamp(x, a, b):
@@ -62,19 +65,23 @@ def ok(A, B):
     return True
 
 
-# ── 후보 풀 : 색상각 3° 간격 × 명도 × 채도 (sRGB 안에 들어오는 색만) ──
+# ── 후보 풀 : 색상각 2° 간격 × 명도 0.02 간격 × 채도 (sRGB 안에 들어오는 색만) ──
 def candidates():
     pool, seen = [], set()
-    for hh in range(0, 360, 3):
-        for L in (0.74, 0.77, 0.80, 0.83, 0.86, 0.89, 0.92, 0.95):
+    Ls = [round(0.72 + 0.02 * i, 2) for i in range(13)]            # 0.72 ~ 0.96
+    Cs = (0.05, 0.06, 0.07, 0.085, 0.10, 0.115, 0.13, 0.145, 0.16, 0.18, 0.20, 0.22, 0.25)
+    for hh in range(0, 360, 2):
+        for L in Ls:
             mc = max_chroma(L, hh)
-            for C in (0.05, 0.065, 0.08, 0.10, 0.12, 0.14, 0.16, 0.18, 0.20, 0.22, 0.25):
+            for C in Cs:
                 if C > mc:   # 색역을 넘으면 그 명도·색상의 최대 채도로 한 번만
                     if mc < 0.05 or C > mc + 0.03: continue
                     C = mc
                 A, _ = oklch_to_hex(L, C, hh)
                 if A in seen: continue
                 seen.add(A)
+                if contrast(PURPLE, A) < LIM["purple_vs_A"] or contrast(A, WHITE) < LIM["A_vs_white"]:
+                    continue   # B를 계산하기 전에 A 조건부터 걸러 시간을 줄인다
                 B = derive_deep(A)
                 if ok(A, B):
                     pool.append((A, B))
@@ -100,6 +107,20 @@ FAMILY = [  # (시작각, 끝각, 이름) OKLCH 색상각
 ]
 
 
+def family_group(h):
+    """화면의 '색 계열' 버튼용 9계열 (OKLCH 색상각). 같은 계열끼리 모아 볼 수 있다."""
+    h = h % 360
+    if h >= 327 or h < 10: return "pink"
+    if h < 30: return "red"
+    if h < 70: return "orange"
+    if h < 105: return "yellow"
+    if h < 148: return "lime"
+    if h < 166: return "green"
+    if h < 200: return "teal"
+    if h < 225: return "sky"
+    return "blue"
+
+
 def tone_name(L, C):
     if C < 0.085: return "연한"
     if C < 0.13: return "부드러운"
@@ -113,6 +134,39 @@ def family_name(h):
         if a <= hh < b or a <= hh + 360 < b:
             return n
     return "자주"  # 보라 제외 구간 경계 안전장치
+
+
+# ───────────── 가시성 점수 · 색각 이상 위험도 ─────────────
+# 대비(명암비) → 점수: 1:1=0점, 3:1(WCAG 비텍스트 기준)=60점, 4.5:1=85점, 7:1 이상=100점 (사이는 직선으로 이음)
+SCORE_PTS = [(1, 0), (3, 60), (4.5, 85), (7, 100)]
+CVD_KINDS = ("protan", "deutan", "tritan")     # 적색약(1형) · 녹색약(2형) · 청황색약(3형)
+CVD_LEVELS = (6, 12)                            # 정상 시각 대비 점수가 6점 미만으로 줄면 낮음, 12점 이상 줄면 높음
+
+
+def ratio_score(r):
+    if r >= 7: return 100.0
+    for (x0, y0), (x1, y1) in zip(SCORE_PTS, SCORE_PTS[1:]):
+        if r <= x1: return y0 + (y1 - y0) * (r - x0) / (x1 - x0)
+    return 0.0
+
+
+def visibility(P, A, B):
+    """적용 방식 ①~⑥ 각각에서 '서로 맞닿는 색 쌍 중 가장 약한 쌍'의 점수를 구해 6개를 평균한다.
+       ①②③ 심볼 두 면(보라-보조색) / ④ 그리고 흰 배경 위 진한 톤 글자 / ⑤ 거기에 보라 글자 옆 진한 기호 / ⑥ 흰 배경 위 진한 톤 단색"""
+    pa, dw, dp = ratio_score(contrast(P, A)), ratio_score(contrast(B, WHITE)), ratio_score(contrast(B, P))
+    return sum([pa, pa, pa, min(pa, dw), min(pa, dp, dw), dw]) / 6
+
+
+def access_metrics(P, A, B):
+    v0 = visibility(P, A, B)
+    cvd, worst = {}, 0.0
+    for k in CVD_KINDS:
+        vs = visibility(simulate_cvd(P, k), simulate_cvd(A, k), simulate_cvd(B, k))
+        drop = round(v0 - vs, 1)          # 화면에 보이는 값(소수 1자리)으로 단계를 정해, 표시와 단계가 어긋나지 않게 한다
+        worst = max(worst, drop)
+        cvd[k] = dict(score=round(vs), drop=drop, level="low" if drop < CVD_LEVELS[0] else "mid" if drop < CVD_LEVELS[1] else "high")
+    return dict(visibility=round(v0), cvd=cvd, cvdRisk=worst,
+                cvdLevel="low" if worst < CVD_LEVELS[0] else "mid" if worst < CVD_LEVELS[1] else "high")
 
 
 def roles(P, A, B, M):
@@ -142,12 +196,12 @@ def finalize(ext, picks):
                            occludedLayers={k: ex[EX_KEY[k]]["occluded"] for k in VARIANTS if ex[EX_KEY[k]]["occluded"]},
                            visibleMapping=orig_map))
         entries.append(dict(
-            id=f"{i + 1:03d}", no=i + 1, name=m["name"], origin="main", badge="메인 컬러",
+            id=f"{i + 1:03d}", no=i + 1, name=m["name"], origin="main", badge="메인 컬러", family=family_group(hex_to_oklch(A)[2]),
             purple=Pp, aux=A, auxDeep=B, mapping=orig_map,
             source=dict(file="N-FUD 2026_Logo_261012.ai", page=m["page"], colorMode="RGB(DeviceRGB)", valuesAreSourceExact=True,
                         note="원본 AI 문서가 RGB 모드라 CMYK·별색 정보가 없고, 웹 HEX는 원본 RGB 값과 같다"),
         ))
-    # ── 확장 92개 : 색상각(→명도) 순으로 정렬, 번호 009~100 ──
+    # ── 확장 EXT_N개 : 색상각(→명도) 순으로 정렬, 번호 009~ ──
     ext_sorted = sorted(picks, key=lambda ab: (round(hex_to_oklch(ab[0])[2] % 360), -hex_to_oklch(ab[0])[0], ab[0]))
     # 핑크(345~360)는 0도 근처에서 시작되도록 정렬 기준을 이동
     ext_sorted = sorted(picks, key=lambda ab: (((hex_to_oklch(ab[0])[2] + 15) % 360), -hex_to_oklch(ab[0])[0], ab[0]))
@@ -161,7 +215,7 @@ def finalize(ext, picks):
             name = f"{base} {k}"; k += 1
         used.add(name)
         entries.append(dict(
-            id=f"{n:03d}", no=n, name=name, origin="extended", badge="확장 컬러",
+            id=f"{n:03d}", no=n, name=name, origin="extended", badge="확장 컬러", family=family_group(h),
             purple=PURPLE, aux=A, auxDeep=B, mapping=mapping_for(PURPLE, A, B, BRIDGE),
             source=None,
         ))
@@ -173,9 +227,12 @@ def finalize(ext, picks):
             contrastDeepWhite=round(contrast(e["auxDeep"], WHITE), 2),
             contrastDeepPurple=round(contrast(e["auxDeep"], e["purple"]), 2),
             oklch=[round(x, 3) for x in hex_to_oklch(e["aux"])],
+            **access_metrics(e["purple"], e["aux"], e["auxDeep"]),
         )
-    assert len(entries) == 100 and len({e["id"] for e in entries}) == 100
-    assert len({e["aux"] for e in entries}) == 100 and len({e["name"] for e in entries}) == 100
+    N = 8 + EXT_N
+    assert len(entries) == N and len({e["id"] for e in entries}) == N
+    assert len({e["aux"] for e in entries}) == N and len({e["name"] for e in entries}) == N
+    assert len({e["auxDeep"] for e in entries}) == N
     out = ROOT / "src" / "data"
     out.mkdir(parents=True, exist_ok=True)
     (out / "colorways.json").write_text(json.dumps(entries, ensure_ascii=False, indent=1))
@@ -190,10 +247,12 @@ def main():
     ext = json.loads((OUT / "extracted.json").read_text())
     orig = [(m["examples"]["①"]["hi"], m["examples"]["④"]["wordmark"]) for m in ext["mainColors"]]
     chosen = [a for a, _ in orig]
+    seeds = [tuple(x) for x in json.loads(SEED.read_text())] if SEED.exists() else []
+    chosen += [a for a, _ in seeds]
     pool = candidates()
     print("후보 수", len(pool), file=sys.stderr)
     # 원본과 너무 가까운 후보 제거
-    pool = [(a, b) for a, b in pool if all(delta_e(a, o) >= MIN_DIST for o in chosen)]
+    pool = [(a, b) for a, b in pool if all(delta_e(a, o) >= FLOOR_A for o in chosen)]
     print("원본과 겹치지 않는 후보", len(pool), file=sys.stderr)
     # ── 선택 : 색상 구간별 할당(쏠림 방지) + 구간 안에서 '이미 있는 색과 가장 먼' 순서 ──
     # 구간 안에서는 선명/연한/중간 톤을 번갈아 고르고, 탁한 갈색·카키 계열은 후보에서 제외한다.
@@ -222,10 +281,12 @@ def main():
     pool = [(a, b) for a, b in pool if not muddy(a) and sector_of(a) is not None]
     labs = {a: srgb_to_oklab(a) for a, _ in pool}
     labsB = {b: srgb_to_oklab(b) for _, b in pool}
-    deep0 = [m["examples"]["④"]["wordmark"] for m in ext["mainColors"]]
+    deep0 = [m["examples"]["④"]["wordmark"] for m in ext["mainColors"]] + [b for _, b in seeds]
     mind = {a: min(delta_e(a, o) for o in chosen) for a, _ in pool}
     mindB = {b: min(delta_e(b, o) for o in deep0) for _, b in pool}
-    picks, taken = [], [0] * len(SECTORS)
+    picks, taken = list(seeds), [0] * len(SECTORS)
+    for a, _ in seeds:
+        taken[sector_of(a)] += 1
     alive = list(pool)
 
     def pick(best):
@@ -240,10 +301,10 @@ def main():
 
     def round_robin(quotas, da, db):
         progress = True
-        while progress and len(picks) < 92:
+        while progress and len(picks) < EXT_N:
             progress = False
             for k in range(len(SECTORS)):
-                if taken[k] >= quotas[k] or len(picks) >= 92: continue
+                if taken[k] >= quotas[k] or len(picks) >= EXT_N: continue
                 cands = [ab for ab in feasible(da, db) if sector_of(ab[0]) == k]
                 if not cands: continue
                 want = CYCLE[taken[k] % len(CYCLE)]
@@ -251,15 +312,15 @@ def main():
                 pick(max(pref, key=lambda ab: (round(mind[ab[0]], 6), ab[0])))
                 progress = True
 
-    quotas = [q for *_, q in SECTORS]
+    quotas = [max(1, round(q * EXT_N / 92)) for *_, q in SECTORS]
     # 거리 기준을 단계적으로 낮추며(0.038 → 0.034 → 0.031) 구간 할당을 채운다. 최저 기준 0.031도 눈으로 구분되는 수준.
-    for da, db in ((MIN_DIST, MIN_DIST_B), (0.034, 0.024), (0.031, 0.022)):
+    for da, db in ((MIN_DIST, MIN_DIST_B), (0.034, 0.024), (0.031, 0.022), (0.027, 0.019), (0.024, 0.017), (0.021, 0.015), (0.019, 0.013), (FLOOR_A, FLOOR_B)):
         round_robin(quotas, da, db)
     # 그래도 모자라면 여유 있는 구간의 할당을 1씩 늘려 가며 채운다
-    while len(picks) < 92:
+    while len(picks) < EXT_N:
         before = len(picks)
         quotas = [max(q, t + 1) for q, t in zip(quotas, taken)]
-        round_robin(quotas, 0.031, 0.022)
+        round_robin(quotas, FLOOR_A, FLOOR_B)
         if len(picks) == before:
             raise SystemExit(f"조건을 만족하는 후보가 {len(picks)}개에서 끝남 → 기준을 낮추세요")
     print("구간별 선택 수", {SECTORS[k][0]: (taken[k], SECTORS[k][3]) for k in range(len(SECTORS))}, file=sys.stderr)

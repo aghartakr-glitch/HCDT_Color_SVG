@@ -39,26 +39,62 @@ with sync_playwright() as pw:
     pg.on("console", lambda m: errs.append(m.text) if m.type == "error" else None)
     pg.goto(URL); pg.wait_for_selector("[data-card]")
     check("첫 화면 기본 필터 = 메인 컬러 8개", pg.locator("[data-card]").count() == 8 and pg.locator(".pill.is-on", has_text="메인 컬러").count() == 1)
-    pg.get_by_role("button", name=re.compile(r"^전체 100")).click()
+    pg.get_by_role("button", name=re.compile(r"^전체 308")).click()
 
     # 1) 개수·배지·순서
     cards = pg.locator("[data-card]")
-    check("카드 100개", cards.count() == 100, str(cards.count()))
-    ids = [cards.nth(i).get_attribute("data-card") for i in range(100)]
-    check("번호 001~100 순서", ids == [f"{i:03d}" for i in range(1, 101)])
+    check("카드 308개", cards.count() == 308, str(cards.count()))
+    ids = [cards.nth(i).get_attribute("data-card") for i in range(308)]
+    check("번호 001~308 순서", ids == [f"{i:03d}" for i in range(1, 309)])
     badges = pg.locator(".card-badge").evaluate_all("els => els.map(e => e.textContent)")
     check("메인 컬러 배지 정확히 8개, 앞 8개", badges[:8] == ["메인 컬러"] * 8 and badges.count("메인 컬러") == 8)
-    check("확장 컬러 배지 92개", badges[8:] == ["확장 컬러"] * 92)
+    check("확장 컬러 배지 300개", badges[8:] == ["확장 컬러"] * 300)
     names1 = pg.locator(".card-name").evaluate_all("els => els.map(e => e.textContent)")
     check("메인 8개 이름·순서", names1[:8] == ["라임", "오렌지", "민트그린", "옐로", "피치", "핑크", "라이트블루", "아쿠아"], str(names1[:8]))
 
     # 2) 필터
     pg.get_by_role("button", name=re.compile(r"^메인 컬러 8")).click()
     check("필터: 메인 8", pg.locator("[data-card]").count() == 8)
-    pg.get_by_role("button", name=re.compile(r"^확장 컬러 92")).click()
-    check("필터: 확장 92", pg.locator("[data-card]").count() == 92)
-    pg.get_by_role("button", name=re.compile(r"^전체 100")).click()
-    check("필터: 전체 100", pg.locator("[data-card]").count() == 100)
+    pg.get_by_role("button", name=re.compile(r"^확장 컬러 300")).click()
+    check("필터: 확장 300", pg.locator("[data-card]").count() == 300)
+    pg.get_by_role("button", name=re.compile(r"^전체 308")).click()
+    check("필터: 전체 308", pg.locator("[data-card]").count() == 308)
+
+    # 2-1) 색 계열 버튼 · 정렬 · 접근성 표시
+    fam_btns = pg.locator('.toolbar-row[role=group] .pill.fam')
+    check("색 계열 버튼 9개", fam_btns.count() == 9)
+    tot = 0
+    for i in range(9):
+        tot += int(fam_btns.nth(i).locator("b").inner_text())
+    check("계열별 개수 합 = 현재 목록(308)", tot == 308, str(tot))
+    fam_btns.nth(5).click()   # 초록
+    n_green = pg.locator("[data-card]").count()
+    ok_green = pg.locator("[data-card]").evaluate_all("els => els.map(e => e.getAttribute('data-card'))")
+    check("초록 계열만 표시, 버튼 개수와 일치", n_green == int(fam_btns.nth(5).locator("b").inner_text()) and all(CW[int(i)-1]["family"] == "green" for i in ok_green))
+    pg.get_by_role("button", name=re.compile(r"^모든 계열")).click()
+    check("모든 계열 → 308 복귀", pg.locator("[data-card]").count() == 308)
+    sort_row = pg.locator('.toolbar-row[aria-label="정렬"]')
+    def order(): return pg.locator("[data-card]").evaluate_all("els => els.map(e => e.getAttribute('data-card'))")
+    sort_row.get_by_role("button", name=re.compile("^가시성 점수")).click()
+    o = order(); vis = [CW[int(i)-1]["metrics"]["visibility"] for i in o]
+    check("정렬: 가시성 점수 높은 순", vis == sorted(vis, reverse=True))
+    sort_row.get_by_role("button", name=re.compile("^가시성 점수")).click()
+    vis = [CW[int(i)-1]["metrics"]["visibility"] for i in order()]
+    check("같은 버튼 다시 누르면 낮은 순", vis == sorted(vis))
+    sort_row.get_by_role("button", name=re.compile("^시각적 위험도")).click()
+    rk = [CW[int(i)-1]["metrics"]["cvdRisk"] for i in order()]
+    check("정렬: 시각적 위험도 낮은 순", rk == sorted(rk))
+    sort_row.get_by_role("button", name=re.compile("^색채 스펙트럼")).click()
+    hue = [(CW[int(i)-1]["metrics"]["oklch"][2] + 15) % 360 for i in order()]
+    check("정렬: 색채 스펙트럼(색상각 순)", all(hue[k] <= hue[k+1] + 1e-9 for k in range(len(hue)-1)))
+    sort_row.get_by_role("button", name=re.compile("^번호순")).click()
+    check("정렬: 번호순 복귀", order() == [f"{i:03d}" for i in range(1, 309)])
+    acc = pg.locator("[data-card='050'] .card-access").text_content()
+    m50 = CW[49]["metrics"]
+    check("카드에 가시성 점수·색각 3종 표시", str(m50["visibility"]) in acc and "적" in acc and "녹" in acc and "청" in acc, acc)
+    pg.get_by_role("button", name=re.compile(r"^메인 컬러 8")).click()
+    check("메인 컬러에서는 정렬 줄 숨김", pg.locator('.toolbar-row[aria-label="정렬"]').count() == 0)
+    pg.get_by_role("button", name=re.compile(r"^전체 308")).click()
 
     # 3) 형식 전환 → 갤러리 대표 로고
     for key in ("longest", "short", "long"):
@@ -69,7 +105,7 @@ with sync_playwright() as pw:
         check(f"갤러리 형식 전환 → {label}", vb(svg) == f"0 0 {exp[2]} {exp[3]}", vb(svg))
     # 4) 새로고침 고정
     pg.reload(); pg.wait_for_selector("[data-card]")
-    pg.get_by_role("button", name=re.compile(r"^전체 100")).click()
+    pg.get_by_role("button", name=re.compile(r"^전체 308")).click()
     check("새로고침 후 이름 목록 동일", pg.locator(".card-name").evaluate_all("els => els.map(e => e.textContent)") == names1)
     # 4-1) 한/영 전환
     pg.get_by_role("button", name="EN", exact=True).click()
@@ -81,9 +117,9 @@ with sync_playwright() as pw:
     check("EN: 새로고침 후 유지", pg.locator("h1").inner_text() == "HCDT Logo Color Explorer")
     pg.get_by_role("button", name="한국어", exact=True).click()
     check("KO: 복귀", pg.locator("h1").inner_text() == "HCDT 로고 컬러 탐색")
-    pg.get_by_role("button", name=re.compile(r"^전체 100")).click()
+    pg.get_by_role("button", name=re.compile(r"^전체 308")).click()
 
-    # 5) 100개 전부: 상세 이름/번호, 보드 6개 적용 방식의 색 확인
+    # 5) 308개 전부: 상세 이름/번호, 보드 6개 적용 방식의 색 확인
     bad = []
     for cw in CW:
         pg.locator(f"[data-card='{cw['id']}']").click()
@@ -101,7 +137,7 @@ with sync_playwright() as pw:
             if [x.upper() for x in f] != [x.upper() for x in exp]: bad.append((cw["id"], v, f, exp))
         syms = fills(pg.locator(".panel .symbol-big svg").evaluate("e => e.outerHTML"))
         if [s.upper() for s in syms] != [cw["mapping"]["1"]["base"].upper(), cw["mapping"]["1"]["hi"].upper()]: bad.append((cw["id"], "sym"))
-    check("100개 시안: 상세 제목 + 6개 적용 방식 색 + 확대 심볼 색", not bad, str(bad[:3]))
+    check("308개 시안: 상세 제목 + 6개 적용 방식 색 + 확대 심볼 색", not bad, str(bad[:3]))
 
     # 6) 상세 조작 + 다운로드 (003 민트그린, Short, ③, 배경 포함)
     pg.locator("[data-card='003']").click()
@@ -186,7 +222,7 @@ with sync_playwright() as pw:
     # 10) 모바일: 전체 화면 상세, 가로 스크롤/잘림 없음, 3형식
     for w, h in ((390, 844), (360, 740), (768, 1024)):
         mc = br.new_context(viewport={"width": w, "height": h}, device_scale_factor=2, accept_downloads=True)
-        m = mc.new_page(); m.goto(URL); m.wait_for_selector("[data-card]"); m.get_by_role("button", name=re.compile(r"^전체 100")).click()
+        m = mc.new_page(); m.goto(URL); m.wait_for_selector("[data-card]"); m.get_by_role("button", name=re.compile(r"^전체 308")).click()
         ov = m.evaluate("document.documentElement.scrollWidth <= window.innerWidth")
         check(f"모바일 {w}px: 갤러리 가로 넘침 없음", ov)
         m.locator("[data-card='008']").click()

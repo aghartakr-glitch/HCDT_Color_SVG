@@ -28,12 +28,17 @@ export interface ColorMapping {
   accent: string | null;
 }
 
+export type FamilyKey = 'pink' | 'red' | 'orange' | 'yellow' | 'lime' | 'green' | 'teal' | 'sky' | 'blue';
+export type CvdKind = 'protan' | 'deutan' | 'tritan';
+export type RiskLevel = 'low' | 'mid' | 'high';
+
 export interface Colorway {
-  id: string;            // '001' ~ '100'
+  id: string;            // '001' ~ '308'
   no: number;
   name: string;
   origin: OriginKind;
   badge: '메인 컬러' | '확장 컬러';
+  family: FamilyKey;     // 색 계열(9종) — 계열 버튼 필터용
   purple: string;        // 기준 보라
   aux: string;           // 보조색
   auxDeep: string;       // 보조색 진한 톤
@@ -45,6 +50,13 @@ export interface Colorway {
     contrastDeepWhite: number;
     contrastDeepPurple: number;
     oklch: [number, number, number];
+    /** 가시성 점수 0~100 (정상 시각) */
+    visibility: number;
+    /** 색각 이상별 점수·정상 대비 감소폭(점)·위험 단계 */
+    cvd: Record<CvdKind, { score: number; drop: number; level: RiskLevel }>;
+    /** 세 유형 중 가장 큰 감소폭 (정렬·종합 단계용) */
+    cvdRisk: number;
+    cvdLevel: RiskLevel;
   };
 }
 

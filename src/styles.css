@@ -167,3 +167,34 @@ h1 { margin: 0 0 10px; font-size: clamp(28px, 4vw, 40px); line-height: 1.15; let
 .lang-btn { border: 0; background: transparent; padding: 6px 14px; font: inherit; font-size: 13px; font-weight: 600; cursor: pointer; color: var(--muted); }
 .lang-btn.is-on { background: #111; color: #fff; }
 .lang-btn:focus-visible { outline: 2px solid var(--purple); outline-offset: -2px; }
+
+/* 계열 버튼 · 정렬 */
+.toolbar-row { display: flex; flex-wrap: wrap; gap: 10px 8px; align-items: center; margin-top: 12px; }
+.pill.fam { display: inline-flex; align-items: center; gap: 7px; }
+.pill.fam i { width: 14px; height: 14px; border-radius: 50%; border: 1px solid rgba(0, 0, 0, 0.18); flex: none; }
+.pill.is-on i { border-color: rgba(255, 255, 255, 0.7); }
+.pill.sort { min-height: 34px; padding: 5px 12px; font-size: 13px; }
+.pill small { color: inherit; opacity: 0.75; margin-left: 3px; }
+.hint { font-size: 12px; color: var(--muted); margin: 6px 0 0; }
+
+/* 카드 하단: 가시성 · 색각 이상 위험도 */
+.card-access { display: flex; flex-wrap: wrap; gap: 4px; align-items: center; font-size: 11px; font-variant-numeric: tabular-nums; }
+.vis-score { background: var(--soft); border-radius: 4px; padding: 1px 6px; color: var(--ink); }
+.risk { display: inline-block; border-radius: 4px; padding: 1px 6px; font-weight: 600; border: 1px solid transparent; white-space: nowrap; }
+.risk-low { background: #e6f5ec; color: #14663a; border-color: #b7e0c7; }
+.risk-mid { background: #fff3d6; color: #805a00; border-color: #f0d68a; }
+.risk-high { background: #fde4e4; color: #a52121; border-color: #f3b4b4; }
+.risk-lg { font-size: 13px; padding: 3px 10px; }
+
+/* 상세: 접근성 표 */
+.access-head { display: flex; flex-wrap: wrap; gap: 8px 14px; align-items: center; margin: 0 0 10px; }
+.access-big { font-size: 34px; font-weight: 800; line-height: 1; font-variant-numeric: tabular-nums; }
+.access-big small { font-size: 14px; font-weight: 600; }
+.sub-line { display: block; }
+.table-wrap { overflow-x: auto; }
+.access-table { width: 100%; border-collapse: collapse; font-size: 13px; }
+.access-table th, .access-table td { text-align: left; padding: 7px 8px; border-bottom: 1px solid var(--line); vertical-align: middle; white-space: nowrap; }
+.access-table thead th { font-size: 12px; color: var(--muted); font-weight: 600; }
+.access-table tbody th { font-weight: 600; }
+.swatches { display: inline-flex; gap: 3px; }
+.swatches i { width: 18px; height: 18px; border-radius: 4px; border: 1px solid rgba(0, 0, 0, 0.15); display: inline-block; }

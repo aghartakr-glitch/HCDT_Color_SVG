@@ -1,5 +1,6 @@
 import { memo } from 'react';
 import { Logo } from './Logo';
+import { AccessMini, useAccessText } from './Access';
 import { colorName, useLang } from '../lib/i18n';
 import type { Colorway, FormatKey } from '../types';
 
@@ -14,7 +15,10 @@ const Card = memo(function Card({ cw, format, selected, onSelect }: CardProps) {
   const { lang, t } = useLang();
   const name = colorName(cw.name, lang);
   const badge = cw.origin === 'main' ? t('메인 컬러', 'Main color') : t('확장 컬러', 'Extended color');
-  const label = t(`${cw.id} ${cw.name}, ${cw.badge}. 기준 보라 ${cw.purple}, 보조색 ${cw.aux}`, `${cw.id} ${name}, ${badge}. Base purple ${cw.purple}, accent ${cw.aux}`);
+  const { level, kindName } = useAccessText();
+  const m = cw.metrics;
+  const risks = (['protan', 'deutan', 'tritan'] as const).map((k) => `${kindName(k)} ${level(m.cvd[k].level)}`).join(', ');
+  const label = t(`${cw.id} ${cw.name}, ${cw.badge}. 기준 보라 ${cw.purple}, 보조색 ${cw.aux}. 가시성 ${m.visibility}점, 색각 이상 위험도: ${risks}`, `${cw.id} ${name}, ${badge}. Base purple ${cw.purple}, accent ${cw.aux}. Visibility ${m.visibility}, color-vision risk: ${risks}`);
   return (
     <li className="card-item">
       <button
@@ -37,6 +41,7 @@ const Card = memo(function Card({ cw, format, selected, onSelect }: CardProps) {
           <span className="chip"><i style={{ background: cw.purple }} />{t('보라', 'Purple')} {cw.purple}</span>
           <span className="chip"><i style={{ background: cw.aux }} />{t('보조', 'Accent')} {cw.aux}</span>
         </span>
+        <AccessMini cw={cw} />
         {selected && <span className="card-selected" aria-hidden="true">{t('선택됨', 'Selected')}</span>}
       </button>
     </li>

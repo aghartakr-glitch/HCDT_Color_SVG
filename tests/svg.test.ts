@@ -20,7 +20,7 @@ function expectedFills(cw: (typeof COLORWAYS)[number], v: VariantId, bg: boolean
   return out;
 }
 
-describe('SVG 생성: 100 × 3 × 6 = 1,800가지 (배경 포함 옵션까지)', () => {
+describe('SVG 생성: 308 × 3 × 6 = 5,544가지 (배경 포함 옵션까지)', () => {
   it('모든 조합이 생성되고 구조·색·여백·외부 참조 조건을 만족한다', () => {
     let count = 0;
     const names = new Set<string>();
@@ -68,7 +68,7 @@ describe('SVG 생성: 100 × 3 × 6 = 1,800가지 (배경 포함 옵션까지)',
         expect(buildLogoSvg(cw, f, v, { includeBackground: bg })).toBe(buildLogoSvg(cw, f, v, { includeBackground: bg }));
       }
     }
-    expect(count).toBe(1800);
+    expect(count).toBe(5544);
   });
 
   it('미리보기 SVG는 다운로드 SVG와 같은 도형·색을 쓴다 (크기 속성만 다름)', () => {
@@ -80,7 +80,7 @@ describe('SVG 생성: 100 × 3 × 6 = 1,800가지 (배경 포함 옵션까지)',
     }
   });
 
-  it('ZIP: 정확히 3개(The Longest·Long·Short), 내용이 단독 파일과 같다 — 100 × 6', async () => {
+  it('ZIP: 정확히 3개(The Longest·Long·Short), 내용이 단독 파일과 같다 — 308 × 6', async () => {
     for (const cw of COLORWAYS) for (const v of VARS) {
       for (const bg of [false, true]) {
         if (bg && !cw.mapping[String(v)].bg) continue;
