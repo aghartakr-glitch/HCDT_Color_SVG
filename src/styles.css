@@ -198,3 +198,11 @@ h1 { margin: 0 0 10px; font-size: clamp(28px, 4vw, 40px); line-height: 1.15; let
 .access-table tbody th { font-weight: 600; }
 .swatches { display: inline-flex; gap: 3px; }
 .swatches i { width: 18px; height: 18px; border-radius: 4px; border: 1px solid rgba(0, 0, 0, 0.15); display: inline-block; }
+
+/* 좁은 화면: 언어 버튼은 제목 위 줄로, 계열·정렬 버튼은 한 줄로 가로 스크롤 */
+@media (max-width: 760px) {
+  .hero { padding-top: 14px; }
+  .lang-switch { position: static; display: flex; width: max-content; margin: 0 0 10px auto; }
+  .toolbar-row { flex-wrap: nowrap; overflow-x: auto; padding-bottom: 6px; margin-right: -20px; padding-right: 20px; scrollbar-width: thin; -webkit-overflow-scrolling: touch; }
+  .toolbar-row > * { flex: none; }
+}
