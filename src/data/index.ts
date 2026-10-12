@@ -22,5 +22,11 @@ export const FORMAT_DESC: Record<FormatKey, string> = {
   short: '심볼 아래에 H–C / D+T',
 };
 
+export const FORMAT_DESC_EN: Record<FormatKey, string> = {
+  longest: 'Full department name to the right of the symbol (3 lines)',
+  long: 'Short department name to the right of the symbol (2 lines)',
+  short: 'H–C / D+T below the symbol',
+};
+
 export const MAIN_COUNT = COLORWAYS.filter((c) => c.origin === 'main').length;
 export const EXTENDED_COUNT = COLORWAYS.filter((c) => c.origin === 'extended').length;

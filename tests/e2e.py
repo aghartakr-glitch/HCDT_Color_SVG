@@ -38,6 +38,8 @@ with sync_playwright() as pw:
     pg.on("pageerror", lambda e: errs.append(str(e)))
     pg.on("console", lambda m: errs.append(m.text) if m.type == "error" else None)
     pg.goto(URL); pg.wait_for_selector("[data-card]")
+    check("첫 화면 기본 필터 = 메인 컬러 8개", pg.locator("[data-card]").count() == 8 and pg.locator(".pill.is-on", has_text="메인 컬러").count() == 1)
+    pg.get_by_role("button", name=re.compile(r"^전체 100")).click()
 
     # 1) 개수·배지·순서
     cards = pg.locator("[data-card]")
@@ -67,7 +69,19 @@ with sync_playwright() as pw:
         check(f"갤러리 형식 전환 → {label}", vb(svg) == f"0 0 {exp[2]} {exp[3]}", vb(svg))
     # 4) 새로고침 고정
     pg.reload(); pg.wait_for_selector("[data-card]")
+    pg.get_by_role("button", name=re.compile(r"^전체 100")).click()
     check("새로고침 후 이름 목록 동일", pg.locator(".card-name").evaluate_all("els => els.map(e => e.textContent)") == names1)
+    # 4-1) 한/영 전환
+    pg.get_by_role("button", name="EN", exact=True).click()
+    check("EN: 제목 영문", pg.locator("h1").inner_text() == "HCDT Logo Color Explorer")
+    check("EN: 메인 8 이름 영문", pg.locator(".card-name").evaluate_all("els => els.slice(0,8).map(e => e.textContent)") == ["Lime", "Orange", "Mint Green", "Yellow", "Peach", "Pink", "Light Blue", "Aqua"])
+    check("EN: 배지 영문", pg.locator(".card-badge").first.text_content() == "Main color" and pg.locator(".card-badge").last.text_content() == "Extended color")
+    check("EN: 한글 잔존 없음(본문)", not re.search(r"[가-힣]", pg.locator(".app").inner_text().replace("한국어", "")), re.findall(r"[가-힣]+", pg.locator(".app").inner_text().replace("한국어", ""))[:5])
+    pg.reload(); pg.wait_for_selector("[data-card]")
+    check("EN: 새로고침 후 유지", pg.locator("h1").inner_text() == "HCDT Logo Color Explorer")
+    pg.get_by_role("button", name="한국어", exact=True).click()
+    check("KO: 복귀", pg.locator("h1").inner_text() == "HCDT 로고 컬러 탐색")
+    pg.get_by_role("button", name=re.compile(r"^전체 100")).click()
 
     # 5) 100개 전부: 상세 이름/번호, 보드 6개 적용 방식의 색 확인
     bad = []
@@ -172,7 +186,7 @@ with sync_playwright() as pw:
     # 10) 모바일: 전체 화면 상세, 가로 스크롤/잘림 없음, 3형식
     for w, h in ((390, 844), (360, 740), (768, 1024)):
         mc = br.new_context(viewport={"width": w, "height": h}, device_scale_factor=2, accept_downloads=True)
-        m = mc.new_page(); m.goto(URL); m.wait_for_selector("[data-card]")
+        m = mc.new_page(); m.goto(URL); m.wait_for_selector("[data-card]"); m.get_by_role("button", name=re.compile(r"^전체 100")).click()
         ov = m.evaluate("document.documentElement.scrollWidth <= window.innerWidth")
         check(f"모바일 {w}px: 갤러리 가로 넘침 없음", ov)
         m.locator("[data-card='008']").click()

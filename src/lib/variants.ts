@@ -6,17 +6,17 @@ import type { VariantDef, VariantId } from '../types';
  */
 export const VARIANTS: VariantDef[] = [
   { id: 1, circled: '①', slug: 'duotone-purple', label: '흰 배경 · 두 색 심볼 · 보라 워드마크',
-    detail: '심볼은 보라+보조색 두 면, 워드마크는 기준 보라', useOn: 'white', transparentToken: 'transparent' },
+    detail: '심볼은 보라+보조색 두 면, 워드마크는 기준 보라', labelEn: 'White bg · two-color symbol · purple wordmark', detailEn: 'Symbol in purple + accent color, wordmark in base purple', useOn: 'white', transparentToken: 'transparent' },
   { id: 2, circled: '②', slug: 'reverse-on-purple', label: '보라 배경 · 보조색 심볼 · 보조색 워드마크',
-    detail: '보라 바탕에서 보조색 면과 워드마크만 보임 (보라 면은 배경과 같은 색)', useOn: 'purple', transparentToken: 'transparent-for-purple-bg' },
+    detail: '보라 바탕에서 보조색 면과 워드마크만 보임 (보라 면은 배경과 같은 색)', labelEn: 'Purple bg · accent symbol · accent wordmark', detailEn: 'On purple, only the accent face and wordmark show (the purple face matches the background)', useOn: 'purple', transparentToken: 'transparent-for-purple-bg' },
   { id: 3, circled: '③', slug: 'purple-on-aux', label: '보조색 배경 · 보라 심볼 · 보라 워드마크',
-    detail: '보조색 바탕에서 보라 면과 워드마크만 보임 (보조색 면은 배경과 같은 색)', useOn: 'aux', transparentToken: 'transparent-for-aux-bg' },
+    detail: '보조색 바탕에서 보라 면과 워드마크만 보임 (보조색 면은 배경과 같은 색)', labelEn: 'Accent bg · purple symbol · purple wordmark', detailEn: 'On the accent color, only the purple face and wordmark show (the accent face matches the background)', useOn: 'aux', transparentToken: 'transparent-for-aux-bg' },
   { id: 4, circled: '④', slug: 'duotone-aux-text', label: '흰 배경 · 두 색 심볼 · 보조색 워드마크',
-    detail: '심볼은 보라+보조색, 워드마크는 보조색 진한 톤', useOn: 'white', transparentToken: 'transparent' },
+    detail: '심볼은 보라+보조색, 워드마크는 보조색 진한 톤', labelEn: 'White bg · two-color symbol · accent wordmark', detailEn: 'Symbol in purple + accent color, wordmark in the deep accent tone', useOn: 'white', transparentToken: 'transparent' },
   { id: 5, circled: '⑤', slug: 'duotone-purple-accent', label: '흰 배경 · 두 색 심볼 · 보라 워드마크 · 보조색 기호',
-    detail: '워드마크는 보라, 가운데 ‘–’ ‘+’ 기호만 보조색 진한 톤', useOn: 'white', transparentToken: 'transparent' },
+    detail: '워드마크는 보라, 가운데 ‘–’ ‘+’ 기호만 보조색 진한 톤', labelEn: 'White bg · two-color symbol · purple wordmark · accent marks', detailEn: 'Wordmark in purple; only the – and + marks in the deep accent tone', useOn: 'white', transparentToken: 'transparent' },
   { id: 6, circled: '⑥', slug: 'mono-aux', label: '흰 배경 · 보조색 단색 심볼·워드마크',
-    detail: '심볼과 워드마크 모두 보조색 진한 톤 한 가지', useOn: 'white', transparentToken: 'transparent' },
+    detail: '심볼과 워드마크 모두 보조색 진한 톤 한 가지', labelEn: 'White bg · single-color accent symbol & wordmark', detailEn: 'Symbol and wordmark both in the deep accent tone', useOn: 'white', transparentToken: 'transparent' },
 ];
 
 export const VARIANT_BY_ID: Record<VariantId, VariantDef> = Object.fromEntries(

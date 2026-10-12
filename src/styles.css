@@ -160,3 +160,10 @@ h1 { margin: 0 0 10px; font-size: clamp(28px, 4vw, 40px); line-height: 1.15; let
   .hex-row .btn { grid-column: 3; grid-row: 1 / span 2; }
 }
 @media (prefers-reduced-motion: reduce) { * { transition: none !important; } }
+
+/* 한/영 전환 버튼 */
+.hero { position: relative; }
+.lang-switch { position: absolute; top: 14px; right: 0; display: inline-flex; border: 1px solid var(--line); border-radius: 999px; overflow: hidden; background: #fff; }
+.lang-btn { border: 0; background: transparent; padding: 6px 14px; font: inherit; font-size: 13px; font-weight: 600; cursor: pointer; color: var(--muted); }
+.lang-btn.is-on { background: #111; color: #fff; }
+.lang-btn:focus-visible { outline: 2px solid var(--purple); outline-offset: -2px; }

@@ -54,6 +54,8 @@ export interface VariantDef {
   slug: string;          // 파일명에 쓰는 이름
   label: string;         // 화면 표기
   detail: string;        // 구성 설명
+  labelEn: string;
+  detailEn: string;
   /** 투명 SVG를 올려 쓰기 좋은 바탕 */
   useOn: 'white' | 'purple' | 'aux';
   /** 투명 배경 파일 이름에 붙는 꼬리표 */

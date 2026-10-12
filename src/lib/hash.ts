@@ -5,6 +5,7 @@ export interface UrlState {
   format: FormatKey;
   variant: VariantId;
   bg: boolean;
+  lang: 'ko' | 'en';
 }
 
 /** 주소 뒤 #c=003&f=long&v=2&bg=1 형태로 선택 상태를 저장해 링크로 공유할 수 있다 */
@@ -18,11 +19,14 @@ export function readHash(validIds: Set<string>): Partial<UrlState> {
   const v = Number(p.get('v'));
   if (v >= 1 && v <= 6) out.variant = v as VariantId;
   if (p.get('bg') === '1') out.bg = true;
+  const l = p.get('l');
+  if (l === 'ko' || l === 'en') out.lang = l;
   return out;
 }
 
 export function writeHash(s: UrlState) {
   const p = new URLSearchParams({ c: s.id, f: s.format, v: String(s.variant), bg: s.bg ? '1' : '0' });
+  if (s.lang === 'en') p.set('l', 'en');
   try {
     window.history.replaceState(null, '', `#${p.toString()}`);
   } catch {
