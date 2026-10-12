@@ -70,9 +70,9 @@ export default function App() {
   }, [showOverlay, closeOverlay]);
 
   const filters: { key: Filter; label: string; count: number }[] = [
-    { key: 'all', label: t('전체', 'All'), count: COLORWAYS.length },
     { key: 'main', label: t('메인 컬러', 'Main color'), count: MAIN_COUNT },
     { key: 'extended', label: t('확장 컬러', 'Extended color'), count: EXTENDED_COUNT },
+    { key: 'all', label: t('전체', 'All'), count: COLORWAYS.length },
   ];
 
   const detail = (
